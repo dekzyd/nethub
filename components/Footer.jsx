@@ -39,16 +39,41 @@ const Footer = () => {
       {/* about, solutions, products, resources links */}
       <div className="bg-customColors-dune flex justify-center">
         <div className="container">
-          <div id="links" className="h-[552px] pt-16">
-            <div className="bg-red-300 h-full"></div>
+          <div id="links" className="h-[552px] pt-16 px-3">
+            <div
+              id="links-container"
+              className="container h-full flex flex-wrap"
+            >
+              <div className="linkCont bg-slate-100">About</div>
+              <div className="linkCont bg-slate-200">Solutions</div>
+              <div className="linkCont bg-slate-300">Products</div>
+              <div className="linkCont bg-slate-400">Resources</div>
+            </div>
           </div>
 
           <div id="privacy-policy" className="h-[275.20px] pt-16">
-            <div className="bg-red-300 h-full"></div>
+            <div className="bg-red-300 h-full container flex flex-col items-center">
+              <h2>Helping tacos</h2>
+              <p>coming soon</p>
+              <div className="flex justify-around">
+                <p>
+                  <span>icon</span> texts 1 ooh now
+                </p>
+                <p>
+                  <span>icon</span> texts 2 ooh now
+                </p>
+                <p>
+                  <span>icon</span> texts 3 ooh now
+                </p>
+                <p>
+                  <span>icon</span> texts 4 ooh now
+                </p>
+              </div>
+            </div>
           </div>
 
           <div id="bottom footer" className="h-[291px] pt-5 pb-20">
-            <div className="bg-red-300 h-full"></div>
+            <div className="bg-red-300 h-full container"></div>
           </div>
         </div>
       </div>
