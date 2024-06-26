@@ -8,6 +8,16 @@
   @apply max-w-[1140px];
 }
 
+/* .rtl {
+  @apply direction: rtl;
+} */
+
+.triangle-left {
+  width: 100%;
+  border-top: 4px solid transparent;
+  border-right: 8px solid #555;
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
