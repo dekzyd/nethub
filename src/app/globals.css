@@ -9,7 +9,7 @@
 }
 
 /* .rtl {
-  @apply direction: rtl;
+  @apply transform: translateX(-50%) rotateY(180deg);
 } */
 
 .triangle-left {
