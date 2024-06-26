@@ -1,9 +1,11 @@
 const Footer = () => {
   return (
     <div id="footer">
-      <div className="bg-customColors-fiord h-[674px]"></div>
+      <div id="contact" className="h-[674px]">
+        <div className="container h-5 bg-customColors-fiord">talk true</div>
+      </div>
       <br />
-      <div className="bg-customColors-fiord h-[674px]"></div>
+      <div className="h-[674px]"></div>
     </div>
   );
 };
