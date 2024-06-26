@@ -36,6 +36,22 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      {/* about, solutions, products, resources links */}
+      <div className="bg-customColors-dune flex justify-center">
+        <div className="container">
+          <div id="links" className="h-[552px] pt-16">
+            <div className="bg-red-300 h-full"></div>
+          </div>
+
+          <div id="privacy-policy" className="h-[275.20px] pt-16">
+            <div className="bg-red-300 h-full"></div>
+          </div>
+
+          <div id="bottom footer" className="h-[291px] pt-5 pb-20">
+            <div className="bg-red-300 h-full"></div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

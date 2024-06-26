@@ -17,6 +17,7 @@ module.exports = {
         customColors: {
           fiord: "#3D5B68",
           ecstacy: "#EE4E4E",
+          dune: "#23211F",
         },
       },
     },
