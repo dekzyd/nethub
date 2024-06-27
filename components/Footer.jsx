@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
 
       {/* footer container 2 */}
-      <div className="h-[674px] bg-customColors-fiord flex justify-center pt-10 pb-20">
+      <div className="min-h-[674px] bg-customColors-fiord flex justify-center pt-10 pb-20">
         <div className="container h-full bg-red-300 p-5">
           <h1>Meeting in Person</h1>
           <p>
@@ -53,27 +53,33 @@ const Footer = () => {
 
           <div id="privacy-policy" className="h-[275.20px] pt-16">
             <div className="bg-red-300 h-full container flex flex-col items-center">
-              <h2>Helping tacos</h2>
-              <p>coming soon</p>
-              <div className="flex justify-around">
-                <p>
-                  <span>icon</span> texts 1 ooh now
+              <h2 className="p-2.5 mb-9">Helping tacos</h2>
+              <p className="mb-5">coming soon</p>
+              <div className="flex justify-center gap-3 pb-5 ">
+                <p className="bg-slate-300">
+                  <span>icon</span> cookie policy
                 </p>
-                <p>
-                  <span>icon</span> texts 2 ooh now
+                <p className="bg-slate-300">
+                  <span>icon</span> terms of use
                 </p>
-                <p>
-                  <span>icon</span> texts 3 ooh now
-                </p>
-                <p>
-                  <span>icon</span> texts 4 ooh now
+                <p className="bg-slate-300">
+                  <span>icon</span> privacy policy
                 </p>
               </div>
             </div>
           </div>
 
           <div id="bottom footer" className="h-[291px] pt-5 pb-20">
-            <div className="bg-red-300 h-full container"></div>
+            <div className="bg-red-300 h-full container flex flex-wrap justify-center items-center">
+              {/* logo */}
+              <div className="bottomftr flex justify-end">logo Nethub</div>
+              {/* address */}
+              <div className="bottomftr">
+                <p>Nethub Tech</p>
+                <p>A113 - 2009 lougheed hwy</p>
+                <p>port coloquaim, BV VBC Abuja, Nigeria</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

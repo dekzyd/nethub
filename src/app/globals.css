@@ -13,7 +13,11 @@
 }
 
 .linkCont {
-  @apply basis-[491.2px] md:basis-1/2 lg:basis-1/4 flex-1 h-full pt-3 px-3;
+  @apply basis-[491.2px] md:basis-1/2 lg:basis-1/4 flex-1 pt-3 px-3;
+}
+
+.bottomftr {
+  @apply bg-slate-200 p-5 basis-[321px];
 }
 
 .triangle-left {
