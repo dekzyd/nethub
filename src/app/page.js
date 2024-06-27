@@ -1,3 +1,3 @@
 export default function Home() {
-  return <main>start nethub</main>;
+  return <main>Home content</main>;
 }
