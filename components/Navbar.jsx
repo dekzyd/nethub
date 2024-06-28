@@ -23,7 +23,6 @@ const Navbar = () => {
           {/* links */}
           <ul className="hidden lg:flex basis-3/4 justify-end">
             <NavigationMenuDemo />
-            <li className="px-4 py-2">Search</li>
           </ul>
           {/* dropdown icon */}
           <div className="lg:hidden flex justify-end basis-3/4">dropdown</div>
