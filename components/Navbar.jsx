@@ -1,3 +1,14 @@
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
+
 const Navbar = () => {
   return (
     <nav className="w-full">
@@ -9,9 +20,33 @@ const Navbar = () => {
           </div>
           {/* links */}
           <ul className="hidden lg:flex basis-3/4 justify-end">
-            <li className="px-4 py-2">About</li>
+            {/* <li className="px-4 py-2">About</li>
             <li className="px-4 py-2">Solutions</li>
             <li className="px-4 py-2">Resources</li>
+             */}
+
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>About</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <NavigationMenuLink>Link</NavigationMenuLink>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <NavigationMenuLink>Link</NavigationMenuLink>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <NavigationMenuLink>Link</NavigationMenuLink>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
             <li className="px-4 py-2">Contact Us</li>
             <li className="px-4 py-2">Search</li>
           </ul>
