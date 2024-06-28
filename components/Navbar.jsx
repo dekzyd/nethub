@@ -9,6 +9,7 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import Divider from "./divider";
+import Link from "next/link";
 import { NavigationMenuDemo } from "./NavLinks";
 
 const Navbar = () => {
@@ -17,9 +18,11 @@ const Navbar = () => {
       <div className="w-full h-20 flex justify-center">
         <div className="container p-3 flex items-center gap-x-3">
           {/* logo */}
-          <div id="logo" className=" basis-1/4 text-3xl font-bold">
-            Logo Nethub
-          </div>
+          <Link href="/">
+            <div id="logo" className=" basis-1/4 text-3xl font-bold">
+              Logo Nethub
+            </div>
+          </Link>
           {/* links */}
           <ul className="hidden lg:flex basis-3/4 justify-end">
             <NavigationMenuDemo />
