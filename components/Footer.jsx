@@ -12,7 +12,7 @@ const Footer = () => {
         {/* footer container 1 */}
         <div className="container h-full bg-red-300 mx-4 flex flex-wrap flex-initial">
           <div className="basis-full md:basis-2/4 flex flex-col flex-initial p-5">
-            <h3 className="mb-5">TALK WITH US</h3>
+            <h3 className="mb-5 text-4xl tracking-wide">Talk with us</h3>
             <ContactForm />
           </div>
           <div className="bg-slate-200 basis-full md:basis-2/4 flex justify-center flex-initial">
