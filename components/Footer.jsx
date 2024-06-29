@@ -1,8 +1,7 @@
 "use client";
 
 import { ContactForm } from "./Contactform";
-import { carrot, newsMail } from "../assets/icons";
-import { Carrot, Linkedin, LinkedinIcon, Twitter, X } from "lucide-react";
+import { CommunityIcons, NewsletterIcons } from "../assets/icons";
 
 const Footer = () => {
   return (
@@ -36,13 +35,17 @@ const Footer = () => {
               <p className="font-semibold text-primary">contact@nethub.com</p>
             </div>
             {/* newsletter */}
-            <p className="uppercase tracking-widest">sign up for newsletter</p>
+            <p className="uppercase tracking-widest mb-2">
+              sign up for newsletter
+            </p>
             <div className="pb-5">
-              <newsMail /> <Carrot /> <Linkedin />
+              <NewsletterIcons />
             </div>
             {/* community */}
-            <p className="uppercase tracking-widest">join the community</p>
-            <div>icon icon</div>
+            <p className="uppercase tracking-widest mb-2">join the community</p>
+            <div>
+              <CommunityIcons />
+            </div>
           </div>
         </div>
       </div>

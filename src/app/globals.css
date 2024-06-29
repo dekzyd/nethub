@@ -90,6 +90,10 @@
   @apply bg-slate-200 p-5 basis-[321px];
 }
 
+.social-icon {
+  @apply bg-customColors-hitgray hover:bg-primary inline-block p-2.5 text-2xl rounded-full mr-5 text-customColors-fiord;
+}
+
 .triangle-left {
   width: 100%;
   border-top: 4px solid transparent;
