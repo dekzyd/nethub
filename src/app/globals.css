@@ -91,7 +91,7 @@
 }
 
 .social-icon {
-  @apply bg-customColors-hitgray hover:bg-primary inline-block p-2.5 text-2xl rounded-full mr-5 text-customColors-fiord;
+  @apply bg-customColors-hitgray text-xl hover:bg-primary inline-block p-2.5 rounded-full mr-5 text-customColors-fiord;
 }
 
 .triangle-left {

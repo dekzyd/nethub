@@ -89,7 +89,7 @@ export function ContactForm() {
           />
           <Button
             type="submit"
-            className="w-full uppercase tracking-wide font-semibold font-sans"
+            className="w-full uppercase tracking-wide font-semibold font-sans px-7 py-4"
           >
             Send Message
           </Button>

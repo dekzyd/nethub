@@ -1,4 +1,3 @@
-import { Mail } from "lucide-react";
 import {
   FaYoutube,
   FaPinterest,
