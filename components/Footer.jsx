@@ -18,7 +18,7 @@ const Footer = () => {
             </h3>
             <ContactForm />
           </div>
-          <div className="basis-full md:basis-2/4 flex flex-col flex-initial py-20 pl-10 pr-5 text-xl text-customColors-loblolly">
+          <div className="basis-full md:basis-2/4 flex flex-col flex-initial py-20 pl-10 pr-5 text-xl text-white">
             {/* toll free */}
             <div className="pb-5">
               <p className="font-medium">Toll-free calls (phone & Skype)</p>
@@ -35,14 +35,16 @@ const Footer = () => {
               <p className="font-semibold text-primary">contact@nethub.com</p>
             </div>
             {/* newsletter */}
-            <p className="uppercase tracking-widest mb-2">
+            <p className="uppercase tracking-widest mb-2 text-customColors-hitgray">
               sign up for newsletter
             </p>
             <div className="pb-5">
               <NewsletterIcons />
             </div>
             {/* community */}
-            <p className="uppercase tracking-widest mb-2">join the community</p>
+            <p className="uppercase tracking-widest mb-2 text-customColors-hitgray">
+              join the community
+            </p>
             <div>
               <CommunityIcons />
             </div>
@@ -52,15 +54,17 @@ const Footer = () => {
 
       {/* footer container 2 */}
       <div className="min-h-[674px] bg-customColors-fiord flex justify-center pt-10 pb-20">
-        <div className="container h-full bg-red-300 p-5">
-          <h1>Meeting in Person</h1>
-          <p>
+        <div className="container h-full p-5">
+          <h1 className="text-customColors-hitgray text-2xl tracking-wider uppercase pb-3">
+            Meeting in Person
+          </h1>
+          <p className="text-white text-md leading-relaxed">
             You can find our friendly and helpful PortaOne staff and sales
-            representative across the globe. Looking to meet face-to-face? Set
-            up a meeting by{" "}
-            <span className="text-customColors-ecstacy">
-              sending us a message
-            </span>
+            representative across the globe.
+          </p>
+          <p className="text-white pb-5 text-md leading-relaxed">
+            Looking to meet face-to-face? Set up a meeting by{" "}
+            <span className="text-primary">sending us a message.</span>
           </p>
           {/* events, corporate offices, tech offices, representatives */}
           <div className="bg-slate-400 flex flex-wrap">
