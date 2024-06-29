@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const { Open_Sans } = require("next/font/google");
 const { fontFamily } = require("tailwindcss/defaultTheme");
+const flowbite = require("flowbite-react/tailwind");
 
 module.exports = {
   darkMode: ["class"],
@@ -9,6 +10,7 @@ module.exports = {
     "./components/**/*.{js,jsx}",
     "./app/**/*.{js,jsx}",
     "./src/**/*.{js,jsx}",
+    flowbite.content(),
   ],
   prefix: "",
   theme: {
@@ -92,5 +94,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), flowbite.plugin()],
 };
