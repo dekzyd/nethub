@@ -11,6 +11,7 @@ import {
 import Divider from "./divider";
 import Link from "next/link";
 import { NavigationMenuDemo } from "./NavLinks";
+import Logo from "./Logo";
 
 const Navbar = () => {
   return (
@@ -20,7 +21,7 @@ const Navbar = () => {
           {/* logo */}
           <Link href="/">
             <div id="logo" className=" basis-1/4 text-3xl font-bold">
-              Logo Nethub
+              <Logo />
             </div>
           </Link>
           {/* links */}

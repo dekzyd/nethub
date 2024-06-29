@@ -268,7 +268,7 @@ const Footer = () => {
           <div id="bottom footer" className="h-[291px] pt-5 pb-20">
             <div className="h-full container flex flex-wrap justify-center items-center">
               {/* logo */}
-              <Logo />
+              <Logo section="footer" />
               {/* address */}
               <div className="bottomftr text-customColors-loblolly/85">
                 <p className="font-semibold">Nethub Tech</p>
