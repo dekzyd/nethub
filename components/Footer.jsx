@@ -2,6 +2,9 @@
 
 import { ContactForm } from "./Contactform";
 import { CommunityIcons, NewsletterIcons } from "../assets/icons";
+import ImageBox from "./imageBox";
+import profilePic from "../assets/canada.webp";
+import { FaAngleRight } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -67,11 +70,85 @@ const Footer = () => {
             <span className="text-primary">sending us a message.</span>
           </p>
           {/* events, corporate offices, tech offices, representatives */}
-          <div className="bg-slate-400 flex flex-wrap">
-            <div className="bg-slate-100 ftflex">1</div>
-            <div className="bg-slate-200 ftflex">2</div>
-            <div className="bg-slate-300 ftflex">3</div>
+          <div className="flex flex-wrap">
+            <div className="ftflex">
+              <h3 className="text-primary font-semibold text-2xl mb-5">
+                Events
+              </h3>
+              <div className="flex flex-col gap-9 pb-5">
+                <ImageBox
+                  headerText={"Canada"}
+                  contents={"Melbourne"}
+                  profilePic={profilePic}
+                />
+                <ImageBox
+                  headerText={"Canada"}
+                  contents={"Melbourne"}
+                  profilePic={profilePic}
+                />
+                <ImageBox
+                  headerText={"Canada"}
+                  contents={"Melbourne"}
+                  profilePic={profilePic}
+                />
+              </div>
+            </div>
+            <div className="ftflex">
+              <h3 className="text-primary font-semibold text-2xl mb-5">
+                Corporate Offices
+              </h3>
+              <div className="flex flex-col gap-9 pb-5">
+                <ImageBox
+                  headerText={"Canada"}
+                  contents={"Melbourne"}
+                  profilePic={profilePic}
+                />
+                <h3 className="text-primary font-semibold text-2xl">
+                  Technology offices
+                </h3>
+                <ImageBox
+                  headerText={"Canada"}
+                  contents={"Melbourne"}
+                  profilePic={profilePic}
+                />
+                <ImageBox
+                  headerText={"Canada"}
+                  contents={"Melbourne"}
+                  profilePic={profilePic}
+                />
+              </div>
+            </div>
+            <div className="ftflex">
+              <h3 className="text-primary font-semibold text-2xl mb-5">
+                Representatives
+              </h3>
+              <div className="flex flex-col gap-9 pb-5">
+                <ImageBox
+                  headerText={"Canada"}
+                  contents={"Melbourne"}
+                  profilePic={profilePic}
+                />
+                <ImageBox
+                  headerText={"Canada"}
+                  contents={"Melbourne"}
+                  profilePic={profilePic}
+                />
+                <ImageBox
+                  headerText={"Canada"}
+                  contents={"Melbourne"}
+                  profilePic={profilePic}
+                />
+                <ImageBox
+                  headerText={"Canada"}
+                  contents={"Melbourne"}
+                  profilePic={profilePic}
+                />
+              </div>
+            </div>
           </div>
+          <h3 className="text-primary text-2xl font-semibold">
+            <span className="text-primary">{FaAngleRight}</span>All Events
+          </h3>
         </div>
       </div>
       {/* about, solutions, products, resources links */}
@@ -82,10 +159,72 @@ const Footer = () => {
               id="links-container"
               className="container h-full flex flex-wrap"
             >
-              <div className="linkCont bg-slate-100">About</div>
-              <div className="linkCont bg-slate-200">Solutions</div>
-              <div className="linkCont bg-slate-300">Products</div>
-              <div className="linkCont bg-slate-400">Resources</div>
+              <div className="linkCont">
+                <h3 className="text-customColors-fiord font-semibold mb-5">
+                  About
+                </h3>
+                <div className="flex flex-col gap-[10px] text-base">
+                  <p className="text-white">Lorem consectetur adipis</p>
+                  <p className="text-white">Adipis</p>
+                  <p className="text-white">Lorem consectetur</p>
+                  <p className="text-white">Lorem consectetur adipis</p>
+                  <p className="text-white">Adipis</p>
+                  <p className="text-white">Lorem consectetur</p>
+                  <p className="text-white">Lorem consectetur adipis</p>
+                  <p className="text-white">Adipis</p>
+                  <p className="text-white">Lorem consectetur</p>
+                  <p className="text-white">Lorem consectetur adipis</p>
+                  <p className="text-white">Adipis</p>
+                  <p className="text-white">Lorem consectetur</p>
+                  <p className="text-white">Lorem consectetur</p>
+                </div>
+              </div>
+              <div className="linkCont">
+                <h3 className="text-customColors-fiord font-semibold mb-5">
+                  Solutions
+                </h3>
+                <div className="flex flex-col gap-[10px] text-base">
+                  <p className="text-white">Lorem consectetur adipis</p>
+                  <p className="text-white">Adipis</p>
+                  <p className="text-white">Lorem consectetur</p>
+                  <p className="text-white">Lorem consectetur adipis</p>
+                  <p className="text-white">Adipis</p>
+                  <p className="text-white">Lorem consectetur</p>
+                </div>
+              </div>
+              <div className="linkCont">
+                <h3 className="text-customColors-fiord font-semibold mb-5">
+                  Products
+                </h3>
+                <div className="flex flex-col gap-[10px] text-base">
+                  <p className="text-white">Lorem consectetur adipis</p>
+                  <p className="text-white">Adipis</p>
+                  <p className="text-white">Lorem consectetur</p>
+                  <p className="text-white">Lorem consectetur adipis</p>
+                  <p className="text-white">Adipis</p>
+                  <p className="text-white">Lorem consectetur</p>
+                  <p className="text-white">Lorem consectetur</p>
+                </div>
+              </div>
+              <div className="linkCont">
+                <h3 className="text-customColors-fiord font-semibold mb-5">
+                  Resources
+                </h3>
+                <div className="flex flex-col gap-[10px] text-base">
+                  <p className="text-white">Lorem consectetur adipis</p>
+                  <p className="text-white">Adipis</p>
+                  <p className="text-white">Lorem consectetur</p>
+                  <p className="text-white">Lorem consectetur</p>
+                  <p className="text-white">Lorem consectetur adipis</p>
+                  <p className="text-white">Adipis</p>
+                  <p className="text-white">Lorem consectetur</p>
+                  <p className="text-white">Lorem consectetur</p>
+                  <p className="text-white">Lorem consectetur adipis</p>
+                  <p className="text-white">Adipis</p>
+                  <p className="text-white">Lorem consectetur</p>
+                  <p className="text-white">Lorem consectetur</p>
+                </div>
+              </div>
             </div>
           </div>
 

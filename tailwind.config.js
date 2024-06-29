@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const { Open_Sans } = require("next/font/google");
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
@@ -68,6 +69,9 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontSize: {
+        slight: "18px",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -84,6 +88,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Montserrat", ...fontFamily.sans],
+        // Open_sans: ["Open_Sans"],
       },
     },
   },
