@@ -1,6 +1,8 @@
 "use client";
 
 import { ContactForm } from "./Contactform";
+import { carrot, newsMail } from "../assets/icons";
+import { Carrot, Linkedin, LinkedinIcon, Twitter, X } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -10,13 +12,37 @@ const Footer = () => {
         className="h-[674px] bg-customColors-fiord flex justify-center pt-[70px]"
       >
         {/* footer container 1 */}
-        <div className="container h-full bg-red-300 mx-4 flex flex-wrap flex-initial">
+        <div className="container h-full mx-4 flex flex-wrap flex-initial">
           <div className="basis-full md:basis-2/4 flex flex-col flex-initial p-5">
-            <h3 className="mb-5 text-4xl tracking-wide">Talk with us</h3>
+            <h3 className="mb-5 text-4xl tracking-widest uppercase text-customColors-hitgray">
+              Talk with us
+            </h3>
             <ContactForm />
           </div>
-          <div className="bg-slate-200 basis-full md:basis-2/4 flex justify-center flex-initial">
-            contacts
+          <div className="basis-full md:basis-2/4 flex flex-col flex-initial py-20 pl-10 pr-5 text-xl text-customColors-loblolly">
+            {/* toll free */}
+            <div className="pb-5">
+              <p className="font-medium">Toll-free calls (phone & Skype)</p>
+              <p className="font-semibold text-primary">+1 866 747 8647</p>
+            </div>
+            {/* abroad */}
+            <div className="pb-5">
+              <p className="font-medium">Calls & faxes from abroad:</p>
+              <p className="font-semibold text-primary">+1 866 747 8647</p>
+            </div>
+            {/* email */}
+            <div className="pb-8">
+              <p className="font-medium">Email:</p>
+              <p className="font-semibold text-primary">contact@nethub.com</p>
+            </div>
+            {/* newsletter */}
+            <p className="uppercase tracking-widest">sign up for newsletter</p>
+            <div className="pb-5">
+              <newsMail /> <Carrot /> <Linkedin />
+            </div>
+            {/* community */}
+            <p className="uppercase tracking-widest">join the community</p>
+            <div>icon icon</div>
           </div>
         </div>
       </div>

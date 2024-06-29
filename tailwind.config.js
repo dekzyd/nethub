@@ -57,6 +57,10 @@ module.exports = {
           fiord: "#3D5B68",
           ecstacy: "#EE4E4E",
           dune: "#23211F",
+          hitgray: "#9eaeb4",
+          loblolly: "#c4cdd1",
+          emperor: "#555555",
+          cuttysark: "#5b7884",
         },
       },
       borderRadius: {
