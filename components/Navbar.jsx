@@ -1,13 +1,3 @@
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
 import Divider from "./divider";
 import Link from "next/link";
 import { NavigationMenuDemo } from "./NavLinks";
@@ -33,7 +23,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* element divider */}
-      <Divider />
+      <Divider fill="#EE4E4E" />
     </nav>
   );
 };

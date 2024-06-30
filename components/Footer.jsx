@@ -1,7 +1,7 @@
 "use client";
 
 import { ContactForm } from "./Contactform";
-import { CommunityIcons, NewsletterIcons } from "../assets/icons";
+import { CommunityIcons, NewsletterIcons } from "./icons";
 import ImageBox from "./imageBox";
 import profilePic from "../assets/canada.webp";
 import Logo from "./Logo";

@@ -16,9 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* <head>
-          <ThemeModeScript />
-        </head> */}
+        <ThemeModeScript />
       </head>
       <body>
         <main className="min-h-screen">

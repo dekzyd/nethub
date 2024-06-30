@@ -14,39 +14,16 @@ import {
 
 const components = [
   {
-    title: "Alert Dialog",
+    title: "Voice Solutions",
     href: "/solutions",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
-    title: "Hover Card",
+    title: "Internet Solutions",
     href: "/solutions",
     description:
       "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/solutions",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/solutions",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/solutions",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/solutions",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },
 ];
 
@@ -58,14 +35,13 @@ export function NavigationMenuDemo() {
           <NavigationMenuTrigger>About</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/about" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="/about" title="The Company">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit eaque rerum dolor.
               </ListItem>
               <ListItem href="/about" title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/about" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Labore, libero..
               </ListItem>
             </ul>
           </NavigationMenuContent>

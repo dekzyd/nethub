@@ -1,4 +1,4 @@
-const Divider = () => {
+const Divider = ({ fill }) => {
   return (
     <div className="rotate-180">
       <svg
@@ -7,7 +7,7 @@ const Divider = () => {
         viewBox="0 0 1000 100"
         preserveAspectRatio="none"
       >
-        <path fill="#EE4E4E" d="M0,6V0h1000v100L0,6z"></path>
+        <path fill={fill} d="M0,6V0h1000v100L0,6z"></path>
       </svg>
     </div>
   );

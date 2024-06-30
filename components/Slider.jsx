@@ -16,6 +16,8 @@ const Slider = () => {
       <Carousel
         theme={customTheme}
         // slide={false}
+        pauseOnHover
+        slideInterval={5000}
         className=""
         onSlideChange={(index) => console.log("onSlideChange()", index)}
       >
@@ -23,7 +25,7 @@ const Slider = () => {
           className="bg-cover bg-no-repeat h-full w-full"
           style={{ backgroundImage: `url('/tech2.jpg')` }}
         >
-          <div className="flex h-full w-full bg-gradient-to-r from-sky-500 to-indigo-500 sm:py-5 lg:py-10 opacity-60">
+          <div className="imgoverlay">
             <div className="lg:basis-1/2"></div>
             <div className="lg:basis-1/2 h-full">
               <div className="flex flex-col h-full justify-center gap-4 lg:max-w-[600px]">
@@ -47,7 +49,7 @@ const Slider = () => {
           className="bg-cover bg-no-repeat h-full w-full"
           style={{ backgroundImage: `url('/tech.jpg')` }}
         >
-          <div className="flex h-full w-full bg-gradient-to-r from-sky-500 to-indigo-500 sm:py-5 lg:py-10 opacity-60">
+          <div className="imgoverlay">
             <div className="lg:basis-1/2"></div>
             <div className="lg:basis-1/2 h-full">
               <div className="flex flex-col h-full justify-center gap-4 lg:max-w-[600px]">
@@ -71,9 +73,9 @@ const Slider = () => {
           className="bg-cover bg-no-repeat h-full w-full"
           style={{ backgroundImage: `url('/tech3.jpg')` }}
         >
-          <div className="flex h-full w-full bg-gradient-to-r from-sky-500 to-indigo-500 sm:py-5 lg:py-10 opacity-60">
+          <div className="imgoverlay">
             <div className="lg:basis-1/2"></div>
-            <div className="lg:basis-1/2 h-full">
+            <div className="lg:basis-1/2 h-full opacity-100">
               <div className="flex flex-col h-full justify-center gap-4 lg:max-w-[600px]">
                 <h3 className="text-white sm:text-3xl lg:text-4xl font-semibold leading-tight">
                   How PortaOne Helped Speedcast Reduce Its Capex and Increase
