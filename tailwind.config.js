@@ -65,6 +65,8 @@ module.exports = {
           loblolly: "#c4cdd1",
           emperor: "#555555",
           cuttysark: "#5b7884",
+          dovegray: "#737373",
+          porcelain: "#F0F2F3",
         },
       },
       borderRadius: {
