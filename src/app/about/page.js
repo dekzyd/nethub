@@ -2,6 +2,7 @@ import PageHeader from "../../../components/PageHeader";
 import { SearchlightIcon } from "../../../components/icons";
 import Divider from "../../../components/divider";
 import Breadcrumbs from "../../../components/Breadcrumbs";
+import UniqueMkt from "../../../components/UniqueMkt";
 
 const About = () => {
   return (
@@ -36,17 +37,23 @@ const About = () => {
           <div className="flex flex-col text-customColors-dovegray pr-10">
             <div className="flex justify-between font-bold text-lg">
               <p>Founded</p>
-              <p className="font-light">-----------------------------</p>
+              <p className="font-light text-customColors-dovegray/40">
+                -----------------------------
+              </p>
               <p>2001</p>
             </div>
             <div className="flex justify-between font-bold text-lg">
               <p>Headquaters</p>
-              <p className="font-light">-----------------------</p>
+              <p className="font-light text-customColors-dovegray/40">
+                -----------------------
+              </p>
               <p>Abuja, Nigeria</p>
             </div>
             <div className="flex justify-between font-bold text-lg">
               <p>Employees</p>
-              <p className="font-light">-----------------------------</p>
+              <p className="font-light text-customColors-dovegray/40">
+                -----------------------------
+              </p>
               <p>250+</p>
             </div>
           </div>
@@ -57,6 +64,7 @@ const About = () => {
         </div>
       </section>
       <Divider fill="#F0F2F3" />
+      <UniqueMkt />
     </div>
   );
 };

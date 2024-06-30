@@ -15,7 +15,7 @@ const Slider = () => {
     <div className="h-96 sm:h-64 lg:h-[400px] xl:h-[450px]">
       <Carousel
         theme={customTheme}
-        // slide={false}
+        slide={false}
         pauseOnHover
         slideInterval={5000}
         className=""
