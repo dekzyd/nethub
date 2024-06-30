@@ -2,6 +2,7 @@
 const { Open_Sans } = require("next/font/google");
 const { fontFamily } = require("tailwindcss/defaultTheme");
 const flowbite = require("flowbite-react/tailwind");
+import tech from "./assets/tech.jpg";
 
 module.exports = {
   darkMode: ["class"],

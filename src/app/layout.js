@@ -14,11 +14,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
-        <head>
+        {/* <head>
           <ThemeModeScript />
-        </head>
+        </head> */}
       </head>
       <body>
         <main className="min-h-screen">
