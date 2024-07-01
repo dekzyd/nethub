@@ -5,6 +5,7 @@ import Breadcrumbs from "../../../components/Breadcrumbs";
 import UniqueMkt from "../../../components/UniqueMkt";
 import PartnerOpt from "../../../components/PartnerOpt";
 import HotTopics from "../../../components/HotTopics";
+import Misc from "../../../components/Misc";
 
 const About = () => {
   return (
@@ -73,6 +74,7 @@ const About = () => {
       {/* Hot topics */}
       <Divider fill="#c4cdd1" />
       <HotTopics />
+      <Misc />
     </div>
   );
 };
