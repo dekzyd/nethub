@@ -3,6 +3,7 @@ import { SearchlightIcon } from "../../../components/icons";
 import Divider from "../../../components/divider";
 import Breadcrumbs from "../../../components/Breadcrumbs";
 import UniqueMkt from "../../../components/UniqueMkt";
+import PartnerOpt from "../../../components/PartnerOpt";
 
 const About = () => {
   return (
@@ -65,6 +66,9 @@ const About = () => {
       </section>
       <Divider fill="#F0F2F3" />
       <UniqueMkt />
+      {/* other about us options */}
+      {/* <Divider fill="#FFF" /> */}
+      <PartnerOpt />
     </div>
   );
 };
