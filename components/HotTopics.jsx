@@ -1,6 +1,6 @@
 import React from "react";
-import { FaAngleRight } from "react-icons/fa6";
 import HotTopicCard from "./HotTopicCard";
+import ChevronLink from "./ChevronLink";
 
 const HotTopics = () => {
   return (
@@ -9,13 +9,7 @@ const HotTopics = () => {
         <h2 className="text-white text-4xl font-bold mb-6">Hot topics</h2>
 
         {/* All hot topics link */}
-        <div className="hover-container">
-          <p className="text-primary">
-            <FaAngleRight />
-          </p>
-          <p className="text-white uppercase font-semibold">all hot topics</p>
-        </div>
-
+        <ChevronLink text="All hot topics" color="text-white" />
         {/* Hot topics container */}
         <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <HotTopicCard />

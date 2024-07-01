@@ -1,4 +1,5 @@
 import React from "react";
+import ChevronLink from "./ChevronLink";
 
 const MiscCard = () => {
   return (
@@ -20,6 +21,12 @@ const MiscCard = () => {
           Oracle Cloud
         </p>
         <p>Nethub Maintenance Release 115 now available</p>
+      </div>
+      <div className="my-3">
+        <ChevronLink
+          text="All case studies"
+          color="text-customColors-hitgray"
+        />
       </div>
     </div>
   );
