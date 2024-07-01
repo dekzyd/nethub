@@ -30,8 +30,8 @@ const Slider = () => {
             <div className="lg:basis-1/2 h-full">
               <div className="flex flex-col h-full justify-center gap-4 lg:max-w-[600px]">
                 <h3 className="text-white sm:text-3xl lg:text-4xl font-semibold leading-tight">
-                  How PortaOne Helped Speedcast Reduce Its Capex and Increase
-                  Its Scalability
+                  How Nethub Helped Speedcast Reduce Its Capex and Increase Its
+                  Scalability
                 </h3>
                 <p className="text-white lg:text-xl">
                   Learn how PortaOne helped Speedcast ‘de-complicate’ its

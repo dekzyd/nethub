@@ -4,6 +4,7 @@ import Divider from "../../../components/divider";
 import Breadcrumbs from "../../../components/Breadcrumbs";
 import UniqueMkt from "../../../components/UniqueMkt";
 import PartnerOpt from "../../../components/PartnerOpt";
+import HotTopics from "../../../components/HotTopics";
 
 const About = () => {
   return (
@@ -69,6 +70,9 @@ const About = () => {
       {/* other about us options */}
       {/* <Divider fill="#FFF" /> */}
       <PartnerOpt />
+      {/* Hot topics */}
+      <Divider fill="#c4cdd1" />
+      <HotTopics />
     </div>
   );
 };

@@ -19,7 +19,7 @@ const Footer = () => {
         id="contact"
         className="h-[674px] bg-customColors-fiord flex justify-center pt-[70px]"
       >
-        {/* footer container 1 */}
+        {/* contact form */}
         <div className="container h-full mx-4 flex flex-wrap flex-initial">
           <div className="basis-full md:basis-2/4 flex flex-col flex-initial p-5">
             <h3 className="mb-5 text-4xl tracking-widest uppercase text-customColors-hitgray">
@@ -41,7 +41,9 @@ const Footer = () => {
             {/* email */}
             <div className="pb-8">
               <p className="font-medium">Email:</p>
-              <p className="font-semibold text-primary">contact@nethub.com</p>
+              <p className="font-semibold text-primary">
+                info@nethubtechnologies.com
+              </p>
             </div>
             {/* newsletter */}
             <p className="uppercase tracking-widest mb-2 text-customColors-hitgray">
