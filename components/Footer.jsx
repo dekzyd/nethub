@@ -15,57 +15,57 @@ import {
 const Footer = () => {
   return (
     <section id="footer">
-      <div
-        id="contact"
-        className="h-[674px] bg-customColors-fiord flex justify-center pt-[70px]"
-      >
-        {/* contact form */}
-        <div className="container h-full mx-4 flex flex-wrap flex-initial">
-          <div className="basis-full md:basis-2/4 flex flex-col flex-initial p-5">
-            <h3 className="mb-5 text-4xl tracking-widest uppercase text-customColors-hitgray">
-              Talk with us
-            </h3>
-            <ContactForm />
-          </div>
-          <div className="basis-full md:basis-2/4 flex flex-col flex-initial py-20 pl-10 pr-5 text-xl text-white">
-            {/* toll free */}
-            <div className="pb-5">
-              <p className="font-medium">Toll-free calls (phone & Skype)</p>
-              <p className="font-semibold text-primary">+1 866 747 8647</p>
+      <div id="contact" className="bg-customColors-fiord pt-[70px]">
+        <div className="container">
+          {/* contact form */}
+          <div className="h-full mx-4 grid sm:grid-cols-1 md:grid-cols-2">
+            <div className="flex flex-col flex-initial p-5">
+              <h3 className="mb-5 text-4xl tracking-widest uppercase text-customColors-hitgray">
+                Talk with us
+              </h3>
+              <ContactForm />
             </div>
-            {/* abroad */}
-            <div className="pb-5">
-              <p className="font-medium">Calls & faxes from abroad:</p>
-              <p className="font-semibold text-primary">+1 866 747 8647</p>
-            </div>
-            {/* email */}
-            <div className="pb-8">
-              <p className="font-medium">Email:</p>
-              <p className="font-semibold text-primary">
-                info@nethubtechnologies.com
+            {/* contact details */}
+            <div className="flex flex-col flex-initial py-20 pl-10 pr-5 text-xl text-white">
+              {/* toll free number*/}
+              <div className="pb-5">
+                <p className="font-medium">Toll-free calls (phone & Skype)</p>
+                <p className="font-semibold text-primary">+1 866 747 8647</p>
+              </div>
+              {/* abroad */}
+              <div className="pb-5">
+                <p className="font-medium">Calls & faxes from abroad:</p>
+                <p className="font-semibold text-primary">+1 866 747 8647</p>
+              </div>
+              {/* email */}
+              <div className="pb-8">
+                <p className="font-medium">Email:</p>
+                <p className="font-semibold text-primary">
+                  info@nethubtechnologies.com
+                </p>
+              </div>
+              {/* newsletter */}
+              <p className="uppercase tracking-widest mb-2 text-customColors-hitgray">
+                sign up for newsletter
               </p>
-            </div>
-            {/* newsletter */}
-            <p className="uppercase tracking-widest mb-2 text-customColors-hitgray">
-              sign up for newsletter
-            </p>
-            <div className="pb-5">
-              <NewsletterIcons />
-            </div>
-            {/* community */}
-            <p className="uppercase tracking-widest mb-2 text-customColors-hitgray">
-              join the community
-            </p>
-            <div>
-              <CommunityIcons />
+              <div className="pb-5">
+                <NewsletterIcons />
+              </div>
+              {/* community */}
+              <p className="uppercase tracking-widest mb-2 text-customColors-hitgray">
+                join the community
+              </p>
+              <div>
+                <CommunityIcons />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* footer container 2 */}
-      <div className="min-h-[674px] bg-customColors-fiord flex justify-center pt-10 pb-20">
-        <div className="container h-full p-5">
+      <div className=" bg-customColors-fiord pt-10 pb-20">
+        <div className="container p-5">
           <h1 className="text-customColors-hitgray text-2xl tracking-wider uppercase pb-3">
             Meeting in Person
           </h1>
@@ -78,7 +78,7 @@ const Footer = () => {
             <span className="text-primary">sending us a message.</span>
           </p>
           {/* events, corporate offices, tech offices, representatives */}
-          <div className="flex flex-wrap">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div className="ftflex">
               <h3 className="text-primary font-semibold text-2xl mb-5">
                 Events
@@ -162,7 +162,7 @@ const Footer = () => {
       {/* about, solutions, products, resources links */}
       <div className="bg-customColors-dune flex justify-center">
         <div className="container">
-          <div id="links" className="h-[552px] pt-16 px-3">
+          <div id="links" className="pt-16 px-3">
             <div
               id="links-container"
               className="container h-full flex flex-wrap"
@@ -236,7 +236,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div id="privacy-policy" className="h-[275.20px] pt-16">
+          <div id="privacy-policy" className="pt-16">
             <div className="h-full container flex flex-col items-center">
               <h2 className="p-2.5 mb-9 text-2xl text-primary">
                 Helping telcos connect people since 2013
@@ -267,15 +267,15 @@ const Footer = () => {
             </div>
           </div>
 
-          <div id="bottom footer" className="h-[291px] pt-5 pb-20">
+          <div id="bottom footer" className="pt-5 pb-20">
             <div className="h-full container flex flex-wrap justify-center items-center">
               {/* logo */}
               <Logo section="footer" />
               {/* address */}
-              <div className="bottomftr text-customColors-loblolly/85">
+              <div className="bottomftr text-customColors-loblolly/85 flex flex-col sm:items-center">
                 <p className="font-semibold">Nethub Tech</p>
                 <p>A113 - 2009 lougheed hwy</p>
-                <p>port coloquaim, BV VBC Abuja, Nigeria</p>
+                <p>port, BV VBC Abuja, Nigeria</p>
               </div>
             </div>
           </div>

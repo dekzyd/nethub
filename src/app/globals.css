@@ -96,7 +96,7 @@
 }
 
 .bottomftr {
-  @apply p-5 basis-[321px];
+  @apply p-5 max-w-[321px];
 }
 
 .social-icon {
