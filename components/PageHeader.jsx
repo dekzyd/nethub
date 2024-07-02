@@ -1,11 +1,21 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 
-const PageHeader = ({ image, icon, title, pre_title, description, btntxt }) => {
+const PageHeader = ({
+  image,
+  icon,
+  title,
+  pre_title,
+  description,
+  btntxt,
+  height,
+}) => {
   return (
     <>
       <div
-        className="w-full h-[467px] bg-cover bg-center bg-no-repeat"
+        className={`w-full ${
+          height ? height : "h-[467px]"
+        } bg-cover bg-center bg-no-repeat`}
         style={{ backgroundImage: `url(${image})` }}
       >
         <div className="imgoverlay">

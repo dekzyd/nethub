@@ -14,16 +14,14 @@ import {
 
 const components = [
   {
-    title: "Voice Solutions",
-    href: "/solutions",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title: "Voice",
+    href: "/solutions/voice",
+    description: "Nethub's voice solutions.",
   },
   {
-    title: "Internet Solutions",
-    href: "/solutions",
-    description:
-      "For sighted users to preview content available behind a link.",
+    title: "Internet",
+    href: "/solutions/internet",
+    description: "Nethub's internet solutions.",
   },
 ];
 
@@ -105,7 +103,7 @@ const ListItem = React.forwardRef((props, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
+        <Link
           ref={ref}
           className={`${className} block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground`}
           {...otherProps}
@@ -114,7 +112,7 @@ const ListItem = React.forwardRef((props, ref) => {
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
-        </a>
+        </Link>
       </NavigationMenuLink>
     </li>
   );

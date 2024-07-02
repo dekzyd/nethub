@@ -1,5 +1,3 @@
-const Solutions = () => {
-  return <div>Solutions page</div>;
-};
-
-export default Solutions;
+export default function Solutions() {
+  return <div>Solutions Page</div>;
+}

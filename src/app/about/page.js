@@ -8,6 +8,12 @@ import HotTopics from "../../../components/HotTopics";
 import Misc from "../../../components/Misc";
 
 const About = () => {
+  // about page breadcrumbs links
+  const aboutcrumbs = [
+    { title: "home", href: "/" },
+    { title: "about", href: "/about" },
+  ];
+
   return (
     <div>
       <PageHeader
@@ -21,7 +27,7 @@ const About = () => {
       <section className="container min-h-[300px] pt-16 pb-10 grid sm:grid-cols-1 md:grid-cols-2 gap-2">
         {/* about page write up */}
         <div className="flex flex-col gap-6">
-          <Breadcrumbs />
+          <Breadcrumbs crumbs={aboutcrumbs} />
           <h3 className="text-primary text-3xl font-semibold">
             Nethub is a global telecommunication software platform developer
           </h3>
