@@ -1,4 +1,5 @@
 import React from "react";
+import { Hsas } from "./icons";
 import BizPerksCard from "./BizPerksCard";
 
 const UniqueMkt = () => {
@@ -15,22 +16,32 @@ const UniqueMkt = () => {
           </p>
         </div>
         {/* biz perks cards */}
-        <div className="min-h-[300px] grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-1">
-          <div className="p-5">
-            <BizPerksCard />
-          </div>
-          <div className="p-5">
-            <BizPerksCard />
-          </div>
-          <div className="p-5">
-            <BizPerksCard />
-          </div>
-          <div className="p-5">
-            <BizPerksCard />
-          </div>
-          <div className="p-5">
-            <BizPerksCard />
-          </div>
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2">
+          <BizPerksCard
+            icon={<Hsas fill="#9EAEB4" />}
+            title="no hidden costs"
+            content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
+          />
+          <BizPerksCard
+            icon={<Hsas fill="#9EAEB4" />}
+            title="no hidden costs"
+            content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
+          />
+          <BizPerksCard
+            icon={<Hsas fill="#9EAEB4" />}
+            title="no hidden costs"
+            content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
+          />
+          <BizPerksCard
+            icon={<Hsas fill="#9EAEB4" />}
+            title="no hidden costs"
+            content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
+          />
+          <BizPerksCard
+            icon={<Hsas fill="#9EAEB4" />}
+            title="no hidden costs"
+            content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
+          />
         </div>
       </div>
     </section>
