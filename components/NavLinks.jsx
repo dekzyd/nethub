@@ -12,7 +12,8 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-const components = [
+// solution items
+const solutions = [
   {
     title: "Voice",
     href: "/solutions/voice",
@@ -23,6 +24,54 @@ const components = [
     href: "/solutions/internet",
     description: "Nethub's internet solutions.",
   },
+  {
+    title: "SIP",
+    href: "/solutions/sip",
+    description: "Nethub's SIP solutions.",
+  },
+  {
+    title: "Cloud PBX & Call Center",
+    href: "/solutions/cloudpbx",
+    description: "Nethub's Cloud PBX & call center solutions.",
+  },
+  {
+    title: "Softphone",
+    href: "/solutions/softphone",
+    description: "Nethub's Softphone solutions.",
+  },
+  {
+    title: "DID",
+    href: "/solutions/did",
+    description: "Nethub's DID solutions.",
+  },
+];
+
+// product items
+
+const products = [
+  {
+    title: "Netswitch",
+    href: "/products/netswitch",
+    description: "Nethub's Netswitch Product.",
+  },
+  {
+    title: "Alterswitch",
+    href: "#",
+    description: "Nethub's Alterswitch Product.",
+  },
+];
+
+const abouts = [
+  {
+    title: "The Company",
+    href: "/about",
+    description: "Nethub Organization.",
+  },
+  {
+    title: "Careers",
+    href: "/about",
+    description: "Join us.",
+  },
 ];
 
 export function NavigationMenuDemo() {
@@ -32,23 +81,8 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>About</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/about" title="The Company">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit eaque rerum dolor.
-              </ListItem>
-              <ListItem href="/about" title="Installation">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Labore, libero..
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
+            <ul className="grid w-[300px] gap-3 p-4 md:w-[400px] md:grid-cols-2 lg:w-[500px]">
+              {abouts.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}
@@ -61,21 +95,38 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/resources" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
-              </ListItem>
-              <ListItem href="/resources" title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/resources" title="Typography">
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              {solutions.map((component) => (
+                <ListItem
+                  key={component.title}
+                  title={component.title}
+                  href={component.href}
+                >
+                  {component.description}
+                </ListItem>
+              ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Products</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              {products.map((product) => (
+                <ListItem
+                  key={product.title}
+                  title={product.title}
+                  href={product.href}
+                >
+                  {product.description}
+                </ListItem>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        {/* contact us */}
         <NavigationMenuItem>
           <Link href="#footer" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>

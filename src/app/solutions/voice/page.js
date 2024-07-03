@@ -44,7 +44,7 @@ const VoiceSolutions = () => {
               </div>
             </div>
             <div className="font-bold grid place-content-center">
-              <FiPhoneCall className=" md:text-[300px] text-customColors-hitgray -scale-x-100" />
+              <FiPhoneCall className=" md:text-[250px] text-customColors-loblolly -scale-x-100" />
             </div>
           </div>
           {/* voice perks */}
