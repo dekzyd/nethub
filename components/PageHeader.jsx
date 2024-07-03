@@ -20,11 +20,13 @@ const PageHeader = ({
       >
         <div className="imgoverlay">
           <div className="container flex">
+            {/* icon */}
             <div className="lg:basis-1/2 flex justify-center items-center">
               {icon}
             </div>
+            {/* Header title and content */}
             <div className="lg:basis-1/2 h-full">
-              <div className="flex flex-col h-full justify-center gap-4 lg:max-w-[600px]">
+              <div className="flex flex-col h-full justify-center gap-7 lg:max-w-[600px]">
                 {pre_title && (
                   <h4 className="text-white uppercase text-xl font-medium tracking-wider">
                     {pre_title}
@@ -35,7 +37,11 @@ const PageHeader = ({
                 </h3>
                 <p className="text-white lg:text-xl">{description}</p>
                 <div>
-                  {btntxt && <Button className="w-auto">{btntxt}</Button>}
+                  {btntxt && (
+                    <Button className="w-auto font-semibold capitalize">
+                      {btntxt}
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>

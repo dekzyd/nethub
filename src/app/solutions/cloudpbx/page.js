@@ -20,7 +20,7 @@ const CloudPbxandCallCenter = () => {
         image="/about.jpg"
         icon={<SearchlightIcon />}
         btntxt="contact us"
-        description="Deliver a business communication environment to your SMB and enterprise customers with PortaSwitch – voice, video, CCaaS, CRM integrations, and more."
+        description="Deliver a business communication environment to your SMB and enterprise customers with PortaSwitch voice, video, CCaaS, CRM integrations, and more."
         height=""
       />
       {/* Voice solutions content */}
@@ -100,7 +100,7 @@ const CloudPageHeader = ({
               {icon}
             </div>
             <div className="lg:basis-1/2 h-full">
-              <div className="flex flex-col h-full justify-center gap-4 lg:max-w-[600px]">
+              <div className="flex flex-col h-full justify-center gap-7 lg:max-w-[600px]">
                 {pre_title && (
                   <h4 className="text-white uppercase text-xl font-medium tracking-wider">
                     {pre_title}
@@ -111,7 +111,11 @@ const CloudPageHeader = ({
                 </h3>
                 <p className="text-white lg:text-xl">{description}</p>
                 <div>
-                  {btntxt && <Button className="w-auto">{btntxt}</Button>}
+                  {btntxt && (
+                    <Button className="w-auto font-semibold capitalize">
+                      {btntxt}
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
