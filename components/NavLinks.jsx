@@ -40,9 +40,9 @@ const solutions = [
     description: "Nethub's Softphone solutions.",
   },
   {
-    title: "DID",
+    title: "DID Solutions",
     href: "/solutions/did",
-    description: "Nethub's DID solutions.",
+    description: "DID Management solutions.",
   },
 ];
 
