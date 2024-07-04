@@ -1,6 +1,6 @@
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
-import { SearchlightIcon } from "../../../../components/icons";
+import { RiVoiceprintLine } from "react-icons/ri";
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import { Hsas, Hc, Sds, Rnr } from "../../../../components/icons";
 import { FiPhoneCall } from "react-icons/fi";
@@ -18,7 +18,9 @@ const VoiceSolutions = () => {
         image="/about.jpg"
         title="Voice solutions"
         // pre_title="company overview"
-        icon={<SearchlightIcon />}
+        icon={
+          <RiVoiceprintLine className="md:text-[200px] lg:text-[250px] text-customColors-porcelain" />
+        }
         btntxt="contact us"
         description="Deliver a business communication environment to your SMB and enterprise customers with PortaSwitch – voice, video, CCaaS, CRM integrations, and more."
         height=""

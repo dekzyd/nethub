@@ -1,7 +1,7 @@
 import React from "react";
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 // import PageHeader from "../../../../components/PageHeader.jsx";
-import { SearchlightIcon } from "../../../../components/icons";
+import { TbCloudCog } from "react-icons/tb";
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import { Hsas, Hc, Sds, Rnr } from "../../../../components/icons";
 import { FiPhoneCall } from "react-icons/fi";
@@ -18,7 +18,9 @@ const CloudPbxandCallCenter = () => {
     <div>
       <CloudPageHeader
         image="/about.jpg"
-        icon={<SearchlightIcon />}
+        icon={
+          <TbCloudCog className="md:text-[200px] lg:text-[300px] text-customColors-porcelain" />
+        }
         btntxt="contact us"
         description="Deliver a business communication environment to your SMB and enterprise customers with PortaSwitch voice, video, CCaaS, CRM integrations, and more."
         height=""

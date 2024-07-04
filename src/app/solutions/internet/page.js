@@ -1,7 +1,7 @@
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
-import { SearchlightIcon } from "../../../../components/icons";
+import { MdOutlineNetworkCheck } from "react-icons/md";
 import { Hsas, Hc, Sds, Rnr } from "../../../../components/icons";
 
 const InternetSolutions = () => {
@@ -17,7 +17,9 @@ const InternetSolutions = () => {
         image="/about.jpg"
         title="Internet solutions"
         // pre_title="company overview"
-        icon={<SearchlightIcon />}
+        icon={
+          <MdOutlineNetworkCheck className="md:text-[200px] lg:text-[250px] text-customColors-porcelain" />
+        }
         height=""
       />
       {/* Internet solutions content */}

@@ -1,9 +1,10 @@
 import Breadcrumbs from "../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../components/PageHeader.jsx";
-import { SearchlightIcon } from "../../../components/icons";
+import { SolutionIcon } from "../../../components/icons";
 import BizPerksCard from "../../../components/BizPerksCard.jsx";
 import { Hsas, Hc, Sds, Rnr } from "../../../components/icons";
 import { FiPhoneCall } from "react-icons/fi";
+import { FaGears } from "react-icons/fa6";
 
 export default function Solutions() {
   // Did Management solutions page breadcrumbs
@@ -17,7 +18,9 @@ export default function Solutions() {
         image="/about.jpg"
         title="Nethub Telecom Solutions"
         // pre_title="company overview"
-        icon={<SearchlightIcon />}
+        icon={
+          <FaGears className="md:text-[250px] lg:text-[300px] text-customColors-porcelain" />
+        }
         btntxt="contact us"
         description="Start earning faster with solutions for modern telcos that are flexible, easily integrated, and fit your budget"
         height=""

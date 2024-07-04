@@ -1,7 +1,7 @@
 import React from "react";
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
-import { SearchlightIcon } from "../../../../components/icons";
+import { MdDialerSip } from "react-icons/md";
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import { Hsas, Hc, Sds, Rnr } from "../../../../components/icons";
 import { FiPhoneCall } from "react-icons/fi";
@@ -17,9 +17,11 @@ const Sip = () => {
     <div>
       <PageHeader
         image="/about.jpg"
-        title="SIP Solutions"
+        title="SIP Trunking"
         // pre_title="company overview"
-        icon={<SearchlightIcon />}
+        icon={
+          <MdDialerSip className="md:text-[180px] lg:text-[230px] text-customColors-porcelain" />
+        }
         btntxt="contact us"
         description="Deliver a business communication environment to your SMB and enterprise customers with PortaSwitch – voice, video, CCaaS, CRM integrations, and more."
         height=""

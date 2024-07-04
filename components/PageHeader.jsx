@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const PageHeader = ({
   image,
@@ -19,13 +20,13 @@ const PageHeader = ({
         style={{ backgroundImage: `url(${image})` }}
       >
         <div className="imgoverlay">
-          <div className="container flex">
+          <div className="container grid sm:grid-cols-1 md:grid-cols-2 gap-5">
             {/* icon */}
-            <div className="lg:basis-1/2 flex justify-center items-center">
+            <div className="hidden md:flex justify-center items-center">
               {icon}
             </div>
             {/* Header title and content */}
-            <div className="lg:basis-1/2 h-full">
+            <div className="h-full">
               <div className="flex flex-col h-full justify-center gap-7 lg:max-w-[600px]">
                 {pre_title && (
                   <h4 className="text-white uppercase text-xl font-medium tracking-wider">
@@ -38,9 +39,11 @@ const PageHeader = ({
                 <p className="text-white lg:text-xl">{description}</p>
                 <div>
                   {btntxt && (
-                    <Button className="w-auto font-semibold capitalize">
-                      {btntxt}
-                    </Button>
+                    <Link href="#footer">
+                      <Button className="w-auto font-semibold capitalize">
+                        {btntxt}
+                      </Button>
+                    </Link>
                   )}
                 </div>
               </div>

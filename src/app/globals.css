@@ -84,7 +84,7 @@
 }
 
 .imgoverlay {
-  @apply flex flex-wrap flex-1 h-full w-full bg-gradient-to-r from-sky-500 to-indigo-500 sm:py-5 lg:py-10 opacity-90;
+  @apply flex flex-wrap flex-1 h-full w-full bg-gradient-to-r from-sky-500 to-indigo-500 sm:py-5 lg:py-10;
 }
 
 .ftflex {

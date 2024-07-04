@@ -1,7 +1,7 @@
 import React from "react";
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
-import { SearchlightIcon } from "../../../../components/icons";
+import { IoKeypad } from "react-icons/io5";
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import { Hsas, Hc, Sds, Rnr } from "../../../../components/icons";
 import { FiPhoneCall } from "react-icons/fi";
@@ -19,7 +19,9 @@ const Did = () => {
         image="/about.jpg"
         title="DID Management"
         // pre_title="company overview"
-        icon={<SearchlightIcon />}
+        icon={
+          <IoKeypad className="md:text-[150px] lg:text-[230px] text-customColors-porcelain" />
+        }
         btntxt="contact us"
         description="Deliver a business communication environment to your SMB and enterprise customers with PortaSwitch – voice, video, CCaaS, CRM integrations, and more."
         height=""
