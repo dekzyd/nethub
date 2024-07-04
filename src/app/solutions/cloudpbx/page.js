@@ -6,6 +6,7 @@ import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import { Hsas, Hc, Sds, Rnr } from "../../../../components/icons";
 import { FiPhoneCall } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
+import Link from "next/link.js";
 
 const CloudPbxandCallCenter = () => {
   // CloudPBX solutions page breadcrumbs
@@ -96,27 +97,33 @@ const CloudPageHeader = ({
         } bg-cover bg-center bg-no-repeat`}
         style={{ backgroundImage: `url(${image})` }}
       >
-        <div className="imgoverlay">
-          <div className="container flex">
-            <div className="lg:basis-1/2 flex justify-center items-center">
+        <div className="imgoverlay h-full">
+          <div className="container grid sm:grid-cols-1 md:grid-cols-2 gap-5 h-full">
+            {/* icon */}
+            <div className="hidden md:flex justify-center items-center">
               {icon}
             </div>
-            <div className="lg:basis-1/2 h-full">
+            {/* Header title and content */}
+            <div className="h-full">
               <div className="flex flex-col h-full justify-center gap-7 lg:max-w-[600px]">
                 {pre_title && (
                   <h4 className="text-white uppercase text-xl font-medium tracking-wider">
                     {pre_title}
                   </h4>
                 )}
-                <h3 className="text-white sm:text-2xl lg:text-5xl font-semibold leading-tight">
-                  Cloud PBX &<p>Call Center solutions</p>
+                <h3 className="text-white sm:text-3xl lg:text-6xl font-semibold leading-tight">
+                  <h3>
+                    Cloud PBX <p>and Call Center</p>
+                  </h3>
                 </h3>
                 <p className="text-white lg:text-xl">{description}</p>
                 <div>
                   {btntxt && (
-                    <Button className="w-auto font-semibold capitalize">
-                      {btntxt}
-                    </Button>
+                    <Link href="#footer">
+                      <Button className="w-auto font-semibold capitalize">
+                        {btntxt}
+                      </Button>
+                    </Link>
                   )}
                 </div>
               </div>
