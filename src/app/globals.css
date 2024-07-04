@@ -84,7 +84,7 @@
 }
 
 .imgoverlay {
-  @apply grid sm:grid-cols-1 md:grid-cols-2 h-full bg-gradient-to-r from-indigo-500/70 to-blue-500 sm:py-5 lg:py-10;
+  @apply bg-gradient-to-r from-indigo-500/70 to-blue-500;
 }
 
 .ftflex {

@@ -11,8 +11,8 @@ export function SearchlightIcon() {
   return (
     <svg
       className=""
-      width="377"
-      height="352"
+      width="327"
+      height="302"
       viewBox="0 0 247 222"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

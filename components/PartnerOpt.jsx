@@ -8,7 +8,6 @@ const PartnerOpt = () => {
       <PartoptCard />
       <PartoptCard />
       <PartoptCard />
-      <PartoptCard />
     </section>
   );
 };

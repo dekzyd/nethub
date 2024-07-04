@@ -19,8 +19,8 @@ const PageHeader = ({
         } bg-cover bg-center bg-no-repeat`}
         style={{ backgroundImage: `url(${image})` }}
       >
-        <div className="imgoverlay">
-          <div className="container grid sm:grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="imgoverlay h-full">
+          <div className="container grid sm:grid-cols-1 md:grid-cols-2 gap-5 h-full">
             {/* icon */}
             <div className="hidden md:flex justify-center items-center">
               {icon}

@@ -6,6 +6,7 @@ import UniqueMkt from "../../../components/UniqueMkt";
 import PartnerOpt from "../../../components/PartnerOpt";
 import HotTopics from "../../../components/HotTopics";
 import Misc from "../../../components/Misc";
+import FeedbackSlider from "../../../components/FeedbackSlider";
 
 const About = () => {
   // about page breadcrumbs links
@@ -77,8 +78,10 @@ const About = () => {
       {/* other about us options */}
       {/* <Divider fill="#FFF" /> */}
       <PartnerOpt />
-      {/* Hot topics */}
+      {/* testimonials */}
+      <FeedbackSlider />
       <Divider fill="#c4cdd1" />
+      {/* Hot topics */}
       <HotTopics />
       <Misc />
     </div>
