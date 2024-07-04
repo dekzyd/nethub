@@ -1,5 +1,6 @@
+import Link from "next/link";
 import React from "react";
-const BizPerksCard = ({ title, content, icon, bgcolor }) => {
+const BizPerksCard = ({ title, content, icon, bgcolor, link }) => {
   return (
     <div>
       <div
@@ -16,6 +17,13 @@ const BizPerksCard = ({ title, content, icon, bgcolor }) => {
         <p className="text-customColors-dovegray max-w-[300px] pr-2">
           {content}
         </p>
+        {link && (
+          <Link href={link}>
+            <p className="text-primary text-sm font-semibold uppercase py-3">
+              Read more...
+            </p>
+          </Link>
+        )}
       </div>
     </div>
   );

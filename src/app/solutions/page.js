@@ -1,10 +1,13 @@
 import Breadcrumbs from "../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../components/PageHeader.jsx";
-import { SolutionIcon } from "../../../components/icons";
 import BizPerksCard from "../../../components/BizPerksCard.jsx";
 import { Hsas, Hc, Sds, Rnr } from "../../../components/icons";
-import { FiPhoneCall } from "react-icons/fi";
 import { FaGears } from "react-icons/fa6";
+import { MdOutlineNetworkCheck, MdDialerSip } from "react-icons/md";
+import { IoKeypad } from "react-icons/io5";
+import { RiVoiceprintLine } from "react-icons/ri";
+import { FiSmartphone } from "react-icons/fi";
+import { TbCloudCog } from "react-icons/tb";
 
 export default function Solutions() {
   // Did Management solutions page breadcrumbs
@@ -29,48 +32,60 @@ export default function Solutions() {
       <section className="bg-white pt-10 pb-10 ">
         <div className="container">
           <Breadcrumbs crumbs={crumbs} />
-          <div className="my-10 grid sm:grid-cols-1 md:grid-cols-2">
-            <div className="">
-              <div className="flex flex-col gap-4">
-                <p className="uppercase font-medium text-2xl tracking-widest">
-                  DID Management solutions
-                </p>
-                <p className="text-primary text-5xl font-semibold tracking-wider leading-normal">
-                  Integrated business communication solution
-                </p>
-                <p className="font-medium text-lg">
-                  Become a next-generation provider of communication services by
-                  delivering an integrated business cloud telephony solution
-                  that your SMB and enterprise customers will be excited about.
-                </p>
-              </div>
-            </div>
-            <div className="font-bold grid place-content-center">
-              <FiPhoneCall className=" md:text-[250px] text-customColors-loblolly -scale-x-100" />
-            </div>
-          </div>
-          {/* voice perks */}
-          <div className="my-14 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+          <div className="min-h-56 py-8 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8">
             <BizPerksCard
-              icon={<Hsas fill="#9EAEB4" />}
-              // bgcolor="bg-customColors-fiord"
-              title="no hidden costs"
+              icon={
+                <MdOutlineNetworkCheck className="text-customColors-porcelain text-5xl" />
+              }
+              bgcolor="bg-customColors-fiord"
+              title="Internet Solutions"
               content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
+              link="/solutions/internet"
             />
             <BizPerksCard
-              icon={<Hc fill="#9EAEB4" />}
-              title="Increase your revenue"
+              icon={
+                <RiVoiceprintLine className="text-customColors-porcelain text-5xl" />
+              }
+              bgcolor="bg-customColors-fiord"
+              title="Voice Solutions"
               content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
+              link="/solutions/voice"
             />
             <BizPerksCard
-              icon={<Sds fill="#9EAEB4" />}
-              title="Stay agile and flexible"
+              icon={
+                <MdDialerSip className="text-customColors-porcelain text-5xl" />
+              }
+              bgcolor="bg-customColors-fiord"
+              title="Sip Trunking"
               content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
+              link="/solutions/sip"
             />
             <BizPerksCard
-              icon={<Rnr fill="#9EAEB4" />}
-              title="Monetize any service"
+              icon={
+                <IoKeypad className="text-customColors-porcelain text-5xl" />
+              }
+              bgcolor="bg-customColors-fiord"
+              title="DID Management"
               content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
+              link="/solutions/did"
+            />
+            <BizPerksCard
+              icon={
+                <FiSmartphone className="text-customColors-porcelain text-5xl" />
+              }
+              bgcolor="bg-customColors-fiord"
+              title="Softphone"
+              content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
+              link="/solutions/softphone"
+            />
+            <BizPerksCard
+              icon={
+                <TbCloudCog className="text-customColors-porcelain text-5xl" />
+              }
+              bgcolor="bg-customColors-fiord"
+              title="Cloud PBX & Call Center"
+              content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
+              link="/solutions/cloudpbx"
             />
           </div>
         </div>
