@@ -16,7 +16,7 @@ const Softphone = () => {
   return (
     <div>
       <PageHeader
-        image="/about.jpg"
+        // image="/about.jpg"
         title="Softphone Solutions"
         // pre_title="company overview"
         icon={

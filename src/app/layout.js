@@ -1,15 +1,15 @@
-import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { ThemeModeScript } from "flowbite-react";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
-
 export const metadata = {
   title: "Nethub",
   description: "Nethub Technologies",
+  icons: {
+    icon: "../favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
         <ThemeModeScript />
       </head>
       <body>
+        {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
         <main className="min-h-screen">
           <Navbar />
           {children}

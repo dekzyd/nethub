@@ -155,7 +155,7 @@ const Footer = () => {
             </div>
           </div>
           <h3 className="text-primary text-2xl font-semibold">
-            <span className="text-primary">{FaAngleRight}</span>All Events
+            <span className="text-primary">{<FaAngleRight />}</span>All Events
           </h3>
         </div>
       </div>
