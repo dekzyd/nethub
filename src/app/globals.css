@@ -84,7 +84,7 @@
 }
 
 .imgoverlay {
-  @apply bg-gradient-to-r from-indigo-500/70 to-blue-500;
+  @apply bg-gradient-to-r from-slate-900/10 to-slate-900;
 }
 
 .ftflex {

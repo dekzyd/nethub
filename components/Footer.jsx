@@ -16,9 +16,9 @@ const Footer = () => {
   return (
     <section id="footer">
       <div id="contact" className="bg-customColors-fiord pt-[70px]">
-        <div className="container">
+        <div className="md:container">
           {/* contact form */}
-          <div className="h-full mx-4 grid sm:grid-cols-1 md:grid-cols-2">
+          <div className="h-full md:mx-4 grid sm:grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col flex-initial p-5">
               <h3 className="mb-5 text-4xl tracking-widest uppercase text-customColors-hitgray">
                 Talk with us
