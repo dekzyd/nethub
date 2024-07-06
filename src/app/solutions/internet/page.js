@@ -30,7 +30,7 @@ const InternetSolutions = () => {
             <div className="">
               <div className="flex flex-col gap-4">
                 <p className="uppercase font-medium text-2xl tracking-widest">
-                  Nethub's Internet solutions
+                  Nethub&apos;s Internet solutions
                 </p>
                 <p className="text-primary text-5xl font-semibold tracking-wider leading-normal">
                   Integrated business communication solution
