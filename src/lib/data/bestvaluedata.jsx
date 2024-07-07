@@ -3,7 +3,7 @@ import {
   RocketIcon,
   CrescentIcon,
   MedalIcon,
-} from "../../components/icons";
+} from "../../../components/icons";
 
 export const bestValueData = [
   {

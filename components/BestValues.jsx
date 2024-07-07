@@ -1,6 +1,6 @@
 import React from "react";
 import { FaThumbsUp } from "react-icons/fa6";
-import { bestValueData } from "@/lib/bestvaluedata";
+import { bestValueData } from "@/lib/data/bestvaluedata";
 import BizPerksCard from "./BizPerksCard";
 
 const BestValues = () => {

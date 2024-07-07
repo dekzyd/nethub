@@ -2,7 +2,7 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
 import { Button } from "@/components/ui/button";
-import { slides } from "@/lib/slides";
+import { slides } from "@/lib/data/slides";
 
 const customTheme = {
   scrollContainer: {
@@ -13,7 +13,7 @@ const customTheme = {
 
 const Slider = () => {
   return (
-    <div className="h-96 lg:h-[400px] xl:h-[480px]">
+    <div className="h-96 lg:h-[420px] xl:h-[600px]">
       <Carousel
         theme={customTheme}
         slide={false}

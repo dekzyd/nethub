@@ -2,7 +2,7 @@ import React from "react";
 
 const Mission = () => {
   return (
-    <div className="bg-customColors-porcelain min-h-56 pt-24 pb-14">
+    <div className="bg-customColors-porcelain min-h-56 pt-12 pb-14">
       <div className="bg-red-20 container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-9">
           <div className="py-5">

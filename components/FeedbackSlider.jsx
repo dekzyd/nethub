@@ -1,5 +1,5 @@
 import React from "react";
-
+import { feedbackdata } from "@/lib/data/feedbackdata";
 import {
   Carousel,
   CarouselContent,
@@ -7,40 +7,50 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
-const FeedbackSlider = () => {
+const FeedbackSlider = ({ flip }) => {
   return (
-    <div className="">
+    <div className={`${flip && "bg-customColors-porcelain"}`}>
       <div className="container py-20">
         <div className="p-3 w-full">
           <div className="mb-3 bg-slate-50">
-            <h3 className="text-customColors-hitgray text-2xl font-semibold text-center">
+            <h3
+              className={`${
+                flip
+                  ? "text-customColors-fiord bg-customColors-porcelain"
+                  : "text-customColors-hitgray "
+              } text-3xl font-semibold text-center`}
+            >
               Feedback from happy customers
             </h3>
           </div>
           <div className="flex justify-center">
             <Carousel className="pl-1 w-full max-w-[1140px]">
               <CarouselContent className="gap-2 w-full py-3">
-                {Array.from({ length: 6 }).map((_, index) => (
+                {feedbackdata.map(({ author, logo, review, position }) => (
                   <CarouselItem
-                    key={index}
-                    className="ml-1 basis-full md:basis-1/2 bg-customColors-porcelain p-5 rounded-3xl max-h-[400px]"
+                    key={author}
+                    className={`ml-1 basis-full md:basis-1/2 ${
+                      flip ? "bg-white" : "bg-customColors-porcelain"
+                    } p-5 rounded-3xl max-h-[400px] border border-gray-200`}
                   >
-                    <div className="flex flex-col items-start p-10 gap-4 justify-stretch">
-                      <div className="bg-white h-36 w-36 rounded-full flex justify-center items-center">
-                        logo
+                    <div className="flex flex-col items-start p-5 gap-4 justify-stretch">
+                      <div className="bg-red-200 h-36 w-36 rounded-full flex overflow-hidden">
+                        <Image
+                          src={logo}
+                          width={500}
+                          height={500}
+                          alt="company logo"
+                          className="object-cover"
+                        />
                       </div>
-                      <p className="text-medium">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Amet praesentium exercitationem, ea nesciunt ut.
-                      </p>
+                      <p className="text-medium">{review}</p>
                       <div className="">
                         <p className="text-primary font-semibold text-2xl italic">
-                          Samuel Taylor
+                          {author}
                         </p>
-                        <p className="text-customColors-dovegray">
-                          Head of IT at MTN Kenya
-                        </p>
+                        <p className="text-customColors-dovegray">{position}</p>
                       </div>
                     </div>
                   </CarouselItem>
