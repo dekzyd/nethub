@@ -17,13 +17,13 @@ const Softphone = () => {
     <div>
       <PageHeader
         image="/tech.jpg"
-        title="Softphone Solutions"
+        title="Softphone Services"
         // pre_title="company overview"
         icon={
           <FiSmartphone className="md:text-[150px] lg:text-[230px] text-customColors-porcelain" />
         }
         btntxt="contact us"
-        description="Deliver a business communication environment to your SMB and enterprise customers with PortaSwitch – voice, video, CCaaS, CRM integrations, and more."
+        description=""
         height=""
       />
       {/* Voice solutions content */}

@@ -1,6 +1,7 @@
-const Divider = ({ fill }) => {
+const Divider = ({ fill, flip }) => {
   return (
-    <div className="rotate-180">
+    // flip horizontally
+    <div className={`rotate-180 ${flip && "-translate-x-[-1]"}`}>
       <svg
         className="w-full h-4"
         xmlns="http://www.w3.org/2000/svg"
