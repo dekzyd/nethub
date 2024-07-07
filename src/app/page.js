@@ -1,4 +1,5 @@
 import BestValues from "../../components/BestValues";
+import FeaturedProducts from "../../components/FeaturedProducts";
 import FeedbackSlider from "../../components/FeedbackSlider";
 import Mission from "../../components/Mission";
 import Slider from "../../components/Slider";
@@ -16,6 +17,8 @@ export default function Home() {
       {/* feedback from happy customers */}
       <Divider fill="#F0F2F3" />
       <FeedbackSlider flip />
+      <Divider fill="#F0F2F3" flip />
+      <FeaturedProducts />
     </main>
   );
 }
