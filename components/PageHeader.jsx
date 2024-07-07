@@ -15,7 +15,7 @@ const PageHeader = ({
     <>
       <div
         className={`w-full ${
-          height ? height : "h-[467px]"
+          height ? height : "h-[600px]"
         } bg-cover bg-center bg-no-repeat`}
         style={{ backgroundImage: `url(${image})` }}
       >

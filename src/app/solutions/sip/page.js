@@ -16,14 +16,14 @@ const Sip = () => {
   return (
     <div>
       <PageHeader
-        image="/about.jpg"
+        image="/sip.jpg"
         title="SIP Trunking"
         // pre_title="company overview"
-        icon={
-          <MdDialerSip className="md:text-[180px] lg:text-[230px] text-customColors-porcelain" />
-        }
-        btntxt="contact us"
-        description="Deliver a business communication environment to your SMB and enterprise customers with PortaSwitch – voice, video, CCaaS, CRM integrations, and more."
+        // icon={
+        //   <MdDialerSip className="md:text-[180px] lg:text-[230px] text-customColors-porcelain" />
+        // }
+        btntxt=""
+        description=""
         height=""
       />
       {/* SIP solutions content */}

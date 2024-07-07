@@ -1,6 +1,6 @@
 export const slides = [
   {
-    image: "/journey2.jpg",
+    image: "/journey3f.jpg",
     icon: "",
     title: "Start a journey with Nethub with leading innovations",
     details:

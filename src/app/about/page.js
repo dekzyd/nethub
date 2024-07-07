@@ -18,10 +18,11 @@ const About = () => {
   return (
     <div>
       <PageHeader
-        image="/about.jpg"
+        image="/about3.jpg"
         title="Nethub at a glance"
         pre_title="company overview"
-        icon={<SearchlightIcon />}
+        height="h-[550px]"
+        // icon={<SearchlightIcon />}
       />
       {/* <Divider fill="#ffffff" /> */}
       {/* About page contents */}

@@ -18,13 +18,13 @@ const CloudPbxandCallCenter = () => {
   return (
     <div>
       <CloudPageHeader
-        image="/about.jpg"
+        image="/journey2.jpg"
         icon={
           <TbCloudCog className="md:text-[200px] lg:text-[300px] text-customColors-porcelain" />
         }
         btntxt="contact us"
-        description="Deliver a business communication environment to your SMB and enterprise customers with PortaSwitch voice, video, CCaaS, CRM integrations, and more."
-        height=""
+        description="Deliver a business communication environment to your SMB and enterprise customers with NetSwitch voice, video, CCaaS, CRM integrations, and more."
+        height="h-[600px]"
       />
       {/* Voice solutions content */}
       <section className="bg-white pt-10 pb-10 ">
@@ -94,14 +94,14 @@ const CloudPageHeader = ({
       <div
         className={`w-full ${
           height ? height : "h-[467px]"
-        } bg-cover bg-center bg-no-repeat`}
+        } bg-cover bg-top bg-no-repeat`}
         style={{ backgroundImage: `url(${image})` }}
       >
         <div className="imgoverlay h-full">
           <div className="container grid sm:grid-cols-1 md:grid-cols-2 gap-5 h-full">
             {/* icon */}
             <div className="hidden md:flex justify-center items-center">
-              {icon}
+              {/* {icon} */}
             </div>
             {/* Header title and content */}
             <div className="h-full">
@@ -111,7 +111,7 @@ const CloudPageHeader = ({
                     {pre_title}
                   </h4>
                 )}
-                <h3 className="text-white sm:text-3xl lg:text-6xl font-semibold leading-tight">
+                <h3 className="text-white text-3xl lg:text-6xl font-semibold leading-tight">
                   <h3>
                     Cloud PBX <p>and Call Center</p>
                   </h3>

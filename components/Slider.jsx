@@ -31,7 +31,7 @@ const Slider = () => {
           return (
             <div
               key={index}
-              className="bg-cover bg-no-repeat h-full w-full"
+              className="bg-cover bg-no-repeat bg-center h-full w-full"
               style={{ backgroundImage: `url(${image})` }}
             >
               <div className="imgoverlay h-full grid sm:grid-cols-1 md:grid-cols-2 px-5">

@@ -14,12 +14,12 @@ const InternetSolutions = () => {
   return (
     <div>
       <PageHeader
-        image="/about.jpg"
-        title="Internet solutions"
+        image="/internet.jpeg"
+        title="Internet solution"
         // pre_title="company overview"
-        icon={
-          <MdOutlineNetworkCheck className="md:text-[200px] lg:text-[250px] text-customColors-porcelain" />
-        }
+        // icon={
+        //   <MdOutlineNetworkCheck className="md:text-[200px] lg:text-[250px] text-customColors-porcelain" />
+        // }
         height=""
       />
       {/* Internet solutions content */}

@@ -15,14 +15,14 @@ const VoiceSolutions = () => {
   return (
     <div>
       <PageHeader
-        image="/about.jpg"
+        image="/voice.jpg"
         title="Voice solutions"
         // pre_title="company overview"
-        icon={
-          <RiVoiceprintLine className="md:text-[200px] lg:text-[250px] text-customColors-porcelain" />
-        }
+        // icon={
+        //   <RiVoiceprintLine className="md:text-[200px] lg:text-[250px] text-customColors-porcelain" />
+        // }
         btntxt="contact us"
-        description="Deliver a business communication environment to your SMB and enterprise customers with PortaSwitch – voice, video, CCaaS, CRM integrations, and more."
+        description="Deliver a business communication environment to your SMB and enterprise customers with NetSwitch – voice, video, CCaaS, CRM integrations, and more."
         height=""
       />
       {/* Voice solutions content */}

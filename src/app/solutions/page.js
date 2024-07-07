@@ -1,7 +1,7 @@
 import Breadcrumbs from "../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../components/PageHeader.jsx";
 import BizPerksCard from "../../../components/BizPerksCard.jsx";
-import { Hsas, Hc, Sds, Rnr } from "../../../components/icons";
+// import { Hsas, Hc, Sds, Rnr } from "../../../components/icons";
 import { FaGears } from "react-icons/fa6";
 import { MdOutlineNetworkCheck, MdDialerSip } from "react-icons/md";
 import { IoKeypad } from "react-icons/io5";

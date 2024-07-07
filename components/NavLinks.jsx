@@ -2,6 +2,14 @@ import React from "react";
 import Link from "next/link";
 import { Search } from "lucide-react";
 
+// icons
+import { FaGears } from "react-icons/fa6";
+import { MdOutlineNetworkCheck, MdDialerSip } from "react-icons/md";
+import { IoKeypad } from "react-icons/io5";
+import { RiVoiceprintLine } from "react-icons/ri";
+import { FiSmartphone } from "react-icons/fi";
+import { TbCloudCog } from "react-icons/tb";
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -15,34 +23,40 @@ import {
 // solution items
 const solutions = [
   {
-    title: "Voice",
+    title: "Voice Service",
     href: "/solutions/voice",
-    description: "Nethub's voice solutions.",
+    description: "Nethub's voice services.",
+    icon: <RiVoiceprintLine className="" />,
   },
   {
-    title: "Internet",
+    title: "Internet Service",
     href: "/solutions/internet",
-    description: "Nethub's internet solutions.",
+    description: "Nethub's internet services.",
+    icon: <MdOutlineNetworkCheck className="" />,
   },
   {
-    title: "SIP",
+    title: "SIP Trunking",
     href: "/solutions/sip",
     description: "Nethub's SIP solutions.",
+    icon: <MdDialerSip className="" />,
   },
   {
     title: "Cloud PBX & Call Center",
     href: "/solutions/cloudpbx",
     description: "Nethub's Cloud PBX & call center solutions.",
+    icon: <TbCloudCog className="" />,
   },
   {
     title: "Softphone",
     href: "/solutions/softphone",
     description: "Nethub's Softphone solutions.",
+    icon: <FiSmartphone className="" />,
   },
   {
-    title: "DID Solutions",
+    title: "DID Provisioning",
     href: "/solutions/did",
     description: "DID Management solutions.",
+    icon: <IoKeypad className="" />,
   },
 ];
 
@@ -97,12 +111,13 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+            <ul className="grid w-[400px] gap-1 p-4 md:w-[550px] md:grid-cols-2 lg:w-[650px]">
               {solutions.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}
                   href={component.href}
+                  icon={component.icon}
                 >
                   {component.description}
                 </ListItem>
@@ -113,7 +128,7 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Products</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+            <ul className="grid w-[400px] gap-2 p-4 md:w-[550px] md:grid-cols-2 lg:w-[650px]">
               {products.map((product) => (
                 <ListItem
                   key={product.title}
@@ -149,20 +164,27 @@ export function NavigationMenuDemo() {
 }
 
 const ListItem = React.forwardRef((props, ref) => {
-  const { className, title, children, ...otherProps } = props;
+  const { className, title, children, icon, ...otherProps } = props;
 
   return (
     <li>
       <NavigationMenuLink asChild>
         <Link
           ref={ref}
-          className={`${className} block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground`}
+          className={`${className} select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground grid grid-cols-4`}
           {...otherProps}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
+          {icon && (
+            <div className="w-12 h-12 bg-primary rounded-full flex justify-center items-center text-2xl text-customColors-porcelain">
+              {icon}
+            </div>
+          )}
+          <div className="flex flex-col gap-1 col-span-3">
+            <div className="text-base font-medium leading-none">{title}</div>
+            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+              {children}
+            </p>
+          </div>
         </Link>
       </NavigationMenuLink>
     </li>

@@ -16,14 +16,14 @@ const Did = () => {
   return (
     <div>
       <PageHeader
-        image="/about.jpg"
+        image="/did3.jpeg"
         title="DID Management"
         // pre_title="company overview"
-        icon={
-          <IoKeypad className="md:text-[150px] lg:text-[230px] text-customColors-porcelain" />
-        }
+        // icon={
+        //   <IoKeypad className="md:text-[150px] lg:text-[230px] text-customColors-porcelain" />
+        // }
         btntxt="contact us"
-        description="Deliver a business communication environment to your SMB and enterprise customers with PortaSwitch – voice, video, CCaaS, CRM integrations, and more."
+        description=""
         height=""
       />
       {/* DID mgmt solutions content */}
