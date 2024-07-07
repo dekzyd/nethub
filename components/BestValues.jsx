@@ -1,5 +1,7 @@
 import React from "react";
 import { FaThumbsUp } from "react-icons/fa6";
+import { bestValueData } from "@/lib/bestvaluedata";
+import BizPerksCard from "./BizPerksCard";
 
 const BestValues = () => {
   return (
@@ -28,7 +30,18 @@ const BestValues = () => {
             </div>
           </div>
           {/* value cards */}
-          <div></div>
+          <div className="grid grid-cols-1 md:grid-cols-4 my-10">
+            {bestValueData.map(({ title, content, icon }) => {
+              return (
+                <BizPerksCard
+                  key={title}
+                  title={title}
+                  content={content}
+                  icon={icon}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
