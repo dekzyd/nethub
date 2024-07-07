@@ -22,7 +22,13 @@ const FeaturedProducts = () => {
             </p>
           </div>
           <div className=" col-span-2 p-5 rounded-xl border-2 border-customColors-porcelain">
-            <Carousel leftControl=" " rightControl=" " slideInterval={5000}>
+            <Carousel
+              leftControl=" "
+              rightControl=" "
+              slideInterval={5000}
+              pauseOnHover
+              //   slide={false}
+            >
               {allServices.map(({ title, href, description, icon }) => {
                 return (
                   <Link href={href} key={title} className="h-full">
@@ -39,7 +45,7 @@ const FeaturedProducts = () => {
                         <Button className="capitalize mt-5">Take a look</Button>
                       </div>
                       <div
-                        className={`h-full w-full flex justify-center items-center text-9xl rounded-xl ${
+                        className={`p-3 md:flex justify-center items-center text-9xl rounded-xl ${
                           icon && "bg-primary/90 text-white"
                         } `}
                       >
