@@ -53,11 +53,13 @@ export const products = [
     title: "Netswitch",
     href: "/products/netswitch",
     description: "Nethub's Netswitch Product.",
+    icon: <FaGears />,
   },
   {
     title: "Alterswitch",
     href: "#",
     description: "Nethub's Alterswitch Product.",
+    icon: <FaGears />,
   },
 ];
 
