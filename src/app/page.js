@@ -3,6 +3,7 @@ import FeaturedProducts from "../../components/FeaturedProducts";
 import FeedbackSlider from "../../components/FeedbackSlider";
 import Mission from "../../components/Mission";
 import Slider from "../../components/Slider";
+import Talkwithus from "../../components/Talkwithus";
 import Divider from "../../components/divider";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <FeedbackSlider flip />
       <Divider fill="#F0F2F3" flip />
       <FeaturedProducts />
+      <Talkwithus />
     </main>
   );
 }
