@@ -84,7 +84,7 @@
 }
 
 .imgoverlay {
-  @apply bg-gradient-to-r from-slate-900/10 to-slate-900;
+  @apply bg-gradient-to-r from-slate-900/20 to-slate-900;
 }
 
 .pre-title {

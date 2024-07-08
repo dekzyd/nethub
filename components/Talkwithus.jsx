@@ -6,15 +6,15 @@ import { talkWithUsData } from "@/lib/data/talkWithUsData";
 
 const Talkwithus = () => {
   return (
-    <div className="">
+    <div className="bg-customColors-porcelain">
       <div className="container h-[478px] py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 h-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 h-full place-content-center">
           <div className="pt-7">
             <div className="flex flex-col gap-5">
-              <h3 className="text-primary text-6xl font-semibold">
+              <h3 className="text-primary text-5xl font-semibold">
                 Talk with us
               </h3>
-              <p className="text-customColors-dovegray text-2xl pr-5">
+              <p className="text-customColors-dovegray text-xl pr-5">
                 Let us show you how moving to Nethub can help you achieve your
                 goals
               </p>
