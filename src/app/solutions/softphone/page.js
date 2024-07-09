@@ -4,7 +4,11 @@ import PageHeader from "../../../../components/PageHeader.jsx";
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import { FaLaptop } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa6";
-import { disBstWay, whynetPhone } from "@/lib/data/softphonedata.jsx";
+import {
+  disBstWay,
+  whynetPhone,
+  easyToStrt,
+} from "@/lib/data/softphonedata.jsx";
 import { Button } from "@/components/ui/button.jsx";
 import Link from "next/link.js";
 
@@ -101,7 +105,7 @@ const Softphone = () => {
         </div>
       </section>
       {/* discover a better way */}
-      <section className="py-16 min-h-56">
+      <section className="py-16">
         <div className="container">
           <h3 className="text-5xl text-primary font-semibold mb-8">
             Discover a better way
@@ -140,9 +144,9 @@ const Softphone = () => {
         </div>
       </section>
       {/* why choose netphone */}
-      <section className="py-16 min-h-56 bg-customColors-porcelain">
+      <section className="py-16  bg-customColors-porcelain">
         <div className="container">
-          <h3 className="text-5xl text-primary font-semibold mb-8">
+          <h3 className="text-4xl text-primary font-semibold mb-8">
             Why choose NetPhone?
           </h3>
           <p className="text-3xl tracking-wide text-customColors-dovegray">
@@ -150,7 +154,7 @@ const Softphone = () => {
             flexibility when customizing and reduced operational efforts, making
             for unparalleled convenience and value for end-users.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 my-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 my-14">
             {whynetPhone.map(({ icon, title, content }) => {
               return (
                 <BizPerksCard
@@ -170,6 +174,54 @@ const Softphone = () => {
             <Link href="/solutions/cloudpbx">
               <p className="flex items-center gap-2">
                 more about our cloud pbx solution{" "}
+                <span className="text-xs">
+                  <FaChevronRight />
+                </span>
+              </p>
+            </Link>
+          </Button>
+        </div>
+      </section>
+      {/* easy to start */}
+      <section className="min-h-56 py-16">
+        <div className="container">
+          <h3 className="text-primary text-4xl font-semibold mb-8">
+            Easy to start, great to use...
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-7 lg:gap-10 my-16">
+            {easyToStrt.map(
+              ({
+                icon,
+                title,
+                content,
+                bgcolor,
+                fontsize,
+                fontweight,
+                txtcolor,
+              }) => {
+                return (
+                  <BizPerksCard
+                    key={title}
+                    title={title}
+                    content={content}
+                    icon={icon}
+                    bgcolor={bgcolor}
+                    txtcolor={txtcolor}
+                    fontsize={fontsize}
+                    fontweight={fontweight}
+                  />
+                );
+              }
+            )}
+          </div>
+          <p className="text-lg">
+            Check out just how easy it is to get started with NetPhone by
+            contacting us.
+          </p>
+          <Button className="mt-4 uppercase font-semibold">
+            <Link href="#footer">
+              <p className="flex items-center gap-2">
+                contact us
                 <span className="text-xs">
                   <FaChevronRight />
                 </span>

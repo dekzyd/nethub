@@ -95,3 +95,46 @@ export const whynetPhone = [
     bgcolor: "",
   },
 ];
+
+export const easyToStrt = [
+  {
+    title: "Brand",
+    icon: 1,
+    content:
+      "design your personalized, branded app and submit to Google / Apple app store.",
+    bgcolor: "bg-customColors-fiord",
+    txtcolor: "text-white",
+    fontweight: "font-semibold",
+    fontsize: "text-2xl",
+  },
+  {
+    title: "Bundle",
+    icon: 2,
+    content:
+      "devise your plans for calls/SMS, packages, recurring fees, and VAS - bundle into products.",
+    bgcolor: "bg-customColors-fiord",
+    txtcolor: "text-white",
+    fontweight: "font-semibold",
+    fontsize: "text-2xl",
+  },
+  {
+    title: "Share",
+    icon: 3,
+    content:
+      "your customer downloads the app and their account is instantly provisioned - easy authorization with QR code or SMS link.",
+    bgcolor: "bg-customColors-fiord",
+    txtcolor: "text-white",
+    fontweight: "font-semibold",
+    fontsize: "text-2xl",
+  },
+  {
+    title: "Use",
+    icon: 4,
+    content:
+      "your customer starts using immediately on 3G, 4G/LTE, or WiFi, with any device (mobile phone, desktop PC).",
+    bgcolor: "bg-customColors-fiord",
+    txtcolor: "text-white",
+    fontweight: "font-semibold",
+    fontsize: "text-2xl",
+  },
+];

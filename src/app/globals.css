@@ -76,7 +76,7 @@
 /* custom styles */
 
 .container {
-  @apply max-w-[1140px];
+  @apply max-w-[1240px];
 }
 
 .hover-container {

@@ -1,12 +1,23 @@
 import Link from "next/link";
 import React from "react";
-const BizPerksCard = ({ title, content, icon, bgcolor, link }) => {
+const BizPerksCard = ({
+  title,
+  content,
+  icon,
+  bgcolor,
+  fontsize,
+  fontweight,
+  link,
+  txtcolor,
+}) => {
   return (
     <div>
       <div
-        className={`${
-          bgcolor ? bgcolor : "bg-white"
-        } p-2 pt-3 h-16 w-16 rounded-full flex justify-center items-center mb-2`}
+        className={`${bgcolor ? bgcolor : "bg-white"} p-2 pt-3 h-16 w-16 ${
+          txtcolor && txtcolor
+        } rounded-full ${fontsize && fontsize} ${
+          fontweight && fontweight
+        } flex justify-center items-center mb-2`}
       >
         {icon}
       </div>
