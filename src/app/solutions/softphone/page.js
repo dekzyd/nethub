@@ -230,6 +230,70 @@ const Softphone = () => {
           </Button>
         </div>
       </section>
+      {/* how you benefit */}
+      <section className="bg-customColors-porcelain pt-10 pb-10">
+        <div className="container">
+          <div className="my-10 grid sm:grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="grid gap-7 lg:h-[488px]">
+              <p className="text-5xl text-primary font-semibold">
+                How you benefit
+              </p>
+              <div className="flex gap-4">
+                <div className="flex items-center">
+                  <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
+                    <FaLaptop className="text-5xl text-customColors-dovegray" />
+                  </div>
+                </div>
+                <p className="text-customColors-dovegray col-span-4  text-lg">
+                  with mobile app auto-provision and real-time call monitoring
+                  and alerts
+                </p>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex items-center">
+                  <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
+                    <FaLaptop className="text-5xl text-customColors-dovegray" />
+                  </div>
+                </div>
+                <p className="text-customColors-dovegray col-span-4  text-lg">
+                  with real-time authorization and overdraft protection,
+                  charging for VAS, and profit guarantee function
+                </p>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex items-center">
+                  <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
+                    <FaLaptop className="text-5xl text-customColors-dovegray" />
+                  </div>
+                </div>
+                <p className="text-customColors-dovegray col-span-4  text-lg">
+                  easy transition and setup, plus comprehensive call management
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col justify-between rounded-[50px] p-10 bg-white">
+              <div>
+                <p className="text-customColors-fiord text-2xl font-semibold">
+                  Simeon Aduragba
+                </p>
+                <p className="text-primary text-lg font-medium mt-1">
+                  Marketing Manager at Nethub
+                </p>
+              </div>
+              <p className="italic text-2xl text-customColors-dovegray font-medium">
+                “During the COVID crisis, many of our customers had to send
+                their employees to work from home.
+              </p>
+              <p className="italic text-2xl text-customColors-dovegray font-medium">
+                With PortaPhone we were able to offer them a reliable way to
+                continue working. Our WebRTC app allowed them to quickly respond
+                to rapidly changing market demands and to continue operating
+                during difficult times.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
