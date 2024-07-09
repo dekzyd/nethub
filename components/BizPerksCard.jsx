@@ -14,7 +14,7 @@ const BizPerksCard = ({ title, content, icon, bgcolor, link }) => {
         <h4 className="text-customColors-fiord text-2xl font-semibold mb-2 pr-2">
           {title}
         </h4>
-        <p className="text-customColors-dovegray max-w-[300px] pr-2">
+        <p className="text-customColors-dovegray text-lg max-w-[300px] pr-2">
           {content}
         </p>
         {link && (

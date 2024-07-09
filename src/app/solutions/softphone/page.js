@@ -1,11 +1,9 @@
 import React from "react";
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
-import { FiSmartphone } from "react-icons/fi";
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
-import { Hsas, Hc, Sds, Rnr } from "../../../../components/icons";
-import { FiPhoneCall } from "react-icons/fi";
 import { FaLaptop } from "react-icons/fa";
+import { disBstWay } from "@/lib/data/softphonedata.jsx";
 
 const Softphone = () => {
   // softphone solutions page breadcrumbs
@@ -31,6 +29,7 @@ const Softphone = () => {
       <section className="bg-customColors-porcelain pt-10 pb-10 min-h-96">
         <div className="container">
           <Breadcrumbs crumbs={crumbs} />
+          {/* in todays softphone mkt*/}
           <div className="my-10 grid sm:grid-cols-1 md:grid-cols-2 gap-5">
             <div className="grid gap-7">
               <p className="text-4xl text-primary font-semibold">
@@ -95,6 +94,31 @@ const Softphone = () => {
                 opportunities for UCaaS providers.{" "}
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* discover a better way */}
+      <section className="py-16 min-h-56">
+        <div className="container">
+          <h3 className="text-5xl text-primary font-semibold mb-5">
+            Discover a better way
+          </h3>
+          <p className="text-3xl text-customColors-dovegray">
+            Increase the tools in your UCaaS toolkit with NetPhone and deliver
+            users a seamless experience they’ll prefer over WhatsApp or
+            Messenger.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 my-16">
+            {disBstWay.map(({ icon, title, content }) => {
+              return (
+                <BizPerksCard
+                  key={title}
+                  title={title}
+                  content={content}
+                  icon={icon}
+                />
+              );
+            })}
           </div>
         </div>
       </section>
