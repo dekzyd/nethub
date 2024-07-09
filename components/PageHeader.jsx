@@ -10,6 +10,7 @@ const PageHeader = ({
   description,
   btntxt,
   height,
+  fontsize,
 }) => {
   return (
     <>
@@ -27,16 +28,22 @@ const PageHeader = ({
             </div>
             {/* Header title and content */}
             <div className="h-full">
-              <div className="flex flex-col h-full justify-center gap-7 lg:max-w-[600px]">
+              <div className="flex flex-col h-full justify-center gap-10 lg:max-w-[600px]">
                 {pre_title && (
                   <h4 className="text-white uppercase text-xl font-medium tracking-wider">
                     {pre_title}
                   </h4>
                 )}
-                <h3 className="text-white sm:text-3xl lg:text-6xl font-semibold leading-tight">
+                <h3
+                  className={`text-white sm:text-3xl ${
+                    fontsize ? fontsize : "lg:text-6xl"
+                  } font-bold tracking-wide leading-tight`}
+                >
                   {title}
                 </h3>
-                <p className="text-white lg:text-xl">{description}</p>
+                <p className="text-white lg:text-2xl leading-relaxed">
+                  {description}
+                </p>
                 <div>
                   {btntxt && (
                     <Link href="#footer">
