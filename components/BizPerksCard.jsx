@@ -19,7 +19,7 @@ const BizPerksCard = ({
           txtcolor && txtcolor
         } rounded-full ${fontsize && fontsize} ${
           fontweight && fontweight
-        } flex justify-center items-center mb-2`}
+        } flex justify-center items-center mb-3`}
       >
         {icon}
       </div>
@@ -27,7 +27,7 @@ const BizPerksCard = ({
         <h4
           className={` ${
             titlecolor ? titlecolor : "text-customColors-fiord"
-          } text-2xl font-semibold mb-2 pr-2`}
+          } text-2xl font-semibold mb-3 pr-2`}
         >
           {title}
         </h4>
