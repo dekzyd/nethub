@@ -75,3 +75,33 @@ export const whatsinit = [
     bgcolor: "",
   },
 ];
+
+export const whynethubdata = [
+  {
+    title: "Open architecture",
+    icon: <Sds fill="#9EAEB4" />,
+    content:
+      "You have the full freedom to develop and integrate with full access to APIs and source code",
+    bgcolor: "",
+  },
+  {
+    title: "Short go-to-market time",
+    icon: <Hsas fill="#9EAEB4" />,
+    content:
+      "Agile development ensures the release of new software updates every 7 weeks",
+    bgcolor: "",
+  },
+  {
+    title: "Years of expertise",
+    icon: <Hc fill="#9EAEB4" />,
+    content:
+      "We’ve been trusted by over 500 customers worldwide in 90+ countries since 2001",
+    bgcolor: "",
+  },
+  {
+    title: "Your choice in pricing",
+    icon: <Sds fill="#9EAEB4" />,
+    content: "Choose the pricing model that best suits your needs",
+    bgcolor: "",
+  },
+];

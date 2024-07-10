@@ -7,6 +7,8 @@ const BizPerksCard = ({
   bgcolor,
   fontsize,
   fontweight,
+  titlecolor,
+  contentcolor,
   link,
   txtcolor,
 }) => {
@@ -22,10 +24,18 @@ const BizPerksCard = ({
         {icon}
       </div>
       <div>
-        <h4 className="text-customColors-fiord text-2xl font-semibold mb-2 pr-2">
+        <h4
+          className={` ${
+            titlecolor ? titlecolor : "text-customColors-fiord"
+          } text-2xl font-semibold mb-2 pr-2`}
+        >
           {title}
         </h4>
-        <p className="text-customColors-dovegray text-lg max-w-[300px] pr-2">
+        <p
+          className={`${
+            contentcolor ? contentcolor : "text-customColors-dovegray"
+          } text-lg max-w-[300px] pr-2`}
+        >
           {content}
         </p>
         {link && (

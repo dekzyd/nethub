@@ -3,7 +3,7 @@ import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import { Button } from "@/components/ui/button.jsx";
-import { disBstWay, whatsinit } from "@/lib/data/sipdata.jsx";
+import { disBstWay, whatsinit, whynethubdata } from "@/lib/data/sipdata.jsx";
 import { FaChevronRight } from "react-icons/fa6";
 import Link from "next/link.js";
 
@@ -151,40 +151,30 @@ const Sip = () => {
       </section>
       {/* why choose Nethub */}
       <section className="py-16 bg-customColors-fiord">
-        <div className="container">
-          <h3 className="text-5xl text-primary font-semibold mb-8">
-            What&apos;s in it for you?
-          </h3>
+        <div className="container text-white ">
+          <h3 className="text-5xl font-semibold mb-8">Why choose Nethub?</h3>
           <p className="text-xl font-medium tracking-wide">
-            See why SIP trunking providers are choosing NetSwitch to provide
-            enterprise PBX, call center connectivity, and more.
+            What makes NetSwitch the go-to for SIP trunking in a competitive
+            market?
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-5 lg:gap-8 my-16">
-            {whatsinit.map(({ icon, title, content }) => {
+          <p className="text-xl font-medium tracking-wide">
+            Allow us to highlight how we differentiate ourselves from the pack.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-5 lg:gap-8 my-16">
+            {whynethubdata.map(({ icon, title, content }) => {
               return (
                 <BizPerksCard
                   key={title}
                   title={title}
                   content={content}
+                  bgcolor="bg-customColors-fiord"
                   icon={icon}
+                  titlecolor="text-primary"
+                  contentcolor="text-white"
                 />
               );
             })}
           </div>
-          <p className="text-lg">
-            Ready to talk? Let’s arrange a demo via a personal call or online
-            presentation.
-          </p>
-          <Button className="mt-4 uppercase font-semibold">
-            <Link href="#footer">
-              <p className="flex items-center gap-2">
-                contact us
-                <span className="text-xs">
-                  <FaChevronRight />
-                </span>
-              </p>
-            </Link>
-          </Button>
         </div>
       </section>
     </div>
