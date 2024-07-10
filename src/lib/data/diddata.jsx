@@ -54,3 +54,79 @@ export const disBstWay = [
     bgcolor: "",
   },
 ];
+
+export const whatsinit = [
+  {
+    title: "Increase profitability",
+    icon: <Sds fill="#9EAEB4" />,
+    content:
+      "With flexible pricing options, profit guarantee charging, kickback rates for premium DIDs and more, you'll see your profits tick up and up.",
+    bgcolor: "",
+  },
+  {
+    title: "Gain more customers by standing out",
+    icon: <Hsas fill="#9EAEB4" />,
+    content:
+      "Differentiate yourself from the competition and attract more customers by delivering DIDs from virtually any country and toll-free and premium DIDs, as well as attractive add-ons",
+    bgcolor: "",
+  },
+  {
+    title: "Upsell high-margin services",
+    icon: <Hc fill="#9EAEB4" />,
+    content:
+      "DID numbers are commodity - with PortaSwitch you have an option to offer hosted PBX / SIP trunking services to your customers, increasing ARPU and customer’s lifetime value.",
+    bgcolor: "",
+  },
+  {
+    title: "Scale quickly and with ease",
+    icon: <Sds fill="#9EAEB4" />,
+    content:
+      "Our unlimited and perpetual license grants you the power to scale undeterred and our platform is quickly and easily expandable.",
+    bgcolor: "",
+  },
+  {
+    title: "Enjoy the freedom to customize and integrate",
+    icon: <Hc fill="#9EAEB4" />,
+    content:
+      "Open architecture means PortaOne always supplies you the APIs and source code to quickly and easily build integrations and use across multiple regions and countries",
+    bgcolor: "",
+  },
+  {
+    title: "Expand your revenue streams",
+    icon: <Sds fill="#9EAEB4" />,
+    content:
+      "Promotion, discounts, resellers, white-label operators, multiple sources of DIDs. Increase how you sell and increase your chances to earn",
+    bgcolor: "",
+  },
+];
+
+export const whynethubdata = [
+  {
+    title: "Fair pricing",
+    icon: <Sds fill="#9EAEB4" />,
+    content:
+      "With PortaOne, you always get an unlimited & perpetual license. Add customers, products, and numbers to the inventory at no additional costs. All maintenance and future updates included.",
+    bgcolor: "",
+  },
+  {
+    title: "Built to be scalable",
+    icon: <Hsas fill="#9EAEB4" />,
+    content:
+      "resell DIDs - or use the same PortaOne’s platform to sell hosted PBX or SIP trunking services, no extra fees! Convergent billing and online charging system is a part of the solution.",
+    bgcolor: "",
+  },
+  {
+    title: "Unlimited & perpetual license",
+    icon: <Hc fill="#9EAEB4" />,
+    content:
+      "Our platforms can easily scale up by adding more servers to match your project success.",
+    bgcolor: "",
+  },
+  {
+    title: "Short go-to-market time",
+    icon: <Sds fill="#9EAEB4" />,
+    content:
+      "Want to be ahead of competition? We release new software updates every 7 weeks, meaning your newly-requested functionality can be delivered to customers in just a few months.",
+    bgcolor: "",
+  },
+];

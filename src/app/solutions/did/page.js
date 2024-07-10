@@ -2,10 +2,13 @@ import React from "react";
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
 import { havingtroubles } from "../../../lib/data/diddata.jsx";
-import { IoKeypad } from "react-icons/io5";
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
-import { disBstWay } from "../../../lib/data/diddata.jsx";
-import { FiPhoneCall } from "react-icons/fi";
+import {
+  disBstWay,
+  whatsinit,
+  whynethubdata,
+} from "../../../lib/data/diddata.jsx";
+import Image from "next/image.js";
 
 const Did = () => {
   // Did Management solutions page breadcrumbs
@@ -111,7 +114,7 @@ const Did = () => {
       {/* better way */}
       <section className="py-16">
         <div className="container">
-          <h3 className="text-5xl text-primary font-semibold mb-8">
+          <h3 className="text-5xl text-primary font-semibold mb-6">
             Discover a better way
           </h3>
           <p className="text-xl tracking-wide text-black">
@@ -133,7 +136,78 @@ const Did = () => {
         </div>
       </section>
       {/* whats in it  */}
+      <section className="py-16 bg-customColors-porcelain">
+        <div className="container">
+          <h3 className="text-5xl text-primary font-semibold mb-6">
+            What&apos;s in it for you?
+          </h3>
+          <p className="text-xl font-medium tracking-wide">
+            Reduce costs by outsourcing implementation of custom scenarios to
+            customers or 3rd parties. We also maintain the platform, so you save
+            on hardware purchasing, hosting, provisioning, and maintenance.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-8 my-16">
+            {whatsinit.map(({ icon, title, content }) => {
+              return (
+                <BizPerksCard
+                  key={title}
+                  title={title}
+                  content={content}
+                  icon={icon}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </section>
       {/* why nethub */}
+      <section className="py-16 bg-customColors-fiord">
+        <div className="container text-white ">
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            {/* written */}
+            <div>
+              <h3 className="text-5xl font-semibold mb-8">
+                Why choose Nethub?
+              </h3>
+              <p className="text-xl font-medium tracking-wide">
+                What has made so many telecom providers join the community of
+                NetSwitch users when providing DID management provisioning?
+              </p>
+              <p className="text-xl font-medium tracking-wide">
+                Allow us to highlight how we differentiate ourselves from the
+                pack.
+              </p>
+            </div>
+            {/* pic */}
+            <div className="w-full flex justify-center">
+              <div className="w-72 h-72 overflow-hidden rounded-full flex">
+                <Image
+                  height={500}
+                  width={500}
+                  src="/about2.jpeg"
+                  alt="image"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-5 lg:gap-8 my-16">
+            {whynethubdata.map(({ icon, title, content }) => {
+              return (
+                <BizPerksCard
+                  key={title}
+                  title={title}
+                  content={content}
+                  bgcolor="bg-customColors-fiord"
+                  icon={icon}
+                  titlecolor="text-primary"
+                  contentcolor="text-white"
+                />
+              );
+            })}
+          </div>
+        </div>
+      </section>
       {/* 6 steps */}
     </div>
   );
