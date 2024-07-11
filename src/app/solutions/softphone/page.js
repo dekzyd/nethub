@@ -47,7 +47,7 @@ const Softphone = () => {
                 OTT solutions and are in danger of getting left behind.
               </p>
               <div className="flex gap-4">
-                <div className="flex items-center">
+                <div className="flex ">
                   <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
                     <FaLaptop className="text-5xl text-customColors-dovegray" />
                   </div>
@@ -59,7 +59,7 @@ const Softphone = () => {
                 </p>
               </div>
               <div className="flex gap-4">
-                <div className="flex items-center">
+                <div className="flex">
                   <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
                     <FaLaptop className="text-5xl text-customColors-dovegray" />
                   </div>
@@ -70,7 +70,7 @@ const Softphone = () => {
                 </p>
               </div>
               <div className="flex gap-4">
-                <div className="flex items-center">
+                <div className="flex">
                   <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
                     <FaLaptop className="text-5xl text-customColors-dovegray" />
                   </div>
