@@ -63,12 +63,12 @@ const Footer = () => {
 
       {/* footer container 2 */}
       <div className=" bg-customColors-fiord pt-10 pb-20">
-        <div className="container p-5">
+        <div className="container">
           <h1 className="text-customColors-hitgray text-2xl tracking-wider uppercase pb-3">
             Meeting in Person
           </h1>
           <p className="text-white text-md leading-relaxed">
-            You can find our friendly and helpful PortaOne staff and sales
+            You can find our friendly and helpful Nethub staff and sales
             representative across the globe.
           </p>
           <p className="text-white pb-5 text-md leading-relaxed">
@@ -173,16 +173,6 @@ const Footer = () => {
                   <p className="text-white">Lorem consectetur adipis</p>
                   <p className="text-white">Adipis</p>
                   <p className="text-white">Lorem consectetur</p>
-                  <p className="text-white">Lorem consectetur adipis</p>
-                  <p className="text-white">Adipis</p>
-                  <p className="text-white">Lorem consectetur</p>
-                  <p className="text-white">Lorem consectetur adipis</p>
-                  <p className="text-white">Adipis</p>
-                  <p className="text-white">Lorem consectetur</p>
-                  <p className="text-white">Lorem consectetur adipis</p>
-                  <p className="text-white">Adipis</p>
-                  <p className="text-white">Lorem consectetur</p>
-                  <p className="text-white">Lorem consectetur</p>
                 </div>
               </div>
               <div className="linkCont">
@@ -190,9 +180,6 @@ const Footer = () => {
                   Solutions
                 </h3>
                 <div className="flex flex-col gap-[10px] text-base">
-                  <p className="text-white">Lorem consectetur adipis</p>
-                  <p className="text-white">Adipis</p>
-                  <p className="text-white">Lorem consectetur</p>
                   <p className="text-white">Lorem consectetur adipis</p>
                   <p className="text-white">Adipis</p>
                   <p className="text-white">Lorem consectetur</p>
@@ -206,10 +193,6 @@ const Footer = () => {
                   <p className="text-white">Lorem consectetur adipis</p>
                   <p className="text-white">Adipis</p>
                   <p className="text-white">Lorem consectetur</p>
-                  <p className="text-white">Lorem consectetur adipis</p>
-                  <p className="text-white">Adipis</p>
-                  <p className="text-white">Lorem consectetur</p>
-                  <p className="text-white">Lorem consectetur</p>
                 </div>
               </div>
               <div className="linkCont">
@@ -219,15 +202,6 @@ const Footer = () => {
                 <div className="flex flex-col gap-[10px] text-base">
                   <p className="text-white">Lorem consectetur adipis</p>
                   <p className="text-white">Adipis</p>
-                  <p className="text-white">Lorem consectetur</p>
-                  <p className="text-white">Lorem consectetur</p>
-                  <p className="text-white">Lorem consectetur adipis</p>
-                  <p className="text-white">Adipis</p>
-                  <p className="text-white">Lorem consectetur</p>
-                  <p className="text-white">Lorem consectetur</p>
-                  <p className="text-white">Lorem consectetur adipis</p>
-                  <p className="text-white">Adipis</p>
-                  <p className="text-white">Lorem consectetur</p>
                   <p className="text-white">Lorem consectetur</p>
                 </div>
               </div>

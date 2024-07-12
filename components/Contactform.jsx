@@ -43,23 +43,22 @@ export function ContactForm() {
 
   // submit handler
   function onSubmit(values) {
-    // console.log(values);
-    // emailjs
-    //   .sendForm("service_fow05uw", "template_uvfna3q", formRef.current, {
-    //     publicKey: "pMQTsRwKmT5ezThl9",
-    //   })
-    //   .then(
-    //     () => {
-    //       console.log("SUCCESS!");
-    //     },
-    //     (error) => {
-    //       console.log("FAILED...", error.text);
-    //     }
-    //   );
+    console.log(values);
+    emailjs
+      .sendForm("service_fow05uw", "template_uvfna3q", formRef.current, {
+        publicKey: "pMQTsRwKmT5ezThl9",
+      })
+      .then(
+        () => {
+          toast.success("Message sent Successfully");
+        },
+        (error) => {
+          toast.error("Error sending message", error.text);
+        }
+      );
     // After successful submission reset form
     if (form.formState.isSubmitted) {
       form.reset();
-      toast.success("Message sent Successfully", {});
     }
   }
 
