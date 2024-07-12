@@ -1,6 +1,8 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -16,13 +18,14 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const formSchema = z.object({
-  username: z
+  // form error messages
+  user_name: z
     .string()
     .min(2, { message: "Username must be at least 2 characters." }),
-  msg: z.string().min(10, {
+  message: z.string().min(4, {
     message: "Message must be at least 4 characters.",
   }),
-  email: z.string().email("Invalid email format"),
+  user_email: z.string().email("Invalid email format"),
 });
 
 export function ContactForm() {
@@ -30,24 +33,46 @@ export function ContactForm() {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+      user_name: "",
+      user_email: "",
+      message: "",
     },
   });
 
-  // 2. Define a submit handler
+  const formRef = useRef();
+
+  // submit handler
   function onSubmit(values) {
-    // Do something with the form values
-    // This will be validated (but not type-safe)
-    console.log(values);
+    // console.log(values);
+    // emailjs
+    //   .sendForm("service_fow05uw", "template_uvfna3q", formRef.current, {
+    //     publicKey: "pMQTsRwKmT5ezThl9",
+    //   })
+    //   .then(
+    //     () => {
+    //       console.log("SUCCESS!");
+    //     },
+    //     (error) => {
+    //       console.log("FAILED...", error.text);
+    //     }
+    //   );
+    // After successful submission reset form
+    if (form.formState.isSubmitted) {
+      form.reset();
+    }
   }
 
   return (
     <>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-7 pb-5">
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          ref={formRef}
+          className="space-y-7 pb-5"
+        >
           <FormField
             control={form.control}
-            name="username"
+            name="user_name"
             render={({ field }) => (
               <FormItem>
                 <FormControl>
@@ -59,7 +84,7 @@ export function ContactForm() {
           />
           <FormField
             control={form.control}
-            name="email"
+            name="user_email"
             render={({ field }) => (
               <FormItem>
                 <FormControl>
@@ -72,7 +97,7 @@ export function ContactForm() {
           <div className="h-20 bg-primary-foreground rounded-md w-2/6"></div>
           <FormField
             control={form.control}
-            name="msg"
+            name="message"
             render={({ field }) => (
               <FormItem>
                 <FormControl>
@@ -90,6 +115,7 @@ export function ContactForm() {
           <Button
             type="submit"
             className="w-full uppercase tracking-wide font-semibold font-sans px-7 py-4"
+            disabled={form.formState.isSubmitting}
           >
             Send Message
           </Button>

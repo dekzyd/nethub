@@ -2,8 +2,6 @@
 
 import { ContactForm } from "./Contactform";
 import { CommunityIcons, NewsletterIcons } from "./icons";
-import ImageBox from "./imageBox";
-import profilePic from "../assets/canada.webp";
 import Logo from "./Logo";
 import {
   FaAngleRight,
@@ -78,7 +76,7 @@ const Footer = () => {
             <span className="text-primary">sending us a message.</span>
           </p>
           {/* events, corporate offices, tech offices, representatives */}
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {/* <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div className="ftflex">
               <h3 className="text-primary font-semibold text-2xl mb-5">
                 Events
@@ -156,7 +154,7 @@ const Footer = () => {
           </div>
           <h3 className="text-primary text-2xl font-semibold">
             <span className="text-primary">{<FaAngleRight />}</span>All Events
-          </h3>
+          </h3> */}
         </div>
       </div>
       {/* about, solutions, products, resources links */}
