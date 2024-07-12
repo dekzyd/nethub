@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import { ToastContainer, toast } from "react-toastify";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -59,6 +59,7 @@ export function ContactForm() {
     // After successful submission reset form
     if (form.formState.isSubmitted) {
       form.reset();
+      toast.success("Message sent Successfully", {});
     }
   }
 
