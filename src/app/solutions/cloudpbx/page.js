@@ -8,7 +8,11 @@ import { FiPhoneCall } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 import Link from "next/link.js";
 import { FaLaptop, FaChevronRight } from "react-icons/fa6";
-import { bizsoldata, unbeatftdata } from "../../../lib/data/cloudpbxdata.jsx";
+import {
+  bizsoldata,
+  unbeatftdata,
+  stepspbx,
+} from "../../../lib/data/cloudpbxdata.jsx";
 
 const CloudPbxandCallCenter = () => {
   // CloudPBX solutions page breadcrumbs
@@ -21,9 +25,10 @@ const CloudPbxandCallCenter = () => {
     <div>
       <CloudPageHeader
         image="/journey2.jpg"
-        icon={
-          <TbCloudCog className="md:text-[200px] lg:text-[300px] text-customColors-porcelain" />
-        }
+        // icon={
+        //   <TbCloudCog className="md:text-[200px] lg:text-[300px] text-customColors-porcelain" />
+        // }
+        title="Cloud PBX / Hosted PBX platform and Cloud Call Center with Netswitch"
         btntxt="contact us"
         description="Deliver a business communication environment to your SMB and enterprise customers with NetSwitch voice, video, CCaaS, CRM integrations, and more."
         height="h-[600px]"
@@ -258,11 +263,11 @@ const CloudPbxandCallCenter = () => {
       {/* steps to managing cloudpbx */}
       <section className="min-h-56 py-16">
         <div className="container">
-          <h3 className="text-primary text-4xl font-semibold mb-8">
-            Easy to start, great to use...
+          <h3 className="text-primary text-3xl font-semibold mb-8">
+            4 steps to managing your cloud PBX – from idea to earnings
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-7 lg:gap-10 my-16">
-            {unbeatftdata.map(
+            {stepspbx.map(
               ({
                 icon,
                 title,
@@ -287,20 +292,6 @@ const CloudPbxandCallCenter = () => {
               }
             )}
           </div>
-          <p className="text-lg">
-            Check out just how easy it is to get started with NetPhone by
-            contacting us.
-          </p>
-          <Button className="mt-4 uppercase font-semibold">
-            <Link href="#footer">
-              <p className="flex items-center gap-2">
-                contact us
-                <span className="text-xs">
-                  <FaChevronRight />
-                </span>
-              </p>
-            </Link>
-          </Button>
         </div>
       </section>
     </div>
@@ -315,35 +306,40 @@ const CloudPageHeader = ({
   description,
   btntxt,
   height,
+  fontsize,
 }) => {
   return (
     <>
       <div
         className={`w-full ${
-          height ? height : "h-[467px]"
-        } bg-cover bg-top bg-no-repeat`}
+          height ? height : "h-[600px]"
+        } bg-cover bg-no-repeat`}
         style={{ backgroundImage: `url(${image})` }}
       >
         <div className="imgoverlay h-full">
           <div className="container grid sm:grid-cols-1 md:grid-cols-2 gap-5 h-full">
             {/* icon */}
             <div className="hidden md:flex justify-center items-center">
-              {/* {icon} */}
+              {icon}
             </div>
             {/* Header title and content */}
             <div className="h-full">
-              <div className="flex flex-col h-full justify-center gap-7 lg:max-w-[600px]">
+              <div className="flex flex-col h-full justify-center gap-10 lg:max-w-[600px]">
                 {pre_title && (
                   <h4 className="text-white uppercase text-xl font-medium tracking-wider">
                     {pre_title}
                   </h4>
                 )}
-                <div className="text-white text-3xl lg:text-6xl font-semibold leading-tight">
-                  <h3>
-                    Cloud PBX <p>and Call Center</p>
-                  </h3>
-                </div>
-                <p className="text-white lg:text-xl">{description}</p>
+                <h3
+                  className={`text-white sm:text-3xl ${
+                    fontsize ? fontsize : "lg:text-5xl"
+                  } font-bold tracking-wider`}
+                >
+                  {title}
+                </h3>
+                <p className="text-white lg:text-xl leading-relaxed">
+                  {description}
+                </p>
                 <div>
                   {btntxt && (
                     <Link href="#footer">

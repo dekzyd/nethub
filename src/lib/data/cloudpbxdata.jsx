@@ -68,3 +68,47 @@ export const unbeatftdata = [
     bgcolor: "",
   },
 ];
+
+export const stepspbx = [
+  {
+    title: "Configuration",
+    content:
+      "Set up service parameters for recurring and usage-based charging. Activate customers.",
+    bgcolor: "bg-customColors-fiord",
+    txtcolor: "text-white",
+    fontweight: "font-semibold",
+    fontsize: "text-2xl",
+    icon: 1,
+  },
+  {
+    title: "IP phone auto-provisioning",
+
+    content:
+      "Zero-effort instantaneous configuration of more than 50 preset IP phones. Add new models easily.",
+    bgcolor: "bg-customColors-fiord",
+    txtcolor: "text-white",
+    fontweight: "font-semibold",
+    fontsize: "text-2xl",
+    icon: 2,
+  },
+  {
+    title: "Self-care portal",
+
+    content:
+      "Let your customer perform most cloud PBX configuration steps and payments while enjoying great UX.",
+    bgcolor: "bg-customColors-fiord",
+    txtcolor: "text-white",
+    fontweight: "font-semibold",
+    fontsize: "text-2xl",
+    icon: 3,
+  },
+  {
+    title: "Service delivery",
+    content: "Monitor, troubleshoot, send invoices, and generate revenue",
+    bgcolor: "bg-customColors-fiord",
+    txtcolor: "text-white",
+    fontweight: "font-semibold",
+    fontsize: "text-2xl",
+    icon: 4,
+  },
+];
