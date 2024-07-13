@@ -2,7 +2,7 @@ export const slides = [
   {
     image: "/journey3f.jpg",
     icon: "",
-    title: "Start a journey with Nethub with leading innovations",
+    title: "Start a journey with Nethub's leading innovations",
     details:
       "Find out how you can build an innovative system around Nethub's telecom software solutions",
     btntxt: "Find out how",

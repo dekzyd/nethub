@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 const Navbar = () => {
   return (
-    <nav className="w-full">
+    <nav className="w-full sticky top-0 z-10 bg-white">
       <div className="w-full h-20 flex justify-center">
         <div className="container p-3 flex items-center gap-x-3">
           {/* logo */}

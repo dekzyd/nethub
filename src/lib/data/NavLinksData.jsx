@@ -1,10 +1,11 @@
 // icons
-import { FaGears } from "react-icons/fa6";
+import { FaGears, FaUsers } from "react-icons/fa6";
 import { MdOutlineNetworkCheck, MdDialerSip } from "react-icons/md";
 import { IoKeypad } from "react-icons/io5";
 import { RiVoiceprintLine } from "react-icons/ri";
 import { FiSmartphone } from "react-icons/fi";
 import { TbCloudCog } from "react-icons/tb";
+import { BiSolidGridAlt } from "react-icons/bi";
 
 // solution items
 export const solutions = [
@@ -68,10 +69,12 @@ export const abouts = [
     title: "The Company",
     href: "/about",
     description: "Nethub Organization.",
+    icon: <BiSolidGridAlt />,
   },
   {
     title: "Careers",
     href: "/about",
     description: "Join us.",
+    icon: <FaUsers />,
   },
 ];
