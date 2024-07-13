@@ -60,6 +60,7 @@ export function NavigationMenuDemo() {
                   key={product.title}
                   title={product.title}
                   href={product.href}
+                  icon={product.icon}
                 >
                   {product.description}
                 </ListItem>
@@ -97,15 +98,17 @@ const ListItem = React.forwardRef((props, ref) => {
       <NavigationMenuLink asChild>
         <Link
           ref={ref}
-          className={`${className} bg-slate-200 select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground grid grid-cols-4`}
+          className={`${className} select-none space-y-1 rounded-md px-3 my-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground grid grid-cols-4`}
           {...otherProps}
         >
+          {/* icon */}
           {icon && (
-            <div className="w-12 h-12 bg-primary col-span-1 rounded-full flex justify-center items-center text-2xl text-customColors-porcelain">
+            <div className="w-12 h-12 bg-primary col-span-1 rounded-full flex justify-center items-center text-3xl text-customColors-porcelain">
               {icon}
             </div>
           )}
-          <div className="flex flex-col gap-1 col-span-3 ">
+          {/* title and description */}
+          <div className="flex flex-col gap-1 col-span-3">
             <div className="text-base font-medium leading-none -ml-3">
               {title}
             </div>

@@ -27,17 +27,18 @@ export const solutions = [
     description: "Nethub's SIP solutions.",
     icon: <MdDialerSip className="" />,
   },
-  {
-    title: "Cloud PBX & Call Center",
-    href: "/solutions/cloudpbx",
-    description: "Nethub's Cloud PBX & call center solutions.",
-    icon: <TbCloudCog className="" />,
-  },
+
   {
     title: "Softphone",
     href: "/solutions/softphone",
     description: "Nethub's Softphone solutions.",
     icon: <FiSmartphone className="" />,
+  },
+  {
+    title: "Cloud PBX & Call Center",
+    href: "/solutions/cloudpbx",
+    description: "Deliver voice, video, CCaaS, CRM to SMB and enterprise",
+    icon: <TbCloudCog className="" />,
   },
   {
     title: "DID Provisioning",
