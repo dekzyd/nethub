@@ -19,8 +19,9 @@ export default function Home() {
       <Divider fill="#F0F2F3" />
       <FeedbackSlider flip />
       <Divider fill="#F0F2F3" flip />
-      <FeaturedProducts />
       <Talkwithus />
+      <Divider fill="#F0F2F3" />
+      <FeaturedProducts />
     </main>
   );
 }

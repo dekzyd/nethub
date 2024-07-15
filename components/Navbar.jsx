@@ -5,17 +5,17 @@ import Logo from "./Logo";
 
 const Navbar = () => {
   return (
-    <nav className="w-full sticky top-0 z-10 bg-white">
-      <div className="w-full h-20 flex justify-center">
-        <div className="container p-3 flex items-center gap-x-3">
+    <nav className="w-full sticky top-0 z-10 bg-white drop-shadow-lg">
+      <div className="w-full h-20 flex">
+        <div className="container flex justify-between gap-x-3">
           {/* logo */}
           <Link href="/">
-            <div id="logo" className=" basis-1/4 text-3xl font-bold">
+            <div id="logo" className="text-3xl font-bold">
               <Logo />
             </div>
           </Link>
           {/* links */}
-          <ul className="hidden lg:flex basis-3/4 justify-end">
+          <ul className="hidden lg:flex justify-end">
             <NavigationMenuDemo />
           </ul>
           {/* dropdown icon */}
@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* element divider */}
-      <Divider fill="#EE4E4E" />
+      <Divider fill="#e8476f" />
     </nav>
   );
 };

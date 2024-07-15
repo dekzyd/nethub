@@ -8,7 +8,7 @@ export const slides = [
     btntxt: "Find out how",
   },
   {
-    image: "/capex.jpg",
+    image: "/capex.webp",
     icon: "",
     title: "How Nethub Helped Speedcast Reduce Its Capex",
     details:
@@ -16,7 +16,7 @@ export const slides = [
     btntxt: "Read Success Story",
   },
   {
-    image: "/cloudpbx.jpg",
+    image: "/cloudpbx.webp",
     icon: "",
     title: "Supercharge your Cloud PBX Platform in 5 steps",
     details:

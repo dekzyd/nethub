@@ -81,10 +81,10 @@ const About = () => {
       <PartnerOpt />
       {/* testimonials */}
       <FeedbackSlider />
-      <Divider fill="#c4cdd1" />
-      {/* Hot topics */}
+      {/* <Divider fill="#c4cdd1" /> */}
+      {/* Hot topics
       <HotTopics />
-      <Misc />
+      <Misc /> */}
     </div>
   );
 };

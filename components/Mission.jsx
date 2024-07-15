@@ -1,4 +1,5 @@
 import React from "react";
+import { FaStar } from "react-icons/fa6";
 
 const Mission = () => {
   return (
@@ -22,9 +23,17 @@ const Mission = () => {
             </p>
           </div>
         </div>
-        <p className="text-center py-7 text-customColors-hitgray text-2xl">
-          Trusted by telecommunication service providers around the globe.
-        </p>
+
+        <div className=" mt-20">
+          <p className="text-center py-5 text-customColors-hitgray text-2xl">
+            Trusted by telecommunication service providers around the globe.
+          </p>
+          <div className="flex gap-5 justify-center text-primary/70 hover:text-primary">
+            {Array.from({ length: 5 }).map((_, index) => {
+              return <FaStar key={index} className="text-2xl" />;
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import { talkWithUsData } from "@/lib/data/talkWithUsData";
 
 const Talkwithus = () => {
   return (
-    <div className="bg-customColors-porcelain">
+    <div className="bg-customColors-porce">
       <div className="container h-[478px] py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 h-full place-content-center">
           <div className="pt-7">
@@ -28,6 +28,7 @@ const Talkwithus = () => {
               <Carousel
                 className=""
                 // slide={false}
+                slideInterval={5000}
               >
                 {talkWithUsData.map(({ icon, content }, index) => {
                   return (

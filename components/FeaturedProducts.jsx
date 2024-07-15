@@ -8,7 +8,7 @@ import Link from "next/link";
 const FeaturedProducts = () => {
   const allServices = products.concat(solutions);
   return (
-    <div className="">
+    <div className="bg-customColors-porcelain">
       <div className="container pt-20 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 h-[444px] ">
           <div className="grid place-content-center gap-5">
@@ -25,7 +25,7 @@ const FeaturedProducts = () => {
             <Carousel
               leftControl=" "
               rightControl=" "
-              slideInterval={5000}
+              slideInterval={10000}
               pauseOnHover
               //   slide={false}
             >

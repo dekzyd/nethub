@@ -23,9 +23,9 @@ const BestValues = () => {
               </p>
             </div>
             {/* icon */}
-            <div className="hidden md:flex justify-center items-center md:ml-10">
+            <div className="hidden md:flex items-center md:ml-10">
               <div className="bg-primary/90 rounded-full p-10 grid place-content-center">
-                <FaThumbsUp className="text-customColors-porcelain text-9xl" />
+                <FaThumbsUp className="text-customColors-porcelain text-9xl pb-2" />
               </div>
             </div>
           </div>
