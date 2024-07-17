@@ -139,7 +139,7 @@ export function MedalIcon({ fill }) {
   );
 }
 
-export function LoveIcon({ fill }) {
+export function RocketIcon({ fill }) {
   return (
     <svg
       width="38"
@@ -172,7 +172,7 @@ export function LoveIcon({ fill }) {
   );
 }
 
-export function RocketIcon({ fill }) {
+export function Rocket2Icon({ fill }) {
   return (
     <svg
       width="800px"
