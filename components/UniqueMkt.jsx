@@ -1,7 +1,7 @@
 import React from "react";
 import { MedalIcon, RocketIcon, CrescentIcon, DiamondIcon } from "./icons";
 import BizPerksCard from "./BizPerksCard";
-import { UniqueMktData } from "@/lib/data/uniqueMktData";
+import { UniqueMktData } from "@/lib/data/aboutData";
 
 const UniqueMkt = () => {
   return (
@@ -9,10 +9,10 @@ const UniqueMkt = () => {
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="p-5 max-w-[687px]">
-            <p className="uppercase font-medium text-xl tracking-widest pb-3">
+            <p className="uppercase font-light text-xl tracking-[5px] pb-3">
               what makes Nethub unique
             </p>
-            <p className="text-primary text-[32px] font-semibold tracking-wide">
+            <p className="text-primary text-[32px] font-semibold -tracking-wider">
               Here’s why telcos around the world choose our products and
               services to help them succeed
             </p>
