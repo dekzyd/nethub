@@ -22,7 +22,7 @@ const About = () => {
         title="Nethub at a glance"
         pre_title="company overview"
         height="h-[550px]"
-        // icon={<SearchlightIcon />}
+        icon={<SearchlightIcon />}
       />
       <Divider fill="#fff" />
       {/* About page contents */}
@@ -80,8 +80,8 @@ const About = () => {
       <Divider fill="#F0F2F3" flip />
       <PartnerOpt />
       {/* testimonials */}
-      <FeedbackSlider />
-      <Divider fill="#3d5b68" />
+      <FeedbackSlider flip />
+      {/* <Divider fill="#3d5b68" /> */}
       {/* Hot topics
       <HotTopics />
       <Misc /> */}

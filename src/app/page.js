@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <main className="">
       <Slider />
-      {/* <Divider fill="#EE4E4E" /> */}
       {/* mission */}
       <Mission />
       {/* Best values */}

@@ -62,7 +62,7 @@ const Footer = () => {
       </div>
 
       {/* footer container 2 */}
-      <div className=" bg-customColors-fiord pt-10 pb-20">
+      <div className=" bg-customColors-fiord pt-10 pb-20 md:px-10">
         <div className="container">
           <h1 className="text-customColors-hitgray text-2xl tracking-wider uppercase pb-3">
             Meeting in Person
