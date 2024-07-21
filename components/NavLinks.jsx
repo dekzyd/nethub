@@ -20,7 +20,7 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>About</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-1 p-4 md:w-[550px] md:grid-cols-2 lg:w-[650px]">
+            <ul className="grid w-[400px] gap-1 p-4 md:w-[550px] md:grid-cols-2 ">
               {abouts.map((component) => (
                 <ListItem
                   key={component.title}
@@ -37,7 +37,7 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-1 p-4 md:w-[550px] md:grid-cols-2 lg:w-[650px]">
+            <ul className="grid w-[400px] gap-1 p-4 md:w-[550px] md:grid-cols-2">
               {solutions.map((component) => (
                 <ListItem
                   key={component.title}
@@ -54,7 +54,7 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Products</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-2 p-4 md:w-[550px] md:grid-cols-2 lg:w-[650px]">
+            <ul className="grid w-[400px] gap-2 p-4 md:w-[550px] md:grid-cols-2">
               {products.map((product) => (
                 <ListItem
                   key={product.title}
@@ -98,7 +98,7 @@ const ListItem = React.forwardRef((props, ref) => {
       <NavigationMenuLink asChild>
         <Link
           ref={ref}
-          className={`${className} bg-slate-00 select-none space-y-1 rounded-md px-3 my-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground grid grid-cols-4`}
+          className={`${className} select-none space-y-1 rounded-md px-3 my-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground grid grid-cols-4`}
           {...otherProps}
         >
           {icon && (
@@ -107,10 +107,8 @@ const ListItem = React.forwardRef((props, ref) => {
             </div>
           )}
           <div className="flex flex-col gap-1 col-span-3 ">
-            <div className="text-base font-medium leading-none -ml-3">
-              {title}
-            </div>
-            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground -ml-3">
+            <div className="text-base font-medium leading-none ">{title}</div>
+            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
               {children}
             </p>
           </div>

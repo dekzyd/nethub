@@ -8,22 +8,22 @@ const Talkwithus = () => {
   return (
     <div className="bg-customColors-porce">
       <div className="container h-[478px] py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 h-full place-content-center">
-          <div className="pt-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 place-content-center">
+          <div className="p-5 h-full">
             <div className="flex flex-col gap-5">
-              <h3 className="text-primary text-5xl font-semibold">
+              <h3 className="text-primary text-[50px] font-semibold">
                 Talk with us
               </h3>
-              <p className="text-customColors-dovegray text-xl pr-5">
+              <p className="text-customColors-dovegray text-2xl pr-5">
                 Let us show you how moving to Nethub can help you achieve your
                 goals
               </p>
             </div>
-            <Button className="uppercase mt-9">
+            <Button className="uppercase mt-9 rounded-sm">
               <Link href="#footer">contact us</Link>
             </Button>
           </div>
-          <div className="h-full">
+          <div className="h-[300px]">
             <Link href="#footer">
               <Carousel
                 className=""

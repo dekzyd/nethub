@@ -21,7 +21,7 @@ const FeaturedProducts = () => {
               Nethub featured products and solutions
             </p>
           </div>
-          <div className=" col-span-2 p-5 rounded-xl border-2 border-customColors-porcelain">
+          <div className=" col-span-2 p-5 rounded-xl border-2 border-white">
             <Carousel
               leftControl=" "
               rightControl=" "

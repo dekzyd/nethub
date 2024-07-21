@@ -3,8 +3,8 @@ import { FaStar } from "react-icons/fa6";
 
 const Mission = () => {
   return (
-    <div className="bg-customColors-porcelain h-[666px] pt-12 pb-14">
-      <div className="container h-full flex flex-col justify-around">
+    <div className="bg-customColors-porcelain md:h-[666px] pt-12 pb-14">
+      <div className="bg-red-20 container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-9">
           <div className="p-5">
             <p className="pre-title mb-7">the nethub mission</p>
@@ -24,7 +24,7 @@ const Mission = () => {
           </div>
         </div>
 
-        <div className="">
+        <div className="lg:mt-20">
           <p className="text-center py-5 text-customColors-hitgray text-2xl">
             Trusted by telecommunication service providers around the globe.
           </p>
