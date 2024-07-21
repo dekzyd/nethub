@@ -84,11 +84,11 @@
 }
 
 .imgoverlay {
-  @apply bg-gradient-to-r from-cyan-600/85 to-cyan-600/85;
+  @apply bg-gradient-to-r from-blue-900/85 to-blue-900/85;
 }
 
 .pre-title {
-  @apply uppercase font-medium text-2xl tracking-widest;
+  @apply uppercase font-normal  text-lg tracking-[3px];
 }
 
 .ftflex {
