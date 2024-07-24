@@ -21,19 +21,19 @@ const FeaturedProducts = () => {
               Nethub featured products and solutions
             </p>
           </div>
-          <div className=" col-span-2 p-5 rounded-xl border-2 border-white">
+          <div className=" col-span-2 p-[50px] rounded-xl border-2 border-white">
             <Carousel
               leftControl=" "
               rightControl=" "
               slideInterval={10000}
               pauseOnHover
-              //   slide={false}
+              slide={false}
             >
               {allServices.map(({ title, href, description, icon }) => {
                 return (
                   <Link href={href} key={title} className="h-full">
-                    <div className="grid h-full place-items-center gap-2 grid-cols-1 md:grid-cols-3 dark:bg-gray-700 dark:text-white">
-                      <div className="gap-5 col-span-2">
+                    <div className="grid h-full content-center gap-2 grid-cols-1 md:grid-cols-3 dark:bg-gray-700 dark:text-white">
+                      <div className="gap-5 col-span-2 p-5">
                         <div className="flex flex-col gap-5 ">
                           <h3 className="text-5xl font-bold hover:text-customColors-dovegray">
                             {title}
@@ -45,7 +45,7 @@ const FeaturedProducts = () => {
                         <Button className="capitalize mt-5">Take a look</Button>
                       </div>
                       <div
-                        className={`p-3 md:flex justify-center items-center text-9xl rounded-xl ${
+                        className={`m-1 p-3 md:flex justify-center items-center text-9xl rounded-xl ${
                           icon && "bg-primary/90 text-white"
                         } `}
                       >

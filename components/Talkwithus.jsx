@@ -24,7 +24,7 @@ const Talkwithus = () => {
             </Button>
           </div>
           <div className="h-[300px]">
-            <Link href="#footer">
+            <Link href="">
               <Carousel
                 className=""
                 // slide={false}
@@ -35,10 +35,10 @@ const Talkwithus = () => {
                     <div
                       key={index}
                       style={{ backgroundImage: "url(/3.jpg)" }}
-                      className="grid place-content-center bg-cover bg-no-repeat bg-center w-full bg-red-100 h-full p-9"
+                      className="grid place-content-center bg-cover bg-no-repeat bg-center w-full bg-red-100 h-full p-[50px]"
                     >
                       <div className="">
-                        <p className="text-xl tracking-wide">{content}</p>
+                        <p className="text-[22px] tracking-wide">{content}</p>
                       </div>
                     </div>
                   );
