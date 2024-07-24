@@ -7,10 +7,10 @@ const Navbar = () => {
   return (
     <nav className="w-full sticky top-0 bg-white z-10 drop-shadow-lg">
       <div className="w-full h-20 flex">
-        <div className="container flex justify-between gap-x-3">
+        <div className="container flex justify-between items-center gap-x-3">
           {/* logo */}
           <Link href="/">
-            <div id="logo" className="text-3xl font-bold">
+            <div id="logo">
               <Logo />
             </div>
           </Link>

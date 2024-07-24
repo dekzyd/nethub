@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const { Open_Sans } = require("next/font/google");
 const { fontFamily } = require("tailwindcss/defaultTheme");
 const flowbite = require("flowbite-react/tailwind");
-import tech from "./assets/tech.jpg";
 
 module.exports = {
   darkMode: ["class"],
@@ -93,7 +91,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Montserrat", ...fontFamily.sans],
-        // Open_sans: ["Open_Sans"],
+        Open_sans: ["'Open Sans', sans-serif"],
+        ubuntu: ["'Ubuntu Condensed', sans-serif"],
       },
     },
   },

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { FaArrowsToCircle } from "react-icons/fa6";
+import { FaArrowsToCircle, FaAngleRight } from "react-icons/fa6";
 
 const Netswitch = () => {
   return (
@@ -70,8 +70,9 @@ const Header = ({
                 <div>
                   {btntxt && (
                     <Link href="#footer">
-                      <Button className="w-auto font-semibold capitalize">
-                        {btntxt}
+                      <Button className="w-auto uppercase font-semibold text-[15px] p-6 font-ubuntu tracking-widest">
+                        {btntxt}{" "}
+                        <FaAngleRight className="ml-1 text-[12px] font-bold" />
                       </Button>
                     </Link>
                   )}
