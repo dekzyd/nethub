@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FaArrowsToCircle, FaAngleRight } from "react-icons/fa6";
+import Divider from "../../../../components/divider.jsx";
 
 const Netswitch = () => {
   return (
@@ -36,7 +37,7 @@ const Header = ({
   return (
     <>
       <div
-        className={`w-full ${
+        className={`w-full relative ${
           height ? height : "h-[600px]"
         } bg-cover bg-center bg-no-repeat`}
         style={{ backgroundImage: `url(${image})` }}
@@ -80,6 +81,19 @@ const Header = ({
               </div>
             </div>
           </div>
+        </div>
+        <div
+          style={{ transform: "rotateX(180deg) rotateY(180deg)" }}
+          className={`absolute z-10 bottom-0 w-full`}
+        >
+          <svg
+            className="w-full h-4 bg-transparent"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1000 100"
+            preserveAspectRatio="none"
+          >
+            <path fill="#3D5B68" d="M0,6V0h1000v100L0,6z"></path>
+          </svg>
         </div>
       </div>
     </>
