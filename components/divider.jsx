@@ -1,7 +1,13 @@
 const Divider = ({ fill, flip }) => {
   return (
     // flip horizontally
-    <div className={`rotate-180 ${flip && "-translate-x-[-1]"}`}>
+    <div
+      style={{
+        transform: `rotateX(180deg) ${
+          flip ? "rotateY(180deg)" : "rotateY(0deg)"
+        }`,
+      }}
+    >
       <svg
         className="w-full h-4"
         xmlns="http://www.w3.org/2000/svg"

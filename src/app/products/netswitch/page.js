@@ -92,7 +92,7 @@ const Header = ({
             viewBox="0 0 1000 100"
             preserveAspectRatio="none"
           >
-            <path fill="#3D5B68" d="M0,6V0h1000v100L0,6z"></path>
+            <path fill="var(--fiord)" d="M0,6V0h1000v100L0,6z"></path>
           </svg>
         </div>
       </div>

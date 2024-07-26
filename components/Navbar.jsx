@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 const Navbar = () => {
   return (
-    <nav className="w-full sticky top-0 bg-white z-10 drop-shadow-lg">
+    <nav className="w-full sticky top-0 bg-white z-20 drop-shadow-lg">
       <div className="w-full h-20 flex">
         <div className="container flex justify-between items-center gap-x-3">
           {/* logo */}
@@ -23,7 +23,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* element divider */}
-      <Divider fill="#e8476f" />
+      <Divider fill="var(--preprimary)" />
     </nav>
   );
 };
