@@ -1,4 +1,10 @@
-import { FaRegSave } from "react-icons/fa";
+import { TfiSave } from "react-icons/tfi";
+import { PiSpeedometerBold, PiThumbsUpBold } from "react-icons/pi";
+import { TbWorldPin } from "react-icons/tb";
+import { MdOutlineMiscellaneousServices } from "react-icons/md";
+import { RiCustomerService2Line } from "react-icons/ri";
+import { FaFilterCircleDollar } from "react-icons/fa6";
+
 import {
   DiamondIcon,
   RocketIcon,
@@ -9,35 +15,35 @@ import {
 
 export const frustrationData = [
   {
-    icon: <FaRegSave />,
+    icon: <MdOutlineMiscellaneousServices />,
     text: "Frustration associated with integrating UCaaS platforms with billing",
   },
   {
-    icon: <FaRegSave />,
+    icon: <FaFilterCircleDollar />,
     text: "Ambiguous licensing that has hidden costs and poses a threat to profitability",
   },
   {
-    icon: <FaRegSave />,
+    icon: <TfiSave />,
     text: "Vulnerability due to an inability to scale with legacy, on-premise solutions",
   },
 ];
 
 export const benefitData = [
   {
-    icon: <FaRegSave />,
-    text: "Frustration associated with integrating UCaaS platforms with billing",
+    icon: <PiSpeedometerBold />,
+    text: "Speed up your path to profitability by launching new services more quickly (even big systems)",
   },
   {
-    icon: <FaRegSave />,
-    text: "Ambiguous licensing that has hidden costs and poses a threat to profitability",
+    icon: <PiThumbsUpBold />,
+    text: "Relax while we deliver a feature-rich experience directly to your customers",
   },
   {
-    icon: <FaRegSave />,
-    text: "Vulnerability due to an inability to scale with legacy, on-premise solutions",
+    icon: <TbWorldPin />,
+    text: "Have confidence in guaranteed excellent operational uptime across different geographical regions",
   },
   {
-    icon: <FaRegSave />,
-    text: "Vulnerability due to an inability to scale with legacy, on-premise solutions",
+    icon: <RiCustomerService2Line />,
+    text: "Experience peace of mind and self-sufficiency with online self-care and open architecture",
   },
 ];
 

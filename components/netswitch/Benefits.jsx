@@ -30,11 +30,11 @@ const Benefits = () => {
         <div className="p-5 flex  flex-col justify-around">
           {benefitData.map(({ icon, text }, index) => {
             return (
-              <div key={index} className="flex gap-5 pb-[10px] mt-[10px] ">
-                <div className="h-14 w-14 xl:h-16 xl:w-16 p-5 bg-customColors-loblolly hover:bg-customColors-fiord text-[30px] xl:text-[36px] grid place-content-center rounded-full text-white">
+              <div key={index} className="flex gap-5 pb-[10px] mt-[10px]">
+                <div className="h-14 w-14 xl:h-16 xl:w-16 p-5 hover:text-primary text-[40px] xl:text-[50px] grid place-content-center rounded-full text-customColors-loblolly">
                   {icon}
                 </div>
-                <p className="pl-[5px] font-normal leading-[27px] text-[18px] font-Open_sans text-customColors-fiord">
+                <p className="pl-[5px] font-medium leading-[27px] text-[20px] font-Open_sans text-customColors-fiord">
                   {text}
                 </p>
               </div>
