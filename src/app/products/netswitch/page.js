@@ -2,25 +2,29 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FaArrowsToCircle, FaAngleRight } from "react-icons/fa6";
+import MostTelcos from "../../../../components/netswitch/most_telcos.jsx";
 import Divider from "../../../../components/divider.jsx";
 
 const Netswitch = () => {
   return (
-    <div>
+    <>
       <Header
         image="/netswitch.jpg"
         title="NetSwitch"
         btntxt="contact us"
         description={
           <p>
-            <b>A Unified Service Management & Delivery Platform</b> for voice,
-            messaging, IoT/M2M, and data traffic within a single converged
-            network.
+            <span className="font-semibold">
+              A Unified Service Management & Delivery Platform
+            </span>{" "}
+            for voice, messaging, IoT/M2M, and data traffic within a single
+            converged network.
           </p>
         }
         height=""
       />
-    </div>
+      <MostTelcos />
+    </>
   );
 };
 
@@ -92,7 +96,7 @@ const Header = ({
             viewBox="0 0 1000 100"
             preserveAspectRatio="none"
           >
-            <path fill="var(--fiord)" d="M0,6V0h1000v100L0,6z"></path>
+            <path fill="#fff" d="M0,6V0h1000v100L0,6z"></path>
           </svg>
         </div>
       </div>

@@ -77,7 +77,7 @@ const About = () => {
       <Divider fill="#F0F2F3" />
       <UniqueMkt />
       {/* partner */}
-      <Divider fill="#F0F2F3" flip />
+      {/* <Divider fill="#F0F2F3" /> */}
       <PartnerOpt />
       {/* testimonials */}
       <FeedbackSlider flip />
