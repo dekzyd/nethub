@@ -7,6 +7,7 @@ import PartnerOpt from "../../../components/PartnerOpt";
 import HotTopics from "../../../components/HotTopics";
 import Misc from "../../../components/Misc";
 import FeedbackSlider from "../../../components/FeedbackSlider";
+import { UniqueMktData } from "@/lib/data/aboutData";
 
 const About = () => {
   // about page breadcrumbs links
@@ -75,7 +76,12 @@ const About = () => {
         </div>
       </section>
       <Divider fill="#F0F2F3" />
-      <UniqueMkt />
+      <UniqueMkt
+        pretitle="what makes Nethub unique"
+        title="Here’s why telcos around the world choose our products and
+              services to help them succeed"
+        perks={UniqueMktData}
+      />
       {/* partner */}
       {/* <Divider fill="#F0F2F3" /> */}
       <PartnerOpt />

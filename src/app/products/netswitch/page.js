@@ -3,7 +3,9 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { FaArrowsToCircle, FaAngleRight } from "react-icons/fa6";
 import MostTelcos from "../../../../components/netswitch/most_telcos.jsx";
+import UniqueMkt from "../../../../components/UniqueMkt.jsx";
 import Divider from "../../../../components/divider.jsx";
+import { BetterWayData } from "@/lib/data/products/netswitchData.jsx";
 
 const Netswitch = () => {
   return (
@@ -24,6 +26,13 @@ const Netswitch = () => {
         height=""
       />
       <MostTelcos />
+      <Divider />
+      <UniqueMkt
+        title="Discover a better way"
+        perks={BetterWayData}
+        image="/about3.jpg"
+        flip
+      />
     </>
   );
 };
@@ -86,6 +95,7 @@ const Header = ({
             </div>
           </div>
         </div>
+        {/* divider */}
         <div
           style={{ transform: "rotateX(180deg) rotateY(180deg)" }}
           className={`absolute z-10 bottom-0 w-full`}
@@ -96,7 +106,7 @@ const Header = ({
             viewBox="0 0 1000 100"
             preserveAspectRatio="none"
           >
-            <path fill="#fff" d="M0,6V0h1000v100L0,6z"></path>
+            <path fill="#fec" d="M0,6V0h1000v100L0,6z"></path>
           </svg>
         </div>
       </div>
