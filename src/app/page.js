@@ -8,7 +8,7 @@ import Divider from "../../components/divider";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="scroll-smooth">
       <Slider />
       {/* mission */}
       <Mission />

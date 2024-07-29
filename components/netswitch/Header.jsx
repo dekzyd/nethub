@@ -13,7 +13,8 @@ export default function Header({
   fontsize,
 }) {
   return (
-    <>
+    <section>
+      {/* BACKGROUND IMAGE */}
       <div
         className={`w-full relative ${
           height ? height : "h-[600px]"
@@ -22,13 +23,13 @@ export default function Header({
       >
         <div className="bg-gradient-to-tr to-[#0D4157]/70 to-50% from-[#183104]/50 h-full">
           <div className="container grid sm:grid-cols-1 md:grid-cols-2 gap-5 h-full">
-            {/* icon */}
+            {/* HEADER ICON */}
             <div className="hidden md:flex justify-center items-center ">
               <div className="bg-black/35 p-9 rounded-[40px] text-white text-[200px]">
                 <FaArrowsToCircle />
               </div>
             </div>
-            {/* Header title and content */}
+            {/* HEADER CONTENT */}
             <div className="h-full">
               <div className="flex flex-col h-full justify-center gap-10 lg:max-w-[600px]">
                 {pre_title && (
@@ -43,9 +44,10 @@ export default function Header({
                 >
                   {title}
                 </h3>
-                <p className="text-white lg:text-[24px] leading-[1.7em] font-normal">
+                <h5 className="text-white lg:text-[24px] leading-[1.7em] font-normal">
                   {description}
-                </p>
+                </h5>
+                {/* BUTTON */}
                 <div>
                   {btntxt && (
                     <Link href="#footer">
@@ -60,7 +62,7 @@ export default function Header({
             </div>
           </div>
         </div>
-        {/* divider */}
+        {/* DIVIDER */}
         <div
           style={{ transform: "rotateX(180deg) rotateY(180deg)" }}
           className={`absolute z-10 bottom-0 w-full`}
@@ -75,6 +77,6 @@ export default function Header({
           </svg>
         </div>
       </div>
-    </>
+    </section>
   );
 }
