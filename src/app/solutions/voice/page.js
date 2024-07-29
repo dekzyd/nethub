@@ -2,7 +2,7 @@ import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
 import { RiVoiceprintLine } from "react-icons/ri";
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
-import { Hsas, Hc, Sds, Rnr } from "../../../../components/icons";
+import { DiamondIcon } from "../../../../components/icons";
 import { FiPhoneCall } from "react-icons/fi";
 
 const VoiceSolutions = () => {
@@ -52,23 +52,23 @@ const VoiceSolutions = () => {
           {/* voice perks */}
           <div className="my-14 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
             <BizPerksCard
-              icon={<Hsas fill="#9EAEB4" />}
+              icon={<DiamondIcon fill="#9EAEB4" />}
               // bgcolor="bg-customColors-fiord"
               title="no hidden costs"
               content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
             />
             <BizPerksCard
-              icon={<Hc fill="#9EAEB4" />}
+              icon={<DiamondIcon fill="#9EAEB4" />}
               title="Increase your revenue"
               content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
             />
             <BizPerksCard
-              icon={<Sds fill="#9EAEB4" />}
+              icon={<DiamondIcon fill="#9EAEB4" />}
               title="Stay agile and flexible"
               content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
             />
             <BizPerksCard
-              icon={<Rnr fill="#9EAEB4" />}
+              icon={<DiamondIcon fill="#9EAEB4" />}
               title="Monetize any service"
               content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
             />

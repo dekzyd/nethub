@@ -10,7 +10,7 @@ export default function MostTelcos() {
     { title: "netswitch" },
   ];
   return (
-    <section className="min-h-56 bg-customColors-porcelain">
+    <section className="min-h-56">
       <section className="container pt-16 pb-10 grid grid-cols-1 lg:grid-cols-2">
         {/* write up */}
         <div className="flex flex-col gap-7 p-[30px]">

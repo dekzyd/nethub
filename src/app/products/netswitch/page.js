@@ -26,12 +26,16 @@ const Netswitch = () => {
         height=""
       />
       <MostTelcos />
-      <Divider />
+      <Divider fill="#F0F2F3" />
       <UniqueMkt
         title="Discover a better way"
         perks={BetterWayData}
         image="/about3.jpg"
         flip
+        titlesize="text-[40px]"
+        ltrspacing="tracking-normal"
+        description="Get Nethub services in one – convergent billing and online
+                charging system PLUS class 4 and 5 SIP Netswitch."
       />
     </>
   );

@@ -2,7 +2,16 @@ import React from "react";
 import Image from "next/image";
 import BizPerksCard from "./BizPerksCard";
 
-const UniqueMkt = ({ pretitle, title, perks, image, flip }) => {
+const UniqueMkt = ({
+  pretitle,
+  title,
+  perks,
+  image,
+  flip,
+  titlesize,
+  ltrspacing,
+  description,
+}) => {
   return (
     <section className="bg-customColors-porcelain py-16">
       <div className="container">
@@ -11,13 +20,33 @@ const UniqueMkt = ({ pretitle, title, perks, image, flip }) => {
             <p className="uppercase font-light text-xl tracking-[5px] pb-3">
               {pretitle}
             </p>
-            <p className="text-primary text-[32px] font-semibold -tracking-wider">
+            <p
+              className={`text-primary ${
+                titlesize ? titlesize : "text-[32px]"
+              } font-semibold ${ltrspacing ? ltrspacing : "-tracking-wider"}`}
+            >
               {title}
             </p>
+            {description && (
+              <div className="my-7 font-semibold font-Open_sans text-[20px] text-customColors-fiord">
+                {description}
+              </div>
+            )}
           </div>
-          <div className="hidden lg:grid place-content-center rounded-full">
+          {/* image container */}
+          <div className="hidden lg:grid place-content-center">
             {image && (
-              <Image src={image} alt="basic image" width={300} height={300} />
+              <div className="w-full flex">
+                <div className="w-72 h-72 overflow-hidden rounded-full flex">
+                  <Image
+                    height={600}
+                    width={600}
+                    src={image}
+                    alt="image"
+                    className="object-cover"
+                  />
+                </div>
+              </div>
             )}
           </div>
         </div>
