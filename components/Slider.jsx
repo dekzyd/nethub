@@ -16,7 +16,7 @@ const Slider = () => {
     <div className="h-96 lg:h-[420px] xl:h-[600px]">
       <Carousel
         theme={customTheme}
-        // slide={false}
+        slide={false}
         pauseOnHover
         slideInterval={6000}
         className=""
@@ -40,7 +40,7 @@ const Slider = () => {
                 {/* slide content */}
                 <div className="">
                   <div className="flex flex-col h-full justify-center gap-6 lg:max-w-[600px] drop-shadow-md">
-                    <h3 className="text-white text-2xl sm:text-3xl lg:text-4xl font-semibold lg:leading-normal leading-tight">
+                    <h3 className="text-white text-2xl sm:text-3xl lg:text-[48px] font-semibold lg:leading-normal leading-tight">
                       {title}
                     </h3>
                     <p className="text-white lg:text-xl leading-normal">
