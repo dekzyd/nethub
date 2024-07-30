@@ -1,4 +1,3 @@
-// import { cn } from "@/lib/utils";
 import "./globals.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -16,13 +15,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <ThemeModeScript />
-      </head>
+    <html lang="en" className="scroll-smooth">
+      <head>{/* <ThemeModeScript /> */}</head>
       <body>
-        {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
-        <main className="min-h-screen">
+        <main className="">
           <ToastContainer
             autoClose={2500}
             transition={Slide}

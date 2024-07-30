@@ -16,9 +16,9 @@ const Slider = () => {
     <div className="h-96 lg:h-[420px] xl:h-[600px]">
       <Carousel
         theme={customTheme}
-        slide={false}
+        // slide={false}
         pauseOnHover
-        slideInterval={5000}
+        slideInterval={6000}
         className=""
         onSlideChange={(index) => console.log("onSlideChange()", index)}
       >
