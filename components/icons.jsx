@@ -276,6 +276,27 @@ export function BricksIcon({ fill }) {
   );
 }
 
-export function FrustrationIcon({ fill }) {
-  return;
+export function RevenueIcon({ fill }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+      <g id="icons">
+        <rect fill={fill} x="23.85" y="42.56" width="3" height="6.71"></rect>
+        <polygon
+          fill={fill}
+          points="26.65 31.25 29.65 31.25 29.65 28.8 32.1 28.8 32.1 25.8 29.65 25.8 29.65 23.35 26.65 23.35 26.65 25.8 24.21 25.8 24.21 28.8 26.65 28.8 26.65 31.25"
+        ></polygon>
+        <rect fill={fill} x="30.95" y="40.6" width="3" height="8.67"></rect>
+        <rect fill={fill} x="38.05" y="37.29" width="3" height="11.97"></rect>
+        <rect fill={fill} x="45.15" y="33.1" width="3" height="16.17"></rect>
+        <path
+          fill={fill}
+          d="M39.68,23.37l3.18,3c-6.11,6.09-11.66,9-19,10l.39,3C32.34,38.21,38.41,35,45.05,28.38l3.16,2.95-.29-8.24Z"
+        ></path>
+        <path
+          fill={fill}
+          d="M36,13.32A22.68,22.68,0,1,0,58.68,36,22.71,22.71,0,0,0,36,13.32Zm0,42.36A19.68,19.68,0,1,1,55.68,36,19.7,19.7,0,0,1,36,55.68Z"
+        ></path>
+      </g>
+    </svg>
+  );
 }
