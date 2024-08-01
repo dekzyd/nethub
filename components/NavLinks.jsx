@@ -20,13 +20,17 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>About</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-1 p-4 md:w-[550px] md:grid-cols-2 ">
+            <h1 className="pt-4 pl-4 text-lg uppercase font-light text-customColors-fiord tracking-widest">
+              The company
+            </h1>
+            <ul className="grid gap-1 md:grid-cols-3 ">
               {abouts.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}
                   href={component.href}
                   icon={component.icon}
+                  className="bg-slate-200"
                 >
                   {component.description}
                 </ListItem>
@@ -34,10 +38,11 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="">
           <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
+
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-1 p-4 md:w-[550px] md:grid-cols-2">
+            <ul className="grid gap-1 p-4 md:grid-cols-3">
               {solutions.map((component) => (
                 <ListItem
                   key={component.title}
@@ -54,7 +59,7 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Products</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-2 p-4 md:w-[550px] md:grid-cols-2">
+            <ul className="grid gap-2 p-4 md:grid-cols-3">
               {products.map((product) => (
                 <ListItem
                   key={product.title}
@@ -107,7 +112,9 @@ const ListItem = React.forwardRef((props, ref) => {
             </div>
           )}
           <div className="flex flex-col gap-1 col-span-3 ">
-            <div className="text-base font-medium leading-none ">{title}</div>
+            <div className="text-sm text-customColors-fiord uppercase font-semibold tracking-wide leading-none ">
+              {title}
+            </div>
             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
               {children}
             </p>
