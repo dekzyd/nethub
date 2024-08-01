@@ -16,11 +16,11 @@ export default function Home() {
       <BestValues />
       {/* feedback from happy customers */}
       <Divider fill="#F0F2F3" />
+      <FeaturedProducts />
       <FeedbackSlider flip />
       <Divider fill="#F0F2F3" flip />
       <Talkwithus />
       <Divider fill="#F0F2F3" />
-      <FeaturedProducts />
     </main>
   );
 }
