@@ -30,15 +30,15 @@ const Talkwithus = () => {
                 // slide={false}
                 slideInterval={5000}
               >
-                {talkWithUsData.map(({ icon, content }, index) => {
+                {talkWithUsData.map(({ image, content }, index) => {
                   return (
                     <div
                       key={index}
-                      style={{ backgroundImage: "url(/3.jpg)" }}
+                      style={{ backgroundImage: `url(${image})` }}
                       className="grid place-content-center bg-cover bg-no-repeat bg-center w-full bg-red-100 h-full p-[50px]"
                     >
                       <div className="">
-                        <p className="text-[22px] tracking-wide">{content}</p>
+                        <p className="text-[24px] tracking-wide">{content}</p>
                       </div>
                     </div>
                   );

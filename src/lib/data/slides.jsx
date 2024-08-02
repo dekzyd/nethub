@@ -1,6 +1,6 @@
 export const slides = [
   {
-    image: "/journey3f.jpg",
+    image: "/journey.jpg",
     icon: "",
     title: "Start a journey with Nethub's leading innovations",
     details:
@@ -8,7 +8,7 @@ export const slides = [
     btntxt: "Find out how",
   },
   {
-    image: "/capex_1.webp",
+    image: "/scale-up.webp",
     icon: "",
     title: "How Nethub Helped Speedcast Reduce Its Capex",
     details:
@@ -16,7 +16,7 @@ export const slides = [
     btntxt: "Read Success Story",
   },
   {
-    image: "/speedcast.webp",
+    image: "/Speedcast-success-story.png",
     icon: "",
     title: "Supercharge your Cloud PBX Platform in 5 steps",
     details:
@@ -24,7 +24,7 @@ export const slides = [
     btntxt: "Find out how",
   },
   {
-    image: "/mvno.jpg",
+    image: "/mvno-checklist.jpg",
     icon: "",
     title: "How to become an MVNO checklist",
     details:

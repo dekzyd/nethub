@@ -34,16 +34,16 @@ const Slider = () => {
               className="bg-cover bg-no-repeat bg-center h-full w-full"
               style={{ backgroundImage: `url(${image})` }}
             >
-              <div className="imgoverlay h-full grid sm:grid-cols-1 md:grid-cols-2 px-5">
+              <div className="slider-overlay h-full grid sm:grid-cols-1 md:grid-cols-2 px-5">
                 {/* icon */}
                 <div className="hidden md:grid">{icon}</div>
                 {/* slide content */}
                 <div className="">
                   <div className="flex flex-col h-full justify-center gap-6 lg:max-w-[600px] drop-shadow-md">
-                    <h3 className="text-white text-2xl sm:text-3xl lg:text-[48px] font-semibold lg:leading-normal leading-tight">
+                    <h3 className="text-white text-3xl sm:text-3xl lg:text-[48px] font-semibold lg:leading-normal leading-tight">
                       {title}
                     </h3>
-                    <p className="text-white lg:text-xl leading-normal">
+                    <p className="text-white lg:text-2xl font-Open_sans leading-normal">
                       {details}
                     </p>
                     <div>
