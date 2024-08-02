@@ -18,12 +18,16 @@ import { BiSolidGridAlt } from "react-icons/bi";
 export const solutions = [
   {
     title: "Cloud PBX & Call Center",
+    featured: true,
+    button: "get more info",
     href: "/solutions/cloudpbx",
     description: "Deliver voice, video, CCaaS, CRM to SMB and enterprise",
     icon: <TbCloudCog className="" />,
   },
   {
     title: "SIP Trunking",
+    featured: true,
+    button: "explore more",
     href: "/solutions/sip",
     description: "Nethub's SIP solutions.",
     icon: <MdDialerSip className="" />,
@@ -31,6 +35,8 @@ export const solutions = [
   {
     title: "DID Provisioning",
     href: "/solutions/did",
+    featured: true,
+    button: "check it out",
     description: "DID Management solutions.",
     icon: <IoKeypad className="" />,
   },
@@ -60,12 +66,16 @@ export const solutions = [
 export const products = [
   {
     title: "Netswitch",
+    featured: true,
+    button: "take a look",
     href: "/products/netswitch",
     description: "A unified service management & delivery platform",
     icon: <FaArrowsToCircle />,
   },
   {
     title: "Alterswitch",
+    featured: true,
+    button: "see the possibilities",
     href: "#",
     description: "A Cloud-based unified service management & delivery platform",
     icon: <MdCloudSync />,

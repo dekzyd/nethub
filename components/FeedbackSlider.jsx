@@ -26,12 +26,12 @@ const FeedbackSlider = ({ flip }) => {
             </h3>
           </div>
           <div className="flex justify-center">
-            <Carousel className="pl-1 w-full max-w-[1140px]">
-              <CarouselContent className="gap-2 w-full py-3">
+            <Carousel className="w-full max-w-[1040px]">
+              <CarouselContent className="gap-2 w-full py-3 pl-5">
                 {feedbackdata.map(({ author, logo, review, position }) => (
                   <CarouselItem
                     key={author}
-                    className={`ml-1 basis-full md:basis-1/2 ${
+                    className={`basis-full md:basis-1/2 ${
                       flip ? "bg-white" : "bg-customColors-porcelain"
                     } p-5 rounded-3xl max-h-[400px] border border-gray-200`}
                   >
@@ -39,8 +39,8 @@ const FeedbackSlider = ({ flip }) => {
                       <div className="bg-red-200 h-36 w-36 rounded-full flex overflow-hidden">
                         <Image
                           src={logo}
-                          width={500}
-                          height={500}
+                          width={200}
+                          height={200}
                           alt="company logo"
                           className="object-cover"
                         />
