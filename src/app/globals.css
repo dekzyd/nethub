@@ -86,7 +86,7 @@
 }
 
 .imgoverlay {
-  @apply bg-gradient-to-r from-gray-800/50 to-gray-800;
+  @apply bg-gradient-to-r from-gray-800/70 to-gray-800;
 }
 
 .slider-overlay {

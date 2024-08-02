@@ -3,14 +3,20 @@ import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import Image from "next/image.js";
 import { TbCloudCog } from "react-icons/tb";
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
-import { Hsas, Hc, Sds, Rnr } from "../../../../components/icons";
+import {
+  EIcon,
+  CollectionIcons,
+  DollarDropIcon,
+  FleeingIcon,
+} from "../../../../components/icons";
 import { FiPhoneCall } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 import Link from "next/link.js";
-import { FaLaptop, FaChevronRight } from "react-icons/fa6";
+import { FaChevronRight } from "react-icons/fa6";
 import {
   bizsoldata,
   unbeatftdata,
+  whyNethubCloudPBX,
   stepspbx,
 } from "../../../lib/data/cloudpbxdata.jsx";
 
@@ -24,10 +30,10 @@ const CloudPbxandCallCenter = () => {
   return (
     <div>
       <CloudPageHeader
-        image="/journey2.jpg"
-        // icon={
-        //   <TbCloudCog className="md:text-[200px] lg:text-[300px] text-customColors-porcelain" />
-        // }
+        image="/call-center2.jpg"
+        icon={
+          <TbCloudCog className="md:text-[200px] lg:text-[500px] text-customColors-porcelain" />
+        }
         title="Cloud PBX / Hosted PBX platform and Cloud Call Center with Netswitch"
         btntxt="contact us"
         description="Deliver a business communication environment to your SMB and enterprise customers with NetSwitch voice, video, CCaaS, CRM integrations, and more."
@@ -38,9 +44,9 @@ const CloudPbxandCallCenter = () => {
         <div className="container">
           <Breadcrumbs crumbs={crumbs} />
           {/* in todays softphone mkt*/}
-          <div className="my-10 grid sm:grid-cols-1 md:grid-cols-2">
+          <div className="my-10 grid sm:grid-cols-1 md:grid-cols-2 font-Open_sans">
             <div className="grid p-8">
-              <p className="text-4xl text-primary font-semibold mb-7">
+              <p className="text-4xl text-primary font-semibold mb-7 font-sans">
                 In today’s PBX market...
               </p>
               <p className="text-lg text-customColors-dovegray font-medium leading-relaxed">
@@ -61,10 +67,13 @@ const CloudPbxandCallCenter = () => {
                 <div className="flex gap-4">
                   <div className="flex">
                     <div className="h-[72px] w-[72px] bg-customColors-hitgray/60 rounded-full flex justify-center items-center">
-                      <FaLaptop className="text-5xl text-customColors-porcelain" />
+                      <DollarDropIcon
+                        fill="#9EAEB4"
+                        className="text-5xl text-customColors-porcelain"
+                      />
                     </div>
                   </div>
-                  <div>
+                  <div className="font-Open_sans">
                     <h3 className="text-xl font-semibold mb-1">
                       You’ve been forced to move to SaaS
                     </h3>
@@ -79,10 +88,10 @@ const CloudPbxandCallCenter = () => {
                 <div className="flex gap-4">
                   <div className="flex">
                     <div className="h-[72px] w-[72px] bg-customColors-hitgray/60 rounded-full flex justify-center items-center">
-                      <FaLaptop className="text-5xl text-customColors-porcelain" />
+                      <EIcon className="text-5xl text-customColors-porcelain" />
                     </div>
                   </div>
-                  <div>
+                  <div className="font-Open_sans">
                     <h3 className="text-xl font-semibold mb-1">
                       Your PBX provider has been acquired
                     </h3>
@@ -96,10 +105,10 @@ const CloudPbxandCallCenter = () => {
                 <div className="flex gap-4">
                   <div className="flex">
                     <div className="h-[72px] w-[72px] bg-customColors-hitgray/60 rounded-full flex justify-center items-center">
-                      <FaLaptop className="text-5xl text-customColors-porcelain" />
+                      <FleeingIcon className="text-5xl text-customColors-porcelain" />
                     </div>
                   </div>
-                  <div>
+                  <div className="font-Open_sans">
                     <h3 className="text-xl font-semibold mb-1">
                       Your customers are fleeing
                     </h3>
@@ -110,7 +119,7 @@ const CloudPbxandCallCenter = () => {
                 </div>
               </div>
             </div>
-            <div className="rounded-[50px] mt-5 mx-8 mb-8 p-10 bg-white">
+            <div className="font-Open_sans rounded-[50px] mt-5 mx-8 mb-8 p-10 bg-white">
               {/* pic */}
               <div className="w-full flex mb-5">
                 <div className="w-52 h-52 overflow-hidden rounded-full flex">
@@ -160,10 +169,10 @@ const CloudPbxandCallCenter = () => {
                 <p className="uppercase text-2xl tracking-widest">
                   Nethub Cloud PBX & Call Center
                 </p>
-                <p className="text-primary text-5xl font-semibold tracking-wide leading-normal">
+                <p className="text-primary text-[32px] xl:text-5xl font-semibold -tracking-[0.5px] leading-[43.2px] xl:leading-[62.1px]">
                   Integrated business communication solution
                 </p>
-                <p className="font-semibold text-lg tracking-wide">
+                <p className="font-semibold text-[20px] leading-[30px] font-Open_sans">
                   Become a next-generation provider of communication services by
                   delivering an integrated business cloud telephony solution
                   that your SMB and enterprise customers will be excited about.
@@ -173,6 +182,7 @@ const CloudPbxandCallCenter = () => {
             <div className="font-bold md:flex gap-5 items-center justify-center hidden ml-14">
               <div className="bg-customColors-loblolly/85 p-12 rounded-full grid">
                 <FiPhoneCall className=" md:text-[200px] text-white -scale-x-100" />
+                {/* <CollectionIcons fill="#9EAEB4" /> */}
               </div>
             </div>
           </div>
@@ -192,7 +202,7 @@ const CloudPbxandCallCenter = () => {
       <section className="bg-customColors-porcelain py-20 min-h-96">
         <div className="container">
           <h3 className="text-customColors-fiord text-5xl font-semibold">
-            unbeatable features
+            Unbeatable features
           </h3>
           <div className="my-12 grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1">
             {unbeatftdata.map(({ title, icon, content, titlecolor }, index) => {
@@ -231,8 +241,8 @@ const CloudPbxandCallCenter = () => {
               <div className="w-full flex">
                 <div className="w-72 h-72 overflow-hidden rounded-full flex">
                   <Image
-                    height={600}
-                    width={600}
+                    height={200}
+                    width={300}
                     src="/about2.jpeg"
                     alt="image"
                     className="object-cover"
@@ -242,7 +252,7 @@ const CloudPbxandCallCenter = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 my-14">
-            {unbeatftdata.map(
+            {whyNethubCloudPBX.map(
               ({ icon, title, content, titlecolor, contentcolor }) => {
                 return (
                   <BizPerksCard
@@ -313,7 +323,7 @@ const CloudPageHeader = ({
       <div
         className={`w-full ${
           height ? height : "h-[600px]"
-        } bg-cover bg-no-repeat`}
+        } bg-cover bg-bottom bg-no-repeat`}
         style={{ backgroundImage: `url(${image})` }}
       >
         <div className="imgoverlay h-full">
@@ -331,19 +341,20 @@ const CloudPageHeader = ({
                   </h4>
                 )}
                 <h3
+                  style={{ lineHeight: "51.3px" }}
                   className={`text-white sm:text-3xl ${
-                    fontsize ? fontsize : "lg:text-5xl"
-                  } font-bold tracking-wider`}
+                    fontsize ? fontsize : "lg:text-[48px]"
+                  } font-bold -tracking-[0.8px]`}
                 >
                   {title}
                 </h3>
-                <p className="text-white lg:text-xl leading-relaxed">
+                <p className="text-white lg:text-2xl leading-[33px] font-Open_sans">
                   {description}
                 </p>
                 <div>
                   {btntxt && (
                     <Link href="#footer">
-                      <Button className="w-auto font-semibold capitalize">
+                      <Button className="w-auto font-semibold font-Open_sans uppercase">
                         {btntxt}
                       </Button>
                     </Link>
