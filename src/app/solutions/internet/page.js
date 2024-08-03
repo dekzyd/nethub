@@ -2,7 +2,7 @@ import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
 import { MdOutlineNetworkCheck } from "react-icons/md";
-import { Hsas, Hc, Sds, RocketIcon } from "../../../../components/icons";
+import { RocketIcon } from "../../../../components/icons";
 
 const InternetSolutions = () => {
   const internetcrumbs = [
@@ -25,9 +25,7 @@ const InternetSolutions = () => {
         image="/internet.jpeg"
         title="Internet solution"
         // pre_title="company overview"
-        // icon={
-        //   <MdOutlineNetworkCheck className="md:text-[200px] lg:text-[250px] text-customColors-porcelain" />
-        // }
+        icon={<MdOutlineNetworkCheck />}
         height=""
       />
       {/* Internet solutions content */}

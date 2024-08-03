@@ -1,9 +1,16 @@
 import React from "react";
+import Image from "next/image.js";
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import { FaLaptop } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa6";
+import { ImMobile } from "react-icons/im";
+import {
+  CycleIcon,
+  StarIcon,
+  HandInWaterIcon,
+} from "../../../../components/icons.jsx";
 import {
   disBstWay,
   whynetPhone,
@@ -33,9 +40,7 @@ const Softphone = () => {
         image="/softphone2.jpg"
         title="Cloud Softphone Solution with NetPhone Web & Mobile Apps"
         // pre_title="company overview"
-        // icon={
-        //   <FiSmartphone className="md:text-[150px] lg:text-[230px] text-customColors-porcelain" />
-        // }
+        icon={<ImMobile />}
         btntxt="contact us"
         description="Offer new-generation UCaaS using a white-label softphone app for any device via WebRTC"
         height=""
@@ -45,51 +50,64 @@ const Softphone = () => {
         <div className="container">
           <Breadcrumbs crumbs={crumbs} />
           {/* in todays softphone mkt*/}
-          <div className="my-10 grid sm:grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="grid gap-7">
-              <p className="text-4xl text-primary font-semibold">
+          <div className="my-10 grid sm:grid-cols-1 md:grid-cols-2 font-Open_sans ">
+            <div className="p-10">
+              <p className="text-[38px] -tracking-[0.4px] leading-[48.6px] text-primary mb-7 font-semibold font-sans">
                 In today’s softphone market...
               </p>
-              <p className="text-lg font-medium">
+              <p className="text-lg font-medium mb-6">
                 Many CSPs and MSPs are having trouble competing and monetizing
                 OTT solutions and are in danger of getting left behind.
               </p>
-              <div className="flex gap-4">
-                <div className="flex ">
-                  <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
-                    <FaLaptop className="text-5xl text-customColors-dovegray" />
+              <div className="grid gap-10">
+                <div className="flex gap-4">
+                  <div className="flex ">
+                    <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
+                      <CycleIcon className="text-5xl text-customColors-dovegray" />
+                    </div>
                   </div>
+                  <p className="text-customColors-dovegray col-span-4  text-xl">
+                    The biggest vendors and providers of softphones are closing
+                    down, slowing development, or becoming direct competitors of
+                    smaller CSPs
+                  </p>
                 </div>
-                <p className="text-customColors-dovegray col-span-4  text-lg">
-                  The biggest vendors and providers of softphones are closing
-                  down, slowing development, or becoming direct competitors of
-                  smaller CSPs
-                </p>
-              </div>
-              <div className="flex gap-4">
-                <div className="flex">
-                  <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
-                    <FaLaptop className="text-5xl text-customColors-dovegray" />
+                <div className="flex gap-4">
+                  <div className="flex">
+                    <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
+                      <StarIcon className="text-5xl text-customColors-dovegray" />
+                    </div>
                   </div>
+                  <p className="text-customColors-dovegray col-span-4  text-xl">
+                    End-users are choosing new-age OTT and UCaaS services, with
+                    features absent from traditional telecom solutions
+                  </p>
                 </div>
-                <p className="text-customColors-dovegray col-span-4  text-lg">
-                  End-users are choosing new-age OTT and UCaaS services, with
-                  features absent from traditional telecom solutions
-                </p>
-              </div>
-              <div className="flex gap-4">
-                <div className="flex">
-                  <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
-                    <FaLaptop className="text-5xl text-customColors-dovegray" />
+                <div className="flex gap-4">
+                  <div className="flex">
+                    <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
+                      <HandInWaterIcon className="text-5xl text-customColors-dovegray" />
+                    </div>
                   </div>
+                  <p className="text-customColors-dovegray col-span-4  text-xl">
+                    And they’re losing revenue due to a lack of differentiation
+                    in their offers and therefore a lack of monetization
+                  </p>
                 </div>
-                <p className="text-customColors-dovegray col-span-4  text-lg">
-                  And they’re losing revenue due to a lack of differentiation in
-                  their offers and therefore a lack of monetization
-                </p>
               </div>
             </div>
-            <div className="  rounded-[50px] mt-5 mx-8 mb-8 p-10 bg-white">
+            <div className="rounded-[50px] mt-5 mx-8 mb-8 p-10 bg-white">
+              <div className="w-full flex mb-5">
+                <div className="w-52 h-52 overflow-hidden rounded-full flex">
+                  <Image
+                    height={300}
+                    width={300}
+                    src="/about2.jpeg"
+                    alt="image"
+                    className="object-cover"
+                  />
+                </div>
+              </div>
               <div>
                 <p className="text-customColors-fiord text-2xl font-semibold">
                   Michelle Igwe

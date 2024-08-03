@@ -2,7 +2,7 @@ import { FaArrowsToCircle, FaAngleRight } from "react-icons/fa6";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-export default function Header({
+export default function ProductsHeader({
   image,
   icon,
   title,

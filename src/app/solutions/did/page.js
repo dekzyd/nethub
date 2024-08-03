@@ -3,6 +3,7 @@ import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
 import { havingtroubles } from "../../../lib/data/diddata.jsx";
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
+import { IoKeypad } from "react-icons/io5";
 import {
   disBstWay,
   whatsinit,
@@ -30,10 +31,9 @@ const Did = () => {
       <PageHeader
         image="/did3.jpeg"
         title="Build a DID trading platform using NetSwitch"
-        // pre_title="company overview"
-        // icon={
-        //   <IoKeypad className="md:text-[150px] lg:text-[230px] text-customColors-porcelain" />
-        // }
+        icon={
+          <IoKeypad className="md:text-[150px] lg:text-[230px] text-customColors-porcelain" />
+        }
         btntxt="contact us"
         description="Resell inbound DIDs (local, toll-free, premium and international) to call centers, enterprises and residential customers. Manage DID inventory or use on-demand number acquisition to reduce costs."
         height=""

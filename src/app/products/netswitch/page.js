@@ -1,4 +1,4 @@
-import Header from "../../../../components/netswitch/Header.jsx";
+import ProductsHeader from "../../../../components/netswitch/ProductsHeader.jsx";
 import MostTelcos from "../../../../components/netswitch/MostTelcos.jsx";
 import Benefits from "../../../../components/netswitch/Benefits.jsx";
 import UniqueMkt from "../../../../components/UniqueMkt.jsx";
@@ -20,7 +20,7 @@ const Netswitch = () => {
         />
       </head>
       {/* HEADER */}
-      <Header
+      <ProductsHeader
         image="/netswitch.jpg"
         title="NetSwitch"
         btntxt="contact us"

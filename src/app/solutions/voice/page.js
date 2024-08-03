@@ -26,9 +26,7 @@ const VoiceSolutions = () => {
         image="/voice.jpg"
         title="Voice solutions"
         // pre_title="company overview"
-        // icon={
-        //   <RiVoiceprintLine className="md:text-[200px] lg:text-[250px] text-customColors-porcelain" />
-        // }
+        icon={<RiVoiceprintLine />}
         btntxt="contact us"
         description="Deliver a business communication environment to your SMB and enterprise customers with NetSwitch – voice, video, CCaaS, CRM integrations, and more."
         height=""

@@ -28,7 +28,6 @@ const Sip = () => {
       <PageHeader
         image="/sip.jpg"
         title="NetSwitch for SIP Trunking Providers"
-        fontsize="lg:text-5xl"
         // pre_title="company overview"
         icon={<MdDialerSip />}
         btntxt="contact us"

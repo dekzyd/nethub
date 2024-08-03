@@ -12,7 +12,7 @@ import {
 import { FiPhoneCall } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 import Link from "next/link.js";
-import { FaChevronRight } from "react-icons/fa6";
+import { FaChevronRight, FaAngleRight } from "react-icons/fa6";
 import {
   bizsoldata,
   unbeatftdata,
@@ -132,8 +132,8 @@ const CloudPbxandCallCenter = () => {
               <div className="w-full flex mb-5">
                 <div className="w-52 h-52 overflow-hidden rounded-full flex">
                   <Image
-                    height={500}
-                    width={500}
+                    height={300}
+                    width={300}
                     src="/about2.jpeg"
                     alt="image"
                     className="object-cover"
@@ -349,10 +349,9 @@ const CloudPageHeader = ({
                   </h4>
                 )}
                 <h3
-                  style={{ lineHeight: "51.3px" }}
-                  className={`text-white sm:text-3xl ${
-                    fontsize ? fontsize : "lg:text-[48px]"
-                  } font-bold -tracking-[0.8px]`}
+                  className={`text-white sm:text-[36px] lg:text-[38px]  ${
+                    fontsize ? fontsize : "xl:text-[48px]"
+                  } font-bold tracking-[-0.8px]  xl:leading-[64.8px]`}
                 >
                   {title}
                 </h3>
@@ -361,9 +360,10 @@ const CloudPageHeader = ({
                 </p>
                 <div>
                   {btntxt && (
-                    <Link href="#footer">
+                    <Link href="#contact">
                       <Button className="w-auto font-semibold font-Open_sans uppercase">
                         {btntxt}
+                        <FaAngleRight className="ml-1 text-[12px] font-bold" />
                       </Button>
                     </Link>
                   )}
