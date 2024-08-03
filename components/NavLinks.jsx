@@ -83,7 +83,7 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
         {/* contact us */}
         <NavigationMenuItem>
-          <Link href="#footer" legacyBehavior passHref>
+          <Link href="#contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contact us
             </NavigationMenuLink>

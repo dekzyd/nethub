@@ -123,7 +123,7 @@ export function ContactForm() {
       </Form>
       <p className="text-customColors-hitgray text-sm">
         By clicking the button, you agree to our{" "}
-        <span className="text-primary text-sm">Privacy Policy</span>
+        <span className="text-primary text-sm font-medium">Privacy Policy</span>
       </p>
     </>
   );

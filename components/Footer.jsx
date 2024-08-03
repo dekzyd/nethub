@@ -2,6 +2,7 @@
 
 import { ContactForm } from "./Contactform";
 import { CommunityIcons, NewsletterIcons } from "./icons";
+import Link from "next/link";
 import Logo from "./Logo";
 import {
   FaAngleRight,
@@ -73,7 +74,9 @@ const Footer = () => {
           </p>
           <p className="text-white pb-5 text-md leading-relaxed">
             Looking to meet face-to-face? Set up a meeting by{" "}
-            <span className="text-primary">sending us a message.</span>
+            <span className="text-primary font-medium">
+              <Link href="#contact">sending us a message.</Link>
+            </span>
           </p>
           {/* events, corporate offices, tech offices, representatives */}
           {/* <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -167,42 +170,44 @@ const Footer = () => {
             >
               <div className="linkCont">
                 <h3 className="text-customColors-fiord font-semibold mb-5">
-                  About
+                  Solutions
                 </h3>
-                <div className="flex flex-col gap-[10px] text-base">
-                  <p className="text-white">Lorem consectetur adipis</p>
-                  <p className="text-white">Adipis</p>
-                  <p className="text-white">Lorem consectetur</p>
+                <div className="flex flex-col gap-[10px] text-base  text-white">
+                  <Link href="/solutions/did">DID Provisioning</Link>
+                  <Link href="/solutions/voice">Voice</Link>
+                  <Link href="/solutions/softphone">Softphone</Link>
+                  <Link href="/solutions/internet">Internet</Link>
+                  <Link href="/solutions/cloudpbx">CloudPBX & Call Center</Link>
+                  <Link href="/solutions/sip">SIP Trunking</Link>
                 </div>
               </div>
               <div className="linkCont">
                 <h3 className="text-customColors-fiord font-semibold mb-5">
-                  Solutions
+                  About
                 </h3>
-                <div className="flex flex-col gap-[10px] text-base">
-                  <p className="text-white">Lorem consectetur adipis</p>
-                  <p className="text-white">Adipis</p>
-                  <p className="text-white">Lorem consectetur</p>
+                <div className="flex flex-col gap-[10px] text-base text-white">
+                  <Link href="/about">Company Overview</Link>
+                  <Link href="/about">Leaders</Link>
+                  <Link href="/about">Partners</Link>
                 </div>
               </div>
+
               <div className="linkCont">
                 <h3 className="text-customColors-fiord font-semibold mb-5">
                   Products
                 </h3>
-                <div className="flex flex-col gap-[10px] text-base">
-                  <p className="text-white">Lorem consectetur adipis</p>
-                  <p className="text-white">Adipis</p>
-                  <p className="text-white">Lorem consectetur</p>
+                <div className="flex flex-col gap-[10px] text-base text-white">
+                  <Link href="/products/netswitch">Netswitch</Link>
+                  <Link href="/products/netswitch">Alterswitch</Link>
+                  <Link href="/products/netswitch">NetcoHub</Link>
                 </div>
               </div>
               <div className="linkCont">
                 <h3 className="text-customColors-fiord font-semibold mb-5">
-                  Resources
+                  Careers
                 </h3>
-                <div className="flex flex-col gap-[10px] text-base">
-                  <p className="text-white">Lorem consectetur adipis</p>
-                  <p className="text-white">Adipis</p>
-                  <p className="text-white">Lorem consectetur</p>
+                <div className="flex flex-col gap-[10px] text-white text-base">
+                  <Link href="/about">Join us...</Link>
                 </div>
               </div>
             </div>
@@ -214,7 +219,7 @@ const Footer = () => {
                 Helping telcos connect people since 2013
               </h2>
               <p className="mb-8 text-sm text-customColors-loblolly/85">
-                © 2001 – 2024 PortaOne Inc. All rights reserved.
+                © 2013 – 2024 Nethub Inc. All rights reserved.
               </p>
               <div className="flex justify-center gap-5 pb-5 text-customColors-loblolly">
                 <p className="flex gap-2 capitalize text-sm items-center">
