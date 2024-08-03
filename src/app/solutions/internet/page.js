@@ -2,7 +2,7 @@ import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
 import { MdOutlineNetworkCheck } from "react-icons/md";
-import { Hsas, Hc, Sds, Rnr } from "../../../../components/icons";
+import { Hsas, Hc, Sds, RocketIcon } from "../../../../components/icons";
 
 const InternetSolutions = () => {
   const internetcrumbs = [
@@ -13,6 +13,14 @@ const InternetSolutions = () => {
 
   return (
     <div>
+      {/* meta data and title */}
+      <head>
+        <title>Internet solution</title>
+        <meta
+          name="Nethub's Internet solutions"
+          content="Offer enterprise PBX and call center connectivity, resell phone numbers (DID), protect yourself and users with anti-fraud tools, and implement custom scenarios via a programmable voice API, all via NetSwitch."
+        />
+      </head>
       <PageHeader
         image="/internet.jpeg"
         title="Internet solution"
@@ -49,23 +57,23 @@ const InternetSolutions = () => {
           {/* voice perks */}
           <div className="my-14 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
             <BizPerksCard
-              icon={<Hsas fill="#9EAEB4" />}
+              icon={<RocketIcon fill="#9EAEB4" />}
               // bgcolor="bg-customColors-fiord"
               title="no hidden costs"
               content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
             />
             <BizPerksCard
-              icon={<Hc fill="#9EAEB4" />}
+              icon={<RocketIcon fill="#9EAEB4" />}
               title="Increase your revenue"
               content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
             />
             <BizPerksCard
-              icon={<Sds fill="#9EAEB4" />}
+              icon={<RocketIcon fill="#9EAEB4" />}
               title="Stay agile and flexible"
               content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
             />
             <BizPerksCard
-              icon={<Rnr fill="#9EAEB4" />}
+              icon={<RocketIcon fill="#9EAEB4" />}
               title="Monetize any service"
               content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
             />

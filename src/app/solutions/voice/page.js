@@ -14,6 +14,14 @@ const VoiceSolutions = () => {
   ];
   return (
     <div>
+      {/* meta data and title */}
+      <head>
+        <title>Voice solutions</title>
+        <meta
+          name="Nethub's voice solutions"
+          content="Deliver a business communication environment to your SMB and enterprise customers with NetSwitch – voice, video, CCaaS, CRM integrations, and more."
+        />
+      </head>
       <PageHeader
         image="/voice.jpg"
         title="Voice solutions"

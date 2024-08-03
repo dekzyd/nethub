@@ -5,6 +5,7 @@ import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import { Button } from "@/components/ui/button.jsx";
 import { disBstWay, whatsinit, whynethubdata } from "@/lib/data/sipdata.jsx";
 import { FaChevronRight } from "react-icons/fa6";
+import { MdDialerSip } from "react-icons/md";
 import Link from "next/link.js";
 
 const Sip = () => {
@@ -16,14 +17,20 @@ const Sip = () => {
   ];
   return (
     <div>
+      {/* meta data and title */}
+      <head>
+        <title>SIP Trunking</title>
+        <meta
+          name="Nethub's NetSwitch for SIP Trunking Providers"
+          content="Offer enterprise PBX and call center connectivity, resell phone numbers (DID), protect yourself and users with anti-fraud tools, and implement custom scenarios via a programmable voice API, all via NetSwitch."
+        />
+      </head>
       <PageHeader
         image="/sip.jpg"
         title="NetSwitch for SIP Trunking Providers"
         fontsize="lg:text-5xl"
         // pre_title="company overview"
-        // icon={
-        //   <MdDialerSip className="md:text-[180px] lg:text-[230px] text-customColors-porcelain" />
-        // }
+        icon={<MdDialerSip />}
         btntxt="contact us"
         description="Offer enterprise PBX and call center connectivity, resell phone numbers (DID), protect yourself and users with anti-fraud tools, and implement custom scenarios via a programmable voice API, all via NetSwitch"
         height=""

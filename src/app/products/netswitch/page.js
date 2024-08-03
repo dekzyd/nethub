@@ -11,6 +11,14 @@ import {
 const Netswitch = () => {
   return (
     <>
+      {/* meta data and title */}
+      <head>
+        <title>Netswitch</title>
+        <meta
+          name="Nethub's NetSwitch"
+          content="A Unified Service Management & Delivery Platform for voice, messaging, IoT/M2M, and data traffic within a single converged network."
+        />
+      </head>
       {/* HEADER */}
       <Header
         image="/netswitch.jpg"

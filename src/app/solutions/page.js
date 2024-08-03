@@ -17,6 +17,14 @@ export default function Solutions() {
   ];
   return (
     <div>
+      {/* meta data and title */}
+      <head>
+        <title>Telecom Solutions</title>
+        <meta
+          name="Nethub Telecom Solutions"
+          content="Start earning faster with solutions for modern telcos that are flexible, easily integrated, and fit your budget"
+        />
+      </head>
       <PageHeader
         image="/about.jpg"
         title="Nethub Telecom Solutions"

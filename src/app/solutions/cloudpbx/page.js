@@ -29,11 +29,19 @@ const CloudPbxandCallCenter = () => {
   ];
   return (
     <div>
+      {/* meta data and title */}
+      <head>
+        <title>
+          Cloud PBX / Hosted PBX platform and Cloud Call Center with Nethub.
+        </title>
+        <meta
+          name="Nethub Cloud PBX / Hosted PBX platform and Cloud Call Center"
+          content="Deliver a business communication environment to your SMB and enterprise customers with NetSwitch – voice, video, CCaaS, CRM integrations, and more."
+        />
+      </head>
       <CloudPageHeader
         image="/call-center2.jpg"
-        icon={
-          <TbCloudCog className="md:text-[200px] lg:text-[500px] text-customColors-porcelain" />
-        }
+        icon={<TbCloudCog />}
         title="Cloud PBX / Hosted PBX platform and Cloud Call Center with Netswitch"
         btntxt="contact us"
         description="Deliver a business communication environment to your SMB and enterprise customers with NetSwitch voice, video, CCaaS, CRM integrations, and more."
@@ -228,7 +236,7 @@ const CloudPbxandCallCenter = () => {
               <h3 className="text-4xl font-semibold mb-7">
                 Why choose Nethub?
               </h3>
-              <p className="text-lg font-bold tracking-wide mb-10">
+              <p className="text-xl font-bold tracking-wide mb-10">
                 We promise and deliver the best value and fair pricing.
               </p>
               <p className="text-lg tracking-wide">
@@ -329,7 +337,7 @@ const CloudPageHeader = ({
         <div className="imgoverlay h-full">
           <div className="container grid sm:grid-cols-1 md:grid-cols-2 gap-5 h-full">
             {/* icon */}
-            <div className="hidden md:flex justify-center items-center">
+            <div className="hidden md:flex justify-center items-center md:text-[200px] lg:text-[450px] text-customColors-porcelain">
               {icon}
             </div>
             {/* Header title and content */}

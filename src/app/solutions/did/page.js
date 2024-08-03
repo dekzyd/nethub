@@ -19,6 +19,14 @@ const Did = () => {
   ];
   return (
     <div>
+      {/* meta data and title */}
+      <head>
+        <title>DID Provisioning</title>
+        <meta
+          name="Nethub's DID Provisioning"
+          content="Resell inbound DIDs (local, toll-free, premium and international) to call centers, enterprises and residential customers. Manage DID inventory or use on-demand number acquisition to reduce costs"
+        />
+      </head>
       <PageHeader
         image="/did3.jpeg"
         title="Build a DID trading platform using NetSwitch"

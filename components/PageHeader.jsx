@@ -23,8 +23,8 @@ const PageHeader = ({
         <div className="imgoverlay h-full">
           <div className="container grid sm:grid-cols-1 md:grid-cols-2 gap-5 h-full">
             {/* icon */}
-            <div className="hidden md:flex justify-center items-center ">
-              <div className="hover:scale-110 transition-transform ease-in-out duration-500">
+            <div className="hidden md:flex justify-center items-center md:text-[200px] lg:text-[400px] text-customColors-porcelain">
+              <div className="hover:scale-110 transition-transform ease-in-out duration-500 ">
                 {icon}
               </div>
             </div>

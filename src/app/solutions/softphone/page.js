@@ -21,6 +21,14 @@ const Softphone = () => {
   ];
   return (
     <div>
+      {/* meta data and title */}
+      <head>
+        <title>Softphone Solution</title>
+        <meta
+          name="Nethub's Softphone"
+          content="Offer new-generation UCaaS using a white-label softphone app for any device via WebRTC"
+        />
+      </head>
       <PageHeader
         image="/softphone2.jpg"
         title="Cloud Softphone Solution with NetPhone Web & Mobile Apps"

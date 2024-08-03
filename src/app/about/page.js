@@ -18,6 +18,14 @@ const About = () => {
 
   return (
     <div>
+      {/* meta data and title */}
+      <head>
+        <title>Nethub Company</title>
+        <meta
+          name="Nethub Company"
+          content="Nethub is a global telecommunication software platform developer"
+        />
+      </head>
       <PageHeader
         image="/about3.jpg"
         title="Nethub at a glance"
