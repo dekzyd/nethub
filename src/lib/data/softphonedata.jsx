@@ -1,58 +1,68 @@
-import { DiamondIcon } from "../../../components/icons";
+import { FiThumbsUp } from "react-icons/fi";
+import { HiMiniPuzzlePiece } from "react-icons/hi2";
+import { BsShieldLock } from "react-icons/bs";
+import { IoBulbOutline } from "react-icons/io5";
+import {
+  DiamondIcon,
+  RocketIcon,
+  SolutionIcon,
+  HearSuperblyIcon,
+  StreamIcon,
+} from "../../../components/icons";
 
 export const disBstWay = [
   {
     title: "Launch fast",
-    icon: <DiamondIcon fill="#9EAEB4" />,
+    icon: <RocketIcon fill="#9EAEB4" />,
     content:
       "Deploy the whole system (cloud PBX platform, billing, mobile app, etc.) in just one day - in our cloud or in your datacenter!",
     bgcolor: "",
   },
   {
     title: "Love your brand",
-    icon: <DiamondIcon fill="#9EAEB4" />,
+    icon: <SolutionIcon fill="#9EAEB4" />,
     content:
       "Deploy the whole system (cloud PBX platform, billing, mobile app, etc.) in just one day - in our cloud or in your datacenter!",
     bgcolor: "",
   },
   {
     title: "Perfect UX",
-    icon: <DiamondIcon fill="#9EAEB4" />,
+    icon: <FiThumbsUp className="text-customColors-hitgray text-5xl" />,
     content:
       "Reduce drain on customer support with auto-provisioning, self-care portals and self-management capabilities",
     bgcolor: "",
   },
   {
     title: "Hear superbly",
-    icon: <DiamondIcon fill="#9EAEB4" />,
+    icon: <HearSuperblyIcon fill="#9EAEB4" />,
     content:
       "Offer better sound quality than traditional VoIP calls, even in low bandwidth areas by using WebRTC",
     bgcolor: "",
   },
   {
     title: "Monetize!",
-    icon: <DiamondIcon fill="#9EAEB4" />,
+    icon: <IoBulbOutline className="text-customColors-hitgray text-5xl" />,
     content:
       "Quickly implement custom pages and screens, such as sign-up or in-app promotions and purchases",
     bgcolor: "",
   },
   {
     title: "Secure profits",
-    icon: <DiamondIcon fill="#9EAEB4" />,
+    icon: <BsShieldLock className="text-customColors-hitgray text-5xl" />,
     content:
       "Protect you and your customers with real-time authorization to prevent overdraft",
     bgcolor: "",
   },
   {
     title: "Integrate",
-    icon: <DiamondIcon fill="#9EAEB4" />,
+    icon: <HiMiniPuzzlePiece className="text-5xl text-customColors-hitgray" />,
     content:
       "Extend your customers’ cloud PBX seamlessly to web, mobile, and MS Teams",
     bgcolor: "",
   },
   {
     title: "Streamline",
-    icon: <DiamondIcon fill="#9EAEB4" />,
+    icon: <StreamIcon fill="#9EAEB4" />,
     content:
       "Maximize efficiency by integrating with back-office systems via no-code / low-code workflows",
     bgcolor: "",

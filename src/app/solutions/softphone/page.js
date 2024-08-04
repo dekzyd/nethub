@@ -63,10 +63,10 @@ const Softphone = () => {
                 <div className="flex gap-4">
                   <div className="flex ">
                     <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
-                      <CycleIcon className="text-5xl text-customColors-dovegray" />
+                      <CycleIcon fill="var(--hitgray)" />
                     </div>
                   </div>
-                  <p className="text-customColors-dovegray col-span-4  text-xl">
+                  <p className="text-customColors-dovegray col-span-4 leading-[28.8px] text-[18px]">
                     The biggest vendors and providers of softphones are closing
                     down, slowing development, or becoming direct competitors of
                     smaller CSPs
@@ -75,10 +75,10 @@ const Softphone = () => {
                 <div className="flex gap-4">
                   <div className="flex">
                     <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
-                      <StarIcon className="text-5xl text-customColors-dovegray" />
+                      <StarIcon fill="var(--hitgray)" />
                     </div>
                   </div>
-                  <p className="text-customColors-dovegray col-span-4  text-xl">
+                  <p className="text-customColors-dovegray leading-[28.8px] text-[18px]">
                     End-users are choosing new-age OTT and UCaaS services, with
                     features absent from traditional telecom solutions
                   </p>
@@ -86,10 +86,10 @@ const Softphone = () => {
                 <div className="flex gap-4">
                   <div className="flex">
                     <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
-                      <HandInWaterIcon className="text-5xl text-customColors-dovegray" />
+                      <HandInWaterIcon fill="var(--hitgray)" />
                     </div>
                   </div>
-                  <p className="text-customColors-dovegray col-span-4  text-xl">
+                  <p className="text-customColors-dovegray col-span-4 leading-[28.8px] text-[18px]">
                     And they’re losing revenue due to a lack of differentiation
                     in their offers and therefore a lack of monetization
                   </p>
