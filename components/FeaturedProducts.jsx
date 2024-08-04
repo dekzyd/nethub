@@ -9,7 +9,6 @@ const FeaturedProducts = () => {
   const allServices = products
     .concat(solutions)
     .filter((service) => service.featured);
-  console.log(allServices);
   return (
     <div className="bg-customColors-porcelain">
       <div className="container pt-20 pb-24">
