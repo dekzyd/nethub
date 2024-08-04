@@ -12,7 +12,7 @@ export const slides = [
     icon: "",
     title: "How Nethub Helped Speedcast Reduce Its Capex",
     details:
-      "Learn how PortaOne helped Speedcast 'de-complicate' its infrastructure so it could reduce capex, increase scalability, and get ready for the future.",
+      "Learn how Nethub helped Speedcast 'de-complicate' its infrastructure so it could reduce capex, increase scalability, and get ready for the future.",
     btntxt: "Read Success Story",
   },
   {
