@@ -1,4 +1,4 @@
-import React from "react";
+import CloudPageHeader from "../../../../components/cloudPBX/CloudPageHeader.jsx";
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import Image from "next/image.js";
 import { TbCloudCog } from "react-icons/tb";
@@ -10,9 +10,7 @@ import {
   FleeingIcon,
 } from "../../../../components/icons";
 import { FiPhoneCall } from "react-icons/fi";
-import { Button } from "@/components/ui/button";
-import Link from "next/link.js";
-import { FaChevronRight, FaAngleRight } from "react-icons/fa6";
+import Head from "next/head.js";
 import {
   bizsoldata,
   unbeatftdata,
@@ -20,25 +18,25 @@ import {
   stepspbx,
 } from "../../../lib/data/cloudpbxdata.jsx";
 
+// CloudPBX solutions page breadcrumbs
+const crumbs = [
+  { title: "home", href: "/" },
+  { title: "solutions", href: "/solutions" },
+  { title: "Cloud PBX & Call Center", href: "#" },
+];
+
+{
+  /* meta data and title */
+}
+export const metadata = {
+  title: "Cloud PBX / Hosted PBX platform and Cloud Call Center with Nethub.",
+  description:
+    "Deliver a business communication environment to your SMB and enterprise customers with NetSwitch – voice, video, CCaaS, CRM integrations, and more.",
+};
+
 const CloudPbxandCallCenter = () => {
-  // CloudPBX solutions page breadcrumbs
-  const crumbs = [
-    { title: "home", href: "/" },
-    { title: "solutions", href: "/solutions" },
-    { title: "Cloud PBX & Call Center", href: "#" },
-  ];
   return (
-    <div>
-      {/* meta data and title */}
-      <head>
-        <title>
-          Cloud PBX / Hosted PBX platform and Cloud Call Center with Nethub.
-        </title>
-        <meta
-          name="Nethub Cloud PBX / Hosted PBX platform and Cloud Call Center"
-          content="Deliver a business communication environment to your SMB and enterprise customers with NetSwitch – voice, video, CCaaS, CRM integrations, and more."
-        />
-      </head>
+    <>
       <CloudPageHeader
         image="/call-center2.jpg"
         icon={<TbCloudCog />}
@@ -312,67 +310,6 @@ const CloudPbxandCallCenter = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
-};
-
-const CloudPageHeader = ({
-  image,
-  icon,
-  title,
-  pre_title,
-  description,
-  btntxt,
-  height,
-  fontsize,
-}) => {
-  return (
-    <>
-      <div
-        className={`w-full ${
-          height ? height : "h-[600px]"
-        } bg-cover bg-bottom bg-no-repeat`}
-        style={{ backgroundImage: `url(${image})` }}
-      >
-        <div className="imgoverlay h-full">
-          <div className="container grid sm:grid-cols-1 md:grid-cols-2 gap-5 h-full">
-            {/* icon */}
-            <div className="hidden md:flex justify-center items-center md:text-[200px] lg:text-[450px] text-customColors-porcelain">
-              {icon}
-            </div>
-            {/* Header title and content */}
-            <div className="h-full">
-              <div className="flex flex-col h-full justify-center gap-10 lg:max-w-[600px]">
-                {pre_title && (
-                  <h4 className="text-white uppercase text-xl font-medium tracking-wider">
-                    {pre_title}
-                  </h4>
-                )}
-                <h3
-                  className={`text-white sm:text-[36px] lg:text-[38px]  ${
-                    fontsize ? fontsize : "xl:text-[48px]"
-                  } font-bold tracking-[-0.8px]  xl:leading-[64.8px]`}
-                >
-                  {title}
-                </h3>
-                <p className="text-white lg:text-2xl leading-[33px] font-Open_sans">
-                  {description}
-                </p>
-                <div>
-                  {btntxt && (
-                    <Link href="#contact">
-                      <Button className="w-auto font-semibold font-Open_sans uppercase">
-                        {btntxt}
-                        <FaAngleRight className="ml-1 text-[12px] font-bold" />
-                      </Button>
-                    </Link>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 };
