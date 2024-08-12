@@ -48,7 +48,7 @@ export default function CloudPageHeader({
                   <Link href="#contact">
                     <Button className="w-auto font-semibold font-Open_sans uppercase">
                       {btntxt}
-                      <FaAngleRight className="ml-1 text-[12px] font-bold" />
+                      <FaAngleRight className="ml-1 -mt-[1px] text-[12px] font-bold" />
                     </Button>
                   </Link>
                 )}

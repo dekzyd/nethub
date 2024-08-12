@@ -1,6 +1,9 @@
 import { FiPhoneCall } from "react-icons/fi";
+import { FaAngleRight } from "react-icons/fa6";
 import BizPerksCard from "../BizPerksCard.jsx";
 import { bizsoldata } from "../../src/lib/data/cloudpbxdata.jsx";
+import { Button } from "@/components/ui/button.jsx";
+import Link from "next/link.js";
 
 export default function IntegratedBizSection() {
   return (
@@ -38,6 +41,19 @@ export default function IntegratedBizSection() {
               </div>
             );
           })}
+        </div>
+        <div>
+          <p className="mb-3 font-medium text-lg">
+            Make NetPhone part of your Cloud PBX platform and launch at minimal
+            costs to you.
+          </p>
+
+          <Link href="#contact">
+            <Button className="w-auto font-semibold font-Open_sans uppercase">
+              more about our cloud pbx solution
+              <FaAngleRight className="ml-1 -mt-[1px] text-[12px] font-bold" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
