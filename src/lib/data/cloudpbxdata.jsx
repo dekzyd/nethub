@@ -1,9 +1,10 @@
 import {
-  Hsas,
+  EIcon,
   SolutionIcon,
   RocketIcon,
   DiamondIcon,
   DollarDropIcon,
+  FleeingIcon,
 } from "../../../components/icons";
 import { FaRegFaceSmile } from "react-icons/fa6";
 import { LuThumbsUp } from "react-icons/lu";
@@ -168,5 +169,33 @@ export const stepspbx = [
     fontweight: "font-semibold",
     fontsize: "text-2xl",
     icon: 4,
+  },
+];
+
+export const badpbxexpData = [
+  {
+    title: "You’ve been forced to move to SaaS",
+    icon: (
+      <DollarDropIcon
+        fill="#9EAEB4"
+        className="text-5xl text-customColors-porcelain"
+      />
+    ),
+    content:
+      "so you don’t control product development, integration, or troubleshooting. You’re left to resell the same solutions as your competitors, locked out of the ability to offer popular new tools like CCaaS.",
+    bgcolor: "",
+  },
+  {
+    title: "Your PBX provider has been acquired",
+    icon: <EIcon className="text-5xl text-customColors-porcelain" />,
+    content:
+      "by a large corporation that is less worried about updates. That means you’re losing new sales as your system becomes more and more outdated.",
+    bgcolor: "",
+  },
+  {
+    title: "Your customers are fleeing",
+    icon: <FleeingIcon className="text-5xl text-customColors-porcelain" />,
+    content: "to new-age platforms such as WhatsApp, Slack, or MS Teams.",
+    bgcolor: "",
   },
 ];
