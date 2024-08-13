@@ -6,6 +6,9 @@ import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import { FaLaptop } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa6";
 import { ImMobile } from "react-icons/im";
+import { IoHappyOutline } from "react-icons/io5";
+import { MdOutlineSwitchAccessShortcutAdd } from "react-icons/md";
+import { TbDeviceMobileCog } from "react-icons/tb";
 import {
   CycleIcon,
   StarIcon,
@@ -267,7 +270,7 @@ const Softphone = () => {
               <div className="flex gap-4">
                 <div className="flex">
                   <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
-                    <FaLaptop className="text-5xl text-customColors-dovegray" />
+                    <TbDeviceMobileCog className="text-5xl text-customColors-hitgray" />
                   </div>
                 </div>
                 <div>
@@ -283,7 +286,7 @@ const Softphone = () => {
               <div className="flex gap-4">
                 <div className="flex">
                   <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
-                    <FaLaptop className="text-5xl text-customColors-dovegray" />
+                    <MdOutlineSwitchAccessShortcutAdd className="text-5xl text-customColors-hitgray" />
                   </div>
                 </div>
                 <div>
@@ -299,7 +302,7 @@ const Softphone = () => {
               <div className="flex gap-4">
                 <div className="flex">
                   <div className="h-[80px] w-[80px] bg-white rounded-full flex justify-center items-center">
-                    <FaLaptop className="text-5xl text-customColors-dovegray" />
+                    <IoHappyOutline className="text-5xl text-customColors-hitgray" />
                   </div>
                 </div>
                 <div>

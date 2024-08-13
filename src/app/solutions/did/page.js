@@ -1,4 +1,6 @@
-import React from "react";
+import Link from "next/link.js";
+import { Button } from "@/components/ui/button.jsx";
+import { FaAngleRight } from "react-icons/fa6";
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
 import { havingtroubles } from "../../../lib/data/diddata.jsx";
@@ -144,6 +146,19 @@ const Did = () => {
                 />
               );
             })}
+          </div>
+          <div>
+            <p className="mb-3 font-medium text-lg">
+              Ready to talk? Let’s arrange a demo via a personal call or online
+              presentation.
+            </p>
+
+            <Link href="#contact">
+              <Button className="w-auto font-semibold font-Open_sans uppercase">
+                contact us
+                <FaAngleRight className="ml-1 -mt-[1px] text-[12px] font-bold" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

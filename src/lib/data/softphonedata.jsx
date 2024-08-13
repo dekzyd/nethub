@@ -1,9 +1,11 @@
 import { FiThumbsUp } from "react-icons/fi";
 import { HiMiniPuzzlePiece } from "react-icons/hi2";
-import { BsShieldLock } from "react-icons/bs";
+import { BsShieldLock, BsClipboardData } from "react-icons/bs";
 import { IoBulbOutline } from "react-icons/io5";
+import { LuPackageOpen } from "react-icons/lu";
+import { FaRegHeart } from "react-icons/fa6";
+import { LiaPiggyBankSolid } from "react-icons/lia";
 import {
-  DiamondIcon,
   RocketIcon,
   SolutionIcon,
   HearSuperblyIcon,
@@ -72,35 +74,36 @@ export const disBstWay = [
 export const whynetPhone = [
   {
     title: "Simplify onboarding",
-    icon: <DiamondIcon fill="#9EAEB4" />,
+    icon: <BsClipboardData className="text-[#9EAEB4] text-5xl" />,
     content:
       "Easy sign-up for end-users (using QR code or SMS), full auto-provisioning afterwards.",
     bgcolor: "",
   },
   {
     title: "Stand out",
-    icon: <DiamondIcon fill="#9EAEB4" />,
+    icon: <FiThumbsUp className="text-[#9EAEB4] text-5xl" />,
     content:
       "Allow your brand, not ours, to be seen and heard with a white-label mobile app.",
     bgcolor: "",
   },
   {
     title: "Save money",
-    icon: <DiamondIcon fill="#9EAEB4" />,
+    icon: <LiaPiggyBankSolid className="text-[#9EAEB4] text-6xl" />,
     content:
       "Nethub’s unlimited perpetual license or SaaS subscription based on a single value-based metric: i.e. number of subscribers.",
     bgcolor: "",
   },
   {
     title: "No hidden costs",
-    icon: <DiamondIcon fill="#9EAEB4" />,
+    icon: <LuPackageOpen className="text-[#9EAEB4] text-5xl" />,
     content:
       "All features and modules included; new features available as a part of regular support & maintenance at no extra cost.",
     bgcolor: "",
   },
   {
     title: "Access industry-best support",
-    icon: <DiamondIcon fill="#9EAEB4" />,
+    // icon: <SolutionIcon fill="var(--hitgray)" />,
+    icon: <FaRegHeart className="text-[#9EAEB4] text-5xl" />,
     content: "count on the best tech support for peace of mind 24/7.",
     bgcolor: "",
   },
