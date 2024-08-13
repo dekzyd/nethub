@@ -13,7 +13,6 @@ import {
   RocketIcon,
   CrescentIcon,
   ScalabilityIcon,
-  MedalIcon,
   BricksIcon,
   SolutionIcon,
   AgileIcon,

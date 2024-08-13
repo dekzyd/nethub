@@ -6,14 +6,7 @@ import { RiSeedlingLine } from "react-icons/ri";
 import { GrDocumentPerformance } from "react-icons/gr";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { HiOutlineBuildingLibrary } from "react-icons/hi2";
-
-import {
-  RocketIcon,
-  DiamondIcon,
-  CrescentIcon,
-  RevenueIcon,
-  MedalIcon,
-} from "../../../components/icons";
+import { RocketIcon, CrescentIcon } from "../../../components/icons";
 
 export const disBstWay = [
   {

@@ -123,7 +123,7 @@ const Did = () => {
         </div>
       </section>
       {/* better way */}
-      <section className="py-16">
+      <section className="p-16">
         <div className="container">
           <h3 className="text-5xl text-primary font-semibold mb-6">
             Discover a better way
@@ -133,13 +133,14 @@ const Did = () => {
             telecom providers. With us you can:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-5 lg:gap-8 my-16">
-            {disBstWay.map(({ icon, title, content }) => {
+            {disBstWay.map(({ icon, title, content, bgcolor }) => {
               return (
                 <BizPerksCard
                   key={title}
                   title={title}
                   content={content}
                   icon={icon}
+                  bgcolor={bgcolor}
                 />
               );
             })}
@@ -147,9 +148,9 @@ const Did = () => {
         </div>
       </section>
       {/* whats in it  */}
-      <section className="py-16 bg-customColors-porcelain">
+      <section className="xl:p-20 lg:p-16 bg-customColors-porcelain">
         <div className="container">
-          <h3 className="text-5xl text-primary font-semibold mb-6">
+          <h3 className="text-5xl text-primary font-semibold my-6">
             What&apos;s in it for you?
           </h3>
           <p className="text-xl font-medium tracking-wide">
@@ -172,21 +173,17 @@ const Did = () => {
         </div>
       </section>
       {/* why nethub */}
-      <section className="py-16 bg-customColors-fiord">
+      <section className="xl:p-20 lg:p-16 bg-customColors-fiord">
         <div className="container text-white ">
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* written */}
             <div>
-              <h3 className="text-5xl font-semibold mb-8">
+              <h3 className="text-5xl font-semibold mb-10">
                 Why choose Nethub?
               </h3>
               <p className="text-xl font-medium tracking-wide">
                 What has made so many telecom providers join the community of
                 NetSwitch users when providing DID management provisioning?
-              </p>
-              <p className="text-xl font-medium tracking-wide">
-                Allow us to highlight how we differentiate ourselves from the
-                pack.
               </p>
             </div>
             {/* pic */}
@@ -202,7 +199,7 @@ const Did = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-5 lg:gap-8 my-16">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-5 lg:gap-8 mt-10">
             {whynethubdata.map(({ icon, title, content }) => {
               return (
                 <BizPerksCard
