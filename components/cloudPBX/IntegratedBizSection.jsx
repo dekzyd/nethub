@@ -44,13 +44,13 @@ export default function IntegratedBizSection() {
         </div>
         <div>
           <p className="mb-3 font-medium text-lg">
-            Make NetPhone part of your Cloud PBX platform and launch at minimal
-            costs to you.
+            Ready to talk? Let’s arrange a demo via a personal call or online
+            presentation.
           </p>
 
           <Link href="#contact">
             <Button className="w-auto font-semibold font-Open_sans uppercase">
-              more about our cloud pbx solution
+              contact us
               <FaAngleRight className="ml-1 -mt-[1px] text-[12px] font-bold" />
             </Button>
           </Link>

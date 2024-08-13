@@ -192,7 +192,7 @@ const Did = () => {
                 <Image
                   height={500}
                   width={500}
-                  src="/about2.jpeg"
+                  src="/whynethub2.jpg"
                   alt="image"
                   className="object-cover"
                 />
