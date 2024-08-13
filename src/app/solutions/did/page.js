@@ -11,6 +11,15 @@ import {
 } from "../../../lib/data/diddata.jsx";
 import Image from "next/image.js";
 
+{
+  /* meta data and title */
+}
+export const metadata = {
+  title: "DID Provisioning",
+  content:
+    "Resell inbound DIDs (local, toll-free, premium and international) to call centers, enterprises and residential customers. Manage DID inventory or use on-demand number acquisition to reduce costs",
+};
+
 const Did = () => {
   // Did Management solutions page breadcrumbs
   const crumbs = [
@@ -20,14 +29,6 @@ const Did = () => {
   ];
   return (
     <div>
-      {/* meta data and title */}
-      <head>
-        <title>DID Provisioning</title>
-        <meta
-          name="Nethub's DID Provisioning"
-          content="Resell inbound DIDs (local, toll-free, premium and international) to call centers, enterprises and residential customers. Manage DID inventory or use on-demand number acquisition to reduce costs"
-        />
-      </head>
       <PageHeader
         image="/did3.jpeg"
         title="Build a DID trading platform using NetSwitch"
@@ -98,14 +99,16 @@ const Did = () => {
               Having trouble managing your DID inventory?
             </p>
             <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              {havingtroubles.map(({ title, content }) => {
+              {havingtroubles.map(({ title, content, icon }) => {
                 return (
                   <BizPerksCard
                     key={title}
                     content={content}
+                    icon={icon}
                     title={title}
                     titlecolor="text-black"
                     contentcolor="text-black"
+                    hoverbgcolor="hover:bg-[#a0b0b5]"
                   />
                 );
               })}

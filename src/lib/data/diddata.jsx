@@ -1,23 +1,30 @@
-import { Hsas, Hc, Sds, RocketIcon } from "../../../components/icons";
+import { RocketIcon } from "../../../components/icons";
+import { FaRegFaceAngry } from "react-icons/fa6";
 
 export const havingtroubles = [
   {
     title: "Lost profits",
-    // icon: <Sds fill="#9EAEB4" />,
+    icon: (
+      <FaRegFaceAngry className="text-[#a0b0b5] text-6xl hover:text-white" />
+    ),
     content:
       "Are you losing money from unused DID numbers that are just sitting there collecting dust?",
     bgcolor: "",
   },
   {
     title: "Demand for capacity",
-    // icon: <Sds fill="#9EAEB4" />,
+    icon: (
+      <FaRegFaceAngry className="text-[#a0b0b5] text-6xl hover:text-white" />
+    ),
     content:
       "Do your customers need numbers from multiple countries and you have no administrative capacity to procure those?",
     bgcolor: "",
   },
   {
     title: "Lack of automation",
-    // icon: <Sds fill="#9EAEB4" />,
+    icon: (
+      <FaRegFaceAngry className="text-[#a0b0b5] text-6xl hover:text-white" />
+    ),
     content:
       "Are you employees working in multiple systems and wasting time on mundane tasks that could be easily automated or done by the end user themselves?",
     bgcolor: "",
