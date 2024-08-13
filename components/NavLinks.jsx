@@ -120,7 +120,7 @@ const ListItem = React.forwardRef((props, ref) => {
             </div>
           )}
           <div className="flex flex-col gap-1">
-            <div className="text-sm text-customColors-fiord uppercase font-semibold tracking-wide leading-none ">
+            <div className="text-sm font-ubuntu text-customColors-fiord uppercase font-semibold tracking-widest leading-none ">
               {title}
             </div>
             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">

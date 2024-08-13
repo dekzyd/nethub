@@ -8,6 +8,16 @@ import HotTopics from "../../../components/HotTopics";
 import Misc from "../../../components/Misc";
 import FeedbackSlider from "../../../components/FeedbackSlider";
 import { UniqueMktData } from "@/lib/data/aboutData";
+import Image from "next/image";
+
+{
+  /* meta data and title */
+}
+export const metadata = {
+  title: "Nethub Company",
+  description:
+    "Nethub is a global telecommunication software platform developer",
+};
 
 const About = () => {
   // about page breadcrumbs links
@@ -18,20 +28,13 @@ const About = () => {
 
   return (
     <div>
-      {/* meta data and title */}
-      <head>
-        <title>Nethub Company</title>
-        <meta
-          name="Nethub Company"
-          content="Nethub is a global telecommunication software platform developer"
-        />
-      </head>
       <PageHeader
         image="/about3.jpg"
         title="Nethub at a glance"
         pre_title="company overview"
         height="h-[550px]"
         icon={<SearchlightIcon />}
+        pretitlefontsize="text-xl"
       />
       <Divider fill="#fff" />
       {/* About page contents */}
@@ -79,8 +82,34 @@ const About = () => {
           </div>
         </div>
         {/* media */}
-        <div className="bg-slate-200 flex justify-center items-center p-5">
-          Media
+        <div className="bg-slate-200 grid grid-cols-2 xl:grid-cols-3 gap-2 p-5">
+          <div className="bg-red-200 flex">
+            <Image src="/about.jpg" alt="test image" width={500} height={500} />
+          </div>
+          <div className="bg-red-200 flex">
+            <Image src="/about.jpg" alt="test image" width={500} height={500} />
+          </div>
+          <div className="bg-red-200 flex">
+            <Image src="/about.jpg" alt="test image" width={500} height={500} />
+          </div>
+          <div className="bg-red-200 flex">
+            <Image src="/about.jpg" alt="test image" width={500} height={500} />
+          </div>
+          <div className="bg-red-200 flex">
+            <Image src="/about.jpg" alt="test image" width={500} height={500} />
+          </div>
+          <div className="bg-red-200 flex">
+            <Image src="/about.jpg" alt="test image" width={500} height={500} />
+          </div>
+          <div className="bg-red-200 flex">
+            <Image src="/about.jpg" alt="test image" width={500} height={500} />
+          </div>
+          <div className="bg-red-200 flex">
+            <Image src="/about.jpg" alt="test image" width={500} height={500} />
+          </div>
+          <div className="bg-red-200 flex">
+            <Image src="/about.jpg" alt="test image" width={500} height={500} />
+          </div>
         </div>
       </section>
       <Divider fill="#F0F2F3" />

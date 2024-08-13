@@ -3,7 +3,6 @@ import Image from "next/image.js";
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
 import BizPerksCard from "../../../../components/BizPerksCard.jsx";
-import { FaLaptop } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa6";
 import { ImMobile } from "react-icons/im";
 import { IoHappyOutline } from "react-icons/io5";
@@ -22,6 +21,15 @@ import {
 import { Button } from "@/components/ui/button.jsx";
 import Link from "next/link.js";
 
+{
+  /* meta data and title */
+}
+export const metadata = {
+  title: "Softphone Solution",
+  description:
+    "Offer new-generation UCaaS using a white-label softphone app for any device via WebRTC",
+};
+
 const Softphone = () => {
   // softphone solutions page breadcrumbs
   const crumbs = [
@@ -29,16 +37,9 @@ const Softphone = () => {
     { title: "solutions", href: "/solutions" },
     { title: "Softphone", href: "#" },
   ];
+
   return (
     <div>
-      {/* meta data and title */}
-      <head>
-        <title>Softphone Solution</title>
-        <meta
-          name="Nethub's Softphone"
-          content="Offer new-generation UCaaS using a white-label softphone app for any device via WebRTC"
-        />
-      </head>
       <PageHeader
         image="/softphone2.jpg"
         title="Cloud Softphone Solution with NetPhone Web & Mobile Apps"

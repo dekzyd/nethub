@@ -9,6 +9,15 @@ import { RiVoiceprintLine } from "react-icons/ri";
 import { FiSmartphone } from "react-icons/fi";
 import { TbCloudCog } from "react-icons/tb";
 
+{
+  /* meta data and title */
+}
+export const metadata = {
+  title: "Telecom Solutions",
+  description:
+    "Start earning faster with solutions for modern telcos that are flexible, easily integrated, and fit your budget",
+};
+
 export default function Solutions() {
   // Did Management solutions page breadcrumbs
   const crumbs = [
@@ -17,14 +26,6 @@ export default function Solutions() {
   ];
   return (
     <div>
-      {/* meta data and title */}
-      <head>
-        <title>Telecom Solutions</title>
-        <meta
-          name="Nethub Telecom Solutions"
-          content="Start earning faster with solutions for modern telcos that are flexible, easily integrated, and fit your budget"
-        />
-      </head>
       <PageHeader
         image="/about.jpg"
         title="Nethub Telecom Solutions"

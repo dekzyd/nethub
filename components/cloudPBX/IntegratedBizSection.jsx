@@ -4,6 +4,7 @@ import BizPerksCard from "../BizPerksCard.jsx";
 import { bizsoldata } from "../../src/lib/data/cloudpbxdata.jsx";
 import { Button } from "@/components/ui/button.jsx";
 import Link from "next/link.js";
+import Image from "next/image.js";
 
 export default function IntegratedBizSection() {
   return (
@@ -25,12 +26,25 @@ export default function IntegratedBizSection() {
               </p>
             </div>
           </div>
-          <div className="font-bold md:flex gap-5 items-center justify-center hidden ml-14">
-            <div className="bg-customColors-loblolly/85 p-12 rounded-full grid">
-              <FiPhoneCall className=" md:text-[200px] text-white -scale-x-100" />
-              {/* <CollectionIcons fill="#9EAEB4" /> */}
+          <div className="grid place-content-center">
+            <div className="w-full flex">
+              <div className="w-72 h-72 overflow-hidden rounded-full flex">
+                <Image
+                  height={500}
+                  width={500}
+                  src="/callcenter.webp"
+                  alt="image"
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
+          {/* Phone Icon */}
+          {/* <div className="font-bold md:flex gap-5 items-center justify-center hidden ml-14">
+            <div className="bg-customColors-loblolly/85 p-12 rounded-full grid">
+              <FiPhoneCall className=" md:text-[200px] text-white -scale-x-100" />
+            </div>
+          </div> */}
         </div>
         {/* voice perks */}
         <div className="my-14 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
