@@ -117,6 +117,7 @@ const About = () => {
         pretitle="what makes Nethub unique"
         title="Here’s why telcos around the world choose our products and
               services to help them succeed"
+        textCol="text-customColors-fiord"
         perks={UniqueMktData}
       />
       {/* partner */}

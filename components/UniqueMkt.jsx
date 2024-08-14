@@ -56,8 +56,8 @@ const UniqueMkt = ({
               <div className="w-full flex">
                 <div className="w-72 h-72 overflow-hidden rounded-full flex">
                   <Image
-                    height={600}
-                    width={600}
+                    height={500}
+                    width={500}
                     src={image}
                     alt="image"
                     className="object-cover"
