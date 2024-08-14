@@ -3,28 +3,28 @@ import { FaStar } from "react-icons/fa6";
 
 const Mission = () => {
   return (
-    <div className="bg-customColors-porcelain md:h-[666px] pt-12 pb-14">
-      <div className="bg-red-20 container">
+    <div className="bg-customColors-porcelain md:h-[666px] py-12">
+      <div className="md:flex flex-col h-full container justify-between">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-9">
           <div className="p-5">
             <p className="pre-title mb-7">the nethub mission</p>
-            <h2 className="text-primary text-6xl font-semibold -tracking-[0.8px] leading-[70.2px]">
+            <h2 className="text-primary md:text-6xl text-4xl font-semibold -tracking-[0.8px] md:leading-[70.2px]">
               Help telcos connect people
             </h2>
           </div>
-          <div className="pt-5">
-            <p className="text-customColors-fiord pb-6 text-[33px] tracking-wide leading-[40.5px]">
+          <div className="p-5">
+            <p className="text-customColors-fiord pb-6 md:text-[33px] text-lg tracking-wide md:leading-[40.5px]">
               We empower the telecom community to provide reliable and
               easy-to-use services to everyone.
             </p>
-            <p className="text-customColors-dune text-xl tracking-normal leading-[31.5px] font-normal ">
+            <p className="text-customColors-dune md:text-xl text-lg tracking-normal md:leading-[31.5px] font-normal ">
               Nethub supplies integrated and flexible BSS, OCS, and softswitch
               solutions for telcos to help them easily compete and succeed.
             </p>
           </div>
         </div>
 
-        <div className="lg:mt-20">
+        <div className="mt-14">
           <p className="text-center py-5 text-customColors-hitgray text-2xl">
             Trusted by telecommunication service providers around the globe.
           </p>

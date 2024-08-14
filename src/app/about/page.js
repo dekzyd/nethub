@@ -82,33 +82,87 @@ const About = () => {
           </div>
         </div>
         {/* media */}
-        <div className="bg-slate-200 grid grid-cols-2 xl:grid-cols-3 gap-2 p-5">
+        <div className="grid grid-cols-2 xl:grid-cols-3 gap-2 p-5">
           <div className="bg-red-200 flex">
-            <Image src="/about.jpg" alt="test image" width={500} height={500} />
+            <Image
+              src="/about.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
           </div>
           <div className="bg-red-200 flex">
-            <Image src="/about.jpg" alt="test image" width={500} height={500} />
-          </div>
+            <Image
+              src="/about3.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
           <div className="bg-red-200 flex">
-            <Image src="/about.jpg" alt="test image" width={500} height={500} />
-          </div>
+            <Image
+              src="/call-center.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
           <div className="bg-red-200 flex">
-            <Image src="/about.jpg" alt="test image" width={500} height={500} />
-          </div>
+            <Image
+              src="/about2.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
           <div className="bg-red-200 flex">
-            <Image src="/about.jpg" alt="test image" width={500} height={500} />
-          </div>
+            <Image
+              src="/about.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
           <div className="bg-red-200 flex">
-            <Image src="/about.jpg" alt="test image" width={500} height={500} />
-          </div>
+            <Image
+              src="/journey3f.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
           <div className="bg-red-200 flex">
-            <Image src="/about.jpg" alt="test image" width={500} height={500} />
-          </div>
+            <Image
+              src="/about.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
           <div className="bg-red-200 flex">
-            <Image src="/about.jpg" alt="test image" width={500} height={500} />
-          </div>
+            <Image
+              src="/journey2.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
           <div className="bg-red-200 flex">
-            <Image src="/about.jpg" alt="test image" width={500} height={500} />
+            <Image
+              src="/mvno.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
           </div>
         </div>
       </section>

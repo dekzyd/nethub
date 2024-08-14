@@ -13,7 +13,7 @@ import {
 
 const Footer = () => {
   return (
-    <section id="footer">
+    <section id="footer" className="scroll-mt-[70px]">
       <div
         id="contact"
         // use scroll margin to fix content margin in viewport during scroll.
