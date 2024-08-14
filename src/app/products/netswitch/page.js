@@ -8,17 +8,18 @@ import {
   FavoritePerks,
 } from "@/lib/data/products/netswitchData.jsx";
 
+{
+  /* meta data and title */
+}
+export const metadata = {
+  title: "Netswitch",
+  description:
+    "A Unified Service Management & Delivery Platform for voice, messaging, IoT/M2M, and data traffic within a single converged network.",
+};
+
 const Netswitch = () => {
   return (
     <>
-      {/* meta data and title */}
-      <head>
-        <title>Netswitch</title>
-        <meta
-          name="Nethub's NetSwitch"
-          content="A Unified Service Management & Delivery Platform for voice, messaging, IoT/M2M, and data traffic within a single converged network."
-        />
-      </head>
       {/* HEADER */}
       <ProductsHeader
         image="/netswitch.jpg"

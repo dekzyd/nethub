@@ -65,6 +65,7 @@ module.exports = {
           cuttysark: "#5b7884",
           dovegray: "#737373",
           porcelain: "#F0F2F3",
+          alterblue: "#7dabcb",
         },
       },
       borderRadius: {

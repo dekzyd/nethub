@@ -9,7 +9,7 @@ const Divider = ({ fill, flip }) => {
       }}
     >
       <svg
-        className="w-full h-4"
+        className="w-full h-5"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1000 100"
         preserveAspectRatio="none"

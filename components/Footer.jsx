@@ -14,7 +14,11 @@ import {
 const Footer = () => {
   return (
     <section id="footer">
-      <div id="contact" className="bg-customColors-fiord pt-[70px]">
+      <div
+        id="contact"
+        // use scroll margin to fix content margin in viewport during scroll.
+        className="bg-customColors-fiord pt-[70px] scroll-mt-[70px]"
+      >
         <div className="md:container">
           {/* contact form */}
           <div className="h-full md:mx-4 grid sm:grid-cols-1 md:grid-cols-2">
