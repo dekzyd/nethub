@@ -1,11 +1,15 @@
 import React from "react";
 import { FaThLarge } from "react-icons/fa";
 
-const Logo = ({ section }) => {
+const Logo = ({ section, animation }) => {
   return (
     <div
-      className={`bottomftr flex justify-end items-center gap-2 hover:scale-90 font-Open_sans transition-transform ease-in-out duration-500 tracking-tight ${
-        section == "footer" ? "text-white" : ""
+      className={`flex items-center gap-2  ${
+        animation
+          ? "hover:scale-90 transition-transform ease-in-out duration-500"
+          : ""
+      } font-Open_sans  tracking-tight ${
+        section == "footer" ? "text-white justify-end bottomftr" : ""
       } font-bold`}
     >
       <span className="text-3xl text-white bg-primary h-14 w-14 flex justify-center items-center rounded-full">

@@ -251,9 +251,11 @@ const Footer = () => {
           <div id="bottom footer" className="pt-5 pb-20">
             <div className="h-full container flex flex-wrap justify-center items-center">
               {/* logo */}
-              <Logo section="footer" />
+              <div className="mr-4">
+                <Logo section="footer" />
+              </div>
               {/* address */}
-              <div className="bottomftr text-customColors-loblolly/85 flex flex-col sm:items-center">
+              <div className="bottomftr text-customColors-loblolly/85 flex flex-col">
                 <p className="font-semibold">Nethub Tech</p>
                 <p>A113 - 2009 lougheed hwy</p>
                 <p>port, BV VBC Abuja, Nigeria</p>

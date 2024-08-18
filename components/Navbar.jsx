@@ -15,7 +15,7 @@ const Navbar = () => {
           {/* logo */}
           <Link href="/" className="relative top-1">
             <div id="logo">
-              <Logo />
+              <Logo animation />
             </div>
           </Link>
           {/* links */}
