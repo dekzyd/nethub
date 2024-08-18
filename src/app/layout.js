@@ -5,6 +5,7 @@ import { ThemeModeScript } from "flowbite-react";
 import { Slide, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AppProvider } from "../../components/Context";
+import SideMenu from "../../components/SideMenu";
 
 export const metadata = {
   title: "Nethub",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
               transition={Slide}
               hideProgressBar={true}
             />
+            <SideMenu />
             <Navbar />
             {children}
             <Footer />

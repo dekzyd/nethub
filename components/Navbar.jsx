@@ -7,7 +7,7 @@ import Logo from "./Logo";
 import { useGlobalContext } from "./Context";
 
 const Navbar = () => {
-  const { isSidebarOpen } = useGlobalContext();
+  const { isSidebarOpen, openSidebar } = useGlobalContext();
   return (
     <nav className="w-full sticky top-0 bg-white z-20 drop-shadow-lg">
       <div className="w-full h-16 flex">
@@ -24,7 +24,10 @@ const Navbar = () => {
           </ul>
           {/* dropdown icon */}
           <div className="md:hidden flex justify-end basis-3/4">
-            <TiThMenu className="text-2xl text-customColors-dovegray relative top-[6px] hover:text-primary" />
+            <TiThMenu
+              className="text-2xl text-customColors-dovegray relative top-[6px] hover:text-primary"
+              onClick={openSidebar}
+            />
           </div>
         </div>
       </div>
