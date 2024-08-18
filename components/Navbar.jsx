@@ -15,11 +15,11 @@ const Navbar = () => {
             </div>
           </Link>
           {/* links */}
-          <ul className="hidden lg:flex justify-end mt-2">
+          <ul className="hidden md:flex justify-end mt-2">
             <NavigationMenuDemo className="" />
           </ul>
           {/* dropdown icon */}
-          <div className="lg:hidden flex justify-end basis-3/4">dropdown</div>
+          <div className="md:hidden flex justify-end basis-3/4">dropdown</div>
         </div>
       </div>
       {/* element divider */}
