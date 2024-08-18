@@ -25,7 +25,7 @@ const Navbar = () => {
           {/* dropdown icon */}
           <div className="md:hidden flex justify-end basis-3/4">
             <TiThMenu
-              className="text-2xl text-customColors-dovegray relative top-[6px] hover:text-primary"
+              className="text-2xl cursor-pointer text-customColors-dovegray relative top-[6px] hover:text-primary"
               onClick={openSidebar}
             />
           </div>
