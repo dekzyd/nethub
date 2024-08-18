@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import { ThemeModeScript } from "flowbite-react";
 import { Slide, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AppProvider } from "../../components/Context";
 
 export const metadata = {
   title: "Nethub",
@@ -22,15 +23,17 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <main className="">
-          <ToastContainer
-            autoClose={2500}
-            transition={Slide}
-            hideProgressBar={true}
-          />
-          <Navbar />
-          {children}
-          <Footer />
-          <div className="w-full max-w-[1140px] bg-slate-700 my-0 mx-auto"></div>
+          <AppProvider>
+            <ToastContainer
+              autoClose={2500}
+              transition={Slide}
+              hideProgressBar={true}
+            />
+            <Navbar />
+            {children}
+            <Footer />
+            <div className="w-full max-w-[1140px] bg-slate-700 my-0 mx-auto"></div>
+          </AppProvider>
         </main>
       </body>
     </html>
