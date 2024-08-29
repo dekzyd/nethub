@@ -26,7 +26,7 @@ const Talkwithus = () => {
           <div className="h-[300px]">
             <Link href="">
               <Carousel
-                className=""
+                className="hidden md:grid"
                 // slide={false}
                 slideInterval={5000}
               >
@@ -38,7 +38,9 @@ const Talkwithus = () => {
                       className="grid place-content-center bg-cover bg-no-repeat bg-center w-full bg-red-100 h-full p-[50px]"
                     >
                       <div className="">
-                        <p className="text-[24px] tracking-wide">{content}</p>
+                        <p className="text-base md:text-[24px] tracking-wide">
+                          {content}
+                        </p>
                       </div>
                     </div>
                   );
