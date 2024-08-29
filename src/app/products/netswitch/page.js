@@ -39,11 +39,11 @@ const Netswitch = () => {
       {/* MOST TELCOS */}
       <MostTelcos />
       {/* DISCOVER A BETTER WAY */}
-      <Divider fill="#F0F2F3" />
+      <Divider fill="#F0F2F3" flip />
       <UniqueMkt
         title="Discover a better way"
         perks={BetterPerks}
-        image="/about3.jpg"
+        image="/goodcheck.png"
         descCol="text-customColors-fiord"
         flip
         titlesize="text-[40px]"
@@ -60,7 +60,7 @@ const Netswitch = () => {
         title="What makes NetSwitch a favorite in telecom circles?"
         bgCol="bg-customColors-fiord"
         perks={FavoritePerks}
-        image="/about3.jpg"
+        image="/whynethub.jpg"
         IconBg="bg-customColors-fiord"
         titlesize="text-[40px]"
         UniqTitleColor="text-primary"

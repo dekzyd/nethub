@@ -39,7 +39,7 @@ const Did = () => {
         }
         btntxt="contact us"
         description="Resell inbound DIDs (local, toll-free, premium and international) to call centers, enterprises and residential customers. Manage DID inventory or use on-demand number acquisition to reduce costs."
-        height=""
+        height="h-[550px]"
       />
       {/* DID mgmt solutions content */}
       <section className="bg-customColors-porcelain pt-10 pb-10 ">

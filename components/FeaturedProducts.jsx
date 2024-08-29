@@ -10,7 +10,7 @@ const FeaturedProducts = () => {
     .concat(solutions)
     .filter((service) => service.featured);
   return (
-    <div className="bg-customColors-porcelain">
+    <div className="bg-customColors-fiord">
       <div className="container pt-20 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 h-[444px] ">
           <div className="grid place-content-center gap-5">
@@ -19,7 +19,7 @@ const FeaturedProducts = () => {
                 return <FaStar key={index} className="text-3xl" />;
               })}
             </div>
-            <p className="text-2xl text-customColors-dovegray">
+            <p className="text-2xl text-customColors-hitgray">
               <span className="text-3xl">N</span>ethub&apos;s featured products
               and solutions
             </p>
@@ -39,10 +39,10 @@ const FeaturedProducts = () => {
                       <div className="grid h-full content-center gap-2 grid-cols-1 md:grid-cols-3 dark:bg-gray-700 dark:text-white">
                         <div className="gap-5 col-span-2 p-5">
                           <div className="flex flex-col gap-5 ">
-                            <h3 className="text-5xl font-bold hover:text-customColors-dovegray">
+                            <h3 className="text-5xl font-bold text-white hover:text-primary/80">
                               {title}
                             </h3>
-                            <p className="text-customColors-dovegray text-2xl">
+                            <p className="text-customColors-hitgray text-2xl">
                               {description}
                             </p>
                           </div>

@@ -38,7 +38,7 @@ const About = () => {
       />
       <Divider fill="#fff" />
       {/* About page contents */}
-      <section className="container pt-16 pb-10 grid sm:grid-cols-1 md:grid-cols-2">
+      <section className="container pt-8 2xl:pt-16 pb-10 grid sm:grid-cols-1 md:grid-cols-2">
         {/* write up */}
         <div className="flex flex-col gap-7 p-5">
           <Breadcrumbs crumbs={aboutcrumbs} />

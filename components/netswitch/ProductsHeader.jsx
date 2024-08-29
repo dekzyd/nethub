@@ -68,7 +68,7 @@ export default function ProductsHeader({
           className={`absolute z-10 bottom-0 w-full`}
         >
           <svg
-            className="w-full h-4 bg-transparent"
+            className="w-full h-2 xl:h-5 bg-transparent"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1000 100"
             preserveAspectRatio="none"

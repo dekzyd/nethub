@@ -6,6 +6,13 @@ import Link from "next/link";
 import { abouts, products, solutions } from "@/lib/data/NavLinksData";
 import Logo from "./Logo";
 
+const customTheme = {
+  button: {
+    label:
+      "ml-2 inline-flex h-4 w-4 items-center justify-center rounded-full bg-red-200 text-xs font-semibold text-cyan-800",
+  },
+};
+
 export default function SideMenu() {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
 
@@ -28,7 +35,7 @@ export default function SideMenu() {
         <Logo />
       </div>
       {/* solutions */}
-      <Dropdown label="Solutions" placement="right-start">
+      <Dropdown label="Solutions" placement="right-start" theme={customTheme}>
         {solutions.map((item) => {
           const { title, href, icon } = item;
           return (

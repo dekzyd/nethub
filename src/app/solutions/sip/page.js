@@ -8,6 +8,15 @@ import { FaChevronRight } from "react-icons/fa6";
 import { MdDialerSip } from "react-icons/md";
 import Link from "next/link.js";
 
+{
+  /* meta data and title */
+}
+export const metadata = {
+  title: "SIP Trunking",
+  description:
+    "Offer enterprise PBX and call center connectivity, resell phone numbers (DID), protect yourself and users with anti-fraud tools, and implement custom scenarios via a programmable voice API, all via NetSwitch.",
+};
+
 const Sip = () => {
   // SIP solutions page breadcrumbs
   const crumbs = [
@@ -17,14 +26,6 @@ const Sip = () => {
   ];
   return (
     <div>
-      {/* meta data and title */}
-      <head>
-        <title>SIP Trunking</title>
-        <meta
-          name="Nethub's NetSwitch for SIP Trunking Providers"
-          content="Offer enterprise PBX and call center connectivity, resell phone numbers (DID), protect yourself and users with anti-fraud tools, and implement custom scenarios via a programmable voice API, all via NetSwitch."
-        />
-      </head>
       <PageHeader
         image="/sip.jpg"
         title="NetSwitch for SIP Trunking Providers"

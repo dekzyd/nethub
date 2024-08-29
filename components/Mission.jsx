@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa6";
 
 const Mission = () => {
   return (
-    <div className="bg-customColors-porcelain md:h-[666px] py-12">
+    <div className="bg-customColors-porcelain py-12">
       <div className="md:flex flex-col h-full container justify-between">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-9">
           <div className="p-5">
