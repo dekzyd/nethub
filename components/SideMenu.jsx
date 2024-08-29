@@ -19,7 +19,7 @@ export default function SideMenu() {
   //   show sidemenu if sidebaropen is true
   return (
     <div
-      className={`flex flex-col gap-y-4 h-screen w-screen fixed top-0 left-0 z-50 bg-slate-200 ${
+      className={`flex flex-col gap-y-4 h-screen w-screen fixed top-0 left-0 z-50 bg-slate-200/95 ${
         isSidebarOpen ? "block" : "hidden"
       } p-4`}
     >
