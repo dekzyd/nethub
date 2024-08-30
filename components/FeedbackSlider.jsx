@@ -36,7 +36,7 @@ const FeedbackSlider = ({ flip }) => {
                     } p-5 rounded-3xl max-h-[400px] border border-gray-200`}
                   >
                     <div className="flex flex-col items-start md:p-5 gap-4 justify-stretch">
-                      <div className="bg-red-200 h-36 w-36 rounded-full flex overflow-hidden">
+                      <div className="h-24 w-24 lg:h-36 lg:w-36 rounded-full flex overflow-hidden">
                         <Image
                           src={logo}
                           width={200}
