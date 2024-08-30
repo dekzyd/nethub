@@ -6,10 +6,10 @@ import { talkWithUsData } from "@/lib/data/talkWithUsData";
 
 const Talkwithus = () => {
   return (
-    <div className="bg-customColors-porce">
-      <div className="container h-[478px] py-20">
+    <div className="">
+      <div className="container lg:h-[478px] py-5 md:py-10 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2 place-content-center">
-          <div className="p-5 h-full">
+          <div className="p-5 lg:h-full">
             <div className="flex flex-col gap-5">
               <h3 className="text-primary text-3xl md:text-4xl lg:text-[50px] font-semibold">
                 Talk with us
@@ -23,10 +23,10 @@ const Talkwithus = () => {
               <Link href="#footer">contact us</Link>
             </Button>
           </div>
-          <div className="h-[300px]">
+          <div className="hidden md:block md:h-[300px]">
             <Link href="">
               <Carousel
-                className="hidden md:grid"
+                className="grid"
                 // slide={false}
                 slideInterval={5000}
               >
