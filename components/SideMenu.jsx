@@ -40,7 +40,9 @@ export default function SideMenu() {
           const { title, href, icon } = item;
           return (
             <Dropdown.Item key={title}>
-              <Link href={href}>{title}</Link>
+              <Link href={href} onClick={closeSidebar}>
+                {title}
+              </Link>
             </Dropdown.Item>
           );
         })}
@@ -51,7 +53,9 @@ export default function SideMenu() {
           const { title, href, icon } = item;
           return (
             <Dropdown.Item key={title}>
-              <Link href={href}>{title}</Link>
+              <Link href={href} onClick={closeSidebar}>
+                {title}
+              </Link>
             </Dropdown.Item>
           );
         })}
@@ -62,7 +66,9 @@ export default function SideMenu() {
           const { title, href, icon } = item;
           return (
             <Dropdown.Item key={title}>
-              <Link href={href}>{title}</Link>
+              <Link href={href} onClick={closeSidebar}>
+                {title}
+              </Link>
             </Dropdown.Item>
           );
         })}

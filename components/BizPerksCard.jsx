@@ -43,7 +43,7 @@ const BizPerksCard = ({
         </p>
         {link && (
           <Link href={link}>
-            <p className="text-primary text-sm font-semibold uppercase py-3">
+            <p className="text-primary text-sm hover:text-customColors-hitgray font-semibold uppercase py-3">
               Read more...
             </p>
           </Link>

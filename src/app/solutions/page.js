@@ -1,7 +1,7 @@
 import Breadcrumbs from "../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../components/PageHeader.jsx";
 import BizPerksCard from "../../../components/BizPerksCard.jsx";
-// import { Hsas, Hc, Sds, Rnr } from "../../../components/icons";
+import { solutions } from "@/lib/data/NavLinksData";
 import { FaGears } from "react-icons/fa6";
 import { MdOutlineNetworkCheck, MdDialerSip } from "react-icons/md";
 import { IoKeypad } from "react-icons/io5";
@@ -42,7 +42,22 @@ export default function Solutions() {
         <div className="container">
           <Breadcrumbs crumbs={crumbs} />
           <div className="min-h-56 py-8 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8">
-            <BizPerksCard
+            {solutions.map((solution) => {
+              const { title, href, description, icon } = solution;
+              return (
+                <BizPerksCard
+                  key={title}
+                  icon={icon}
+                  title={title}
+                  bgcolor={"bg-customColors-hitgray"}
+                  txtcolor={"text-white"}
+                  fontsize={"text-5xl"}
+                  content={description}
+                  link={href}
+                />
+              );
+            })}
+            {/* <BizPerksCard
               icon={
                 <MdOutlineNetworkCheck className="text-customColors-porcelain text-5xl" />
               }
@@ -95,7 +110,7 @@ export default function Solutions() {
               title="Cloud PBX & Call Center"
               content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
               link="/solutions/cloudpbx"
-            />
+            /> */}
           </div>
         </div>
       </section>

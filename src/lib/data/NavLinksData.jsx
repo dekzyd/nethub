@@ -85,6 +85,7 @@ export const products = [
   {
     title: "NetcoHub",
     href: "#",
+    bgcol: "bg-customColors-ecstacy",
     description: "Cloud-based integration platform as a service for telcos",
     icon: <TbCloudNetwork />,
   },
