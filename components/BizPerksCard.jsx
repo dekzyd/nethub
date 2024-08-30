@@ -16,7 +16,7 @@ const BizPerksCard = ({
   txtcolor,
 }) => {
   return (
-    <div className="p-5">
+    <div className="md:p-3 lg:p-5">
       <div
         className={`${bgcolor ? bgcolor : "bg-white"} ${
           hoverbgcolor ? hoverbgcolor : ""
@@ -37,7 +37,9 @@ const BizPerksCard = ({
         <p
           className={`${
             contentcolor ? contentcolor : "text-customColors-dovegray"
-          } ${contentsize ? contentsize : "text-lg"} max-w-[300px]`}
+          } ${
+            contentsize ? contentsize : "text-base lg:text-lg"
+          } max-w-[300px]`}
         >
           {content}
         </p>
