@@ -32,7 +32,6 @@ const CloudPbxandCallCenter = () => {
         title="Cloud PBX / Hosted PBX platform and Cloud Call Center with Netswitch"
         btntxt="contact us"
         description="Deliver a business communication environment to your SMB and enterprise customers with NetSwitch voice, video, CCaaS, CRM integrations, and more."
-        height="h-[600px]"
       />
       {/* in todays pbx mkt */}
       <section className="bg-customColors-porcelain pt-10 pb-10 min-h-96">
@@ -69,7 +68,7 @@ const CloudPbxandCallCenter = () => {
       {/* why choose nethub */}
       <WhyNethubSection />
       {/* steps to managing cloudpbx */}
-      <section className="min-h-56 py-16">
+      <section className="py-16">
         <div className="container">
           <h3 className="text-primary text-3xl font-semibold mb-8">
             4 steps to managing your cloud PBX – from idea to earnings

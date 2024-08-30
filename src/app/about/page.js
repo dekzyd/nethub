@@ -21,10 +21,7 @@ export const metadata = {
 
 const About = () => {
   // about page breadcrumbs links
-  const aboutcrumbs = [
-    { title: "home", href: "/" },
-    { title: "about", href: "/about" },
-  ];
+  const aboutcrumbs = [{ title: "home", href: "/" }, { title: "about" }];
 
   return (
     <div>
@@ -61,21 +58,21 @@ const About = () => {
             <div className="flex justify-between font-bold text-lg pb-3">
               <p>Founded</p>
               <p className="font-light text-customColors-dovegray/40">
-                -----------------------------
+                --------
               </p>
-              <p>2001</p>
+              <p>2013</p>
             </div>
             <div className="flex justify-between font-bold text-lg pb-3">
               <p>Headquaters</p>
               <p className="font-light text-customColors-dovegray/40">
-                -----------------------
+                --------
               </p>
-              <p>Abuja, Nigeria</p>
+              <p>Abuja, Ng</p>
             </div>
             <div className="flex justify-between font-bold text-lg pb-3">
               <p>Employees</p>
               <p className="font-light text-customColors-dovegray/40">
-                -----------------------------
+                --------
               </p>
               <p>250+</p>
             </div>

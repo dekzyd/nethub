@@ -15,7 +15,7 @@ export default function CloudPageHeader({
   return (
     <section
       className={`w-full ${
-        height ? height : "h-[600px]"
+        height ? height : "h-[400px] md:h-[600px]"
       } bg-cover bg-bottom bg-no-repeat`}
       style={{ backgroundImage: `url(${image})` }}
     >
@@ -34,7 +34,7 @@ export default function CloudPageHeader({
                 </h4>
               )}
               <h3
-                className={`text-white sm:text-[36px] lg:text-[38px]  ${
+                className={`text-white text-[20px] md:text-[38px]  ${
                   fontsize ? fontsize : "xl:text-[48px]"
                 } font-bold tracking-[-0.8px]  xl:leading-[64.8px]`}
               >
