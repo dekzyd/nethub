@@ -11,7 +11,7 @@ import WhyNethubSection from "../../../../components/cloudPBX/WhyNethubSection.j
 const crumbs = [
   { title: "home", href: "/" },
   { title: "solutions", href: "/solutions" },
-  { title: "Cloud PBX & Call Center", href: "#" },
+  { title: "Cloud PBX & Call Center" },
 ];
 
 {
@@ -46,7 +46,7 @@ const CloudPbxandCallCenter = () => {
       {/* unbeatable features */}
       <section className="bg-customColors-porcelain py-20 min-h-96">
         <div className="container">
-          <h3 className="text-customColors-fiord text-5xl font-semibold">
+          <h3 className="text-customColors-fiord text-3xl md:text-5xl font-semibold">
             Unbeatable features
           </h3>
           <div className="my-12 grid lg:grid-cols-5 md:grid-cols-2 sm:grid-cols-1">

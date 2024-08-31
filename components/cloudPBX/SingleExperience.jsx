@@ -8,7 +8,7 @@ export default function SingleExperience({ icon, title, content }) {
       </div>
       <div className="font-Open_sans">
         <h3 className="text-xl font-semibold mb-1">{title}</h3>
-        <p className="text-customColors-dovegray col-span-4  text-lg">
+        <p className="text-customColors-dovegray col-span-4 text-base lg:text-lg">
           {content}
         </p>
       </div>
