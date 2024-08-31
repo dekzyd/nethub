@@ -97,7 +97,7 @@ const Did = () => {
       <section className="bg-[#a0b0b5] min-h-56 pt-12 pb-16">
         <div className="container">
           <div className="p-5 grid gap-5">
-            <p className="text-white text-[44px] font-bold drop-shadow-md">
+            <p className="text-white text-4xl lg:text-[44px] font-bold drop-shadow-md">
               Having trouble managing your DID inventory?
             </p>
             <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -127,10 +127,10 @@ const Did = () => {
       {/* better way */}
       <section className="p-8 md:p-16">
         <div className="container">
-          <h3 className="text-5xl text-primary font-semibold mb-6">
+          <h3 className="text-4xl lg:text-5xl text-primary font-semibold mb-6">
             Discover a better way
           </h3>
-          <p className="text-xl tracking-wide text-black">
+          <p className="text-lg lg:text-xl tracking-wide text-black">
             NetSwitch combines the top technologies to improve operations for
             telecom providers. With us you can:
           </p>
@@ -165,10 +165,10 @@ const Did = () => {
       {/* whats in it  */}
       <section className="xl:p-20 lg:p-16 p-8 bg-customColors-porcelain">
         <div className="container">
-          <h3 className="text-5xl text-primary font-semibold my-6">
+          <h3 className="text-4xl lg:text-5xl text-primary font-semibold my-6">
             What&apos;s in it for you?
           </h3>
-          <p className="text-xl font-medium tracking-wide">
+          <p className="text-lg lg:text-xl font-medium tracking-wide">
             Reduce costs by outsourcing implementation of custom scenarios to
             customers or 3rd parties. We also maintain the platform, so you save
             on hardware purchasing, hosting, provisioning, and maintenance.
@@ -193,17 +193,17 @@ const Did = () => {
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* written */}
             <div>
-              <h3 className="text-5xl font-semibold mb-10">
+              <h3 className="text-4xl lg:text-5xl font-semibold mb-10">
                 Why choose Nethub?
               </h3>
-              <p className="text-xl font-medium tracking-wide">
+              <p className="text-lg lg:text-xl font-medium tracking-wide">
                 What has made so many telecom providers join the community of
                 NetSwitch users when providing DID management provisioning?
               </p>
             </div>
             {/* pic */}
             <div className="w-full flex justify-center mt-10">
-              <div className="w-72 h-72 overflow-hidden rounded-full flex">
+              <div className="h-52 w-52 lg:w-72 lg:h-72 overflow-hidden rounded-full flex">
                 <Image
                   height={500}
                   width={500}
