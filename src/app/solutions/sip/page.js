@@ -22,7 +22,7 @@ const Sip = () => {
   const crumbs = [
     { title: "home", href: "/" },
     { title: "solutions", href: "/solutions" },
-    { title: "SIP", href: "#" },
+    { title: "SIP" },
   ];
   return (
     <div>
@@ -70,7 +70,7 @@ const Sip = () => {
               </p>
             </div>
             {/* review */}
-            <div className="rounded-[50px] mt-5 mx-8 mb-8 p-10 bg-white">
+            <div className="rounded-[50px] mt-5  mx-4 md:mx-8 mb-8 px-7 py-10 lg:p-14 bg-white">
               <div>
                 <p className="text-customColors-fiord text-2xl font-semibold">
                   Michelle Igwe
@@ -79,13 +79,13 @@ const Sip = () => {
                   Marketing Manager at Nethub
                 </p>
               </div>
-              <p className="italic text-[22px] text-customColors-dovegray mb-[33px]">
+              <p className="italic text-lg md:text-[22px] text-customColors-dovegray mb-[33px]">
                 Over The Top (OTT) communication has rapidly become one of the
                 most popular ways for end users to send and receive audio,
                 voice, share files, and collaborate – all while using the
                 Internet.
               </p>
-              <p className="italic text-[22px] text-customColors-dovegray">
+              <p className="italic text-lg md:text-[22px] text-customColors-dovegray">
                 The explosive demand for OTT services and software can mean big
                 opportunities for UCaaS providers.
               </p>
@@ -96,10 +96,10 @@ const Sip = () => {
       {/* Discover a better way */}
       <section className="py-16">
         <div className="container">
-          <h3 className="text-5xl text-primary font-semibold mb-8">
+          <h3 className="text-4xl lg:text-5xl text-primary font-semibold mb-8">
             Discover a better way
           </h3>
-          <p className="text-3xl tracking-wide text-customColors-dovegray">
+          <p className="text-2xl lg:text-3xl tracking-wide text-customColors-dovegray">
             If you’re ready to change all of that, then Nethub is here to help.
             We can offer a software solution for your SIP trunking business that
             will:
@@ -121,10 +121,10 @@ const Sip = () => {
       {/* whats in it for you */}
       <section className="py-16 bg-customColors-porcelain">
         <div className="container">
-          <h3 className="text-5xl text-primary font-semibold mb-8">
+          <h3 className="text-4xl lg:text-5xl text-primary font-semibold mb-8">
             What&apos;s in it for you?
           </h3>
-          <p className="text-xl font-medium tracking-wide">
+          <p className="text-lg lg:text-xl font-medium tracking-wide">
             See why SIP trunking providers are choosing NetSwitch to provide
             enterprise PBX, call center connectivity, and more.
           </p>
@@ -159,12 +159,14 @@ const Sip = () => {
       {/* why choose Nethub */}
       <section className="py-16 bg-customColors-fiord">
         <div className="container text-white ">
-          <h3 className="text-5xl font-semibold mb-8">Why choose Nethub?</h3>
-          <p className="text-xl font-medium tracking-wide">
+          <h3 className="text-4xl lg:text-5xl font-semibold mb-8">
+            Why choose Nethub?
+          </h3>
+          <p className="text-lg lg:text-xl font-medium tracking-wide">
             What makes NetSwitch the go-to for SIP trunking in a competitive
             market?
           </p>
-          <p className="text-xl font-medium tracking-wide">
+          <p className="text-lg lg:text-xl font-medium tracking-wide">
             Allow us to highlight how we differentiate ourselves from the pack.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-5 lg:gap-8 my-16">

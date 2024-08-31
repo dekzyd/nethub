@@ -46,7 +46,7 @@ const Netswitch = () => {
         image="/goodcheck.png"
         descCol="text-customColors-fiord"
         flip
-        titlesize="text-[40px]"
+        titlesize="text-3xl md:text-[40px]"
         ltrspacing="tracking-normal"
         rating
         description=<p className="font-semibold">
@@ -62,7 +62,7 @@ const Netswitch = () => {
         perks={FavoritePerks}
         image="/whynethub.jpg"
         IconBg="bg-customColors-fiord"
-        titlesize="text-[40px]"
+        titlesize="text-3xl md:text-[40px]"
         UniqTitleColor="text-primary"
         UniqTextColor="text-white"
         ltrspacing="tracking-normal"

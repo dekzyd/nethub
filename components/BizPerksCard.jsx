@@ -16,7 +16,7 @@ const BizPerksCard = ({
   txtcolor,
 }) => {
   return (
-    <div className="md:p-3 lg:p-5">
+    <div className="md:p-3 lg:p-5 my-3">
       <div
         className={`${bgcolor ? bgcolor : "bg-white"} ${
           hoverbgcolor ? hoverbgcolor : ""

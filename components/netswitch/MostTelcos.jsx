@@ -15,12 +15,12 @@ export default function MostTelcos() {
         {/* write up */}
         <div className="flex flex-col gap-7 p-[30px]">
           <Breadcrumbs crumbs={netswitchcrumbs} />
-          <h3 className="text-primary text-3xl font-semibold max-w-[530px]">
+          <h3 className="text-primary text-2xl lg:text-3xl font-semibold max-w-[530px]">
             Most telcos are now relying on their software vendors for
             integration and maintenance.
           </h3>
           <div className="flex flex-col gap-5 text-customColors-dovegray max-w-[530px]">
-            <strong className="tracking-wide text-lg">
+            <strong className="tracking-wide text-base lg:text-lg">
               If this sounds like your company, you may be experiencing…
             </strong>
           </div>

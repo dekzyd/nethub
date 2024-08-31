@@ -100,7 +100,7 @@ const Softphone = () => {
                 </div>
               </div>
             </div>
-            <div className="rounded-[50px] mt-5 mx-8 mb-8 p-10 bg-white">
+            <div className="rounded-[50px] mt-5  mx-4 md:mx-8 mb-8 px-7 py-10 lg:p-14 bg-white">
               <div className="w-full flex mb-5">
                 <div className="w-52 h-52 overflow-hidden rounded-full flex">
                   <Image
@@ -120,13 +120,13 @@ const Softphone = () => {
                   Marketing Manager at Nethub
                 </p>
               </div>
-              <p className="italic text-[22px] text-customColors-dovegray mb-[33px]">
+              <p className="italic text-lg md:text-[22px] text-customColors-dovegray mb-[33px]">
                 Over The Top (OTT) communication has rapidly become one of the
                 most popular ways for end users to send and receive audio,
                 voice, share files, and collaborate – all while using the
                 Internet.
               </p>
-              <p className="italic text-[22px] text-customColors-dovegray">
+              <p className="italic text-lg md:text-[22px] text-customColors-dovegray">
                 The explosive demand for OTT services and software can mean big
                 opportunities for UCaaS providers.
               </p>
@@ -137,10 +137,10 @@ const Softphone = () => {
       {/* discover a better way */}
       <section className="py-16">
         <div className="container">
-          <h3 className="text-5xl text-primary font-semibold mb-8">
+          <h3 className="text-4xl lg:text-5xl text-primary font-semibold mb-8">
             Discover a better way
           </h3>
-          <p className="text-3xl tracking-wide text-customColors-dovegray">
+          <p className="text-2xl lg:text-3xl tracking-wide text-customColors-dovegray">
             Increase the tools in your UCaaS toolkit with NetPhone and deliver
             users a seamless experience they’ll prefer over WhatsApp or
             Messenger.
@@ -176,10 +176,10 @@ const Softphone = () => {
       {/* why choose netphone */}
       <section className="py-16  bg-customColors-porcelain">
         <div className="container">
-          <h3 className="text-4xl text-primary font-semibold mb-8">
+          <h3 className="text-4xl lg:text-5xl text-primary font-semibold mb-8">
             Why choose NetPhone?
           </h3>
-          <p className="text-3xl tracking-wide text-customColors-dovegray">
+          <p className="text-2xl lg:text-3xl tracking-wide text-customColors-dovegray">
             With Nethub’s cloud softphone solution, you’ll get unmatched
             flexibility when customizing and reduced operational efforts, making
             for unparalleled convenience and value for end-users.
@@ -215,7 +215,7 @@ const Softphone = () => {
       {/* easy to start */}
       <section className="min-h-56 py-16">
         <div className="container">
-          <h3 className="text-primary text-4xl font-semibold mb-8">
+          <h3 className="text-primary text-3xl lg:text-4xl font-semibold mb-8">
             Easy to start, great to use...
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-7 lg:gap-10 my-16">
@@ -265,7 +265,7 @@ const Softphone = () => {
         <div className="container">
           <div className="my-10 grid sm:grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10">
             <div className="grid gap-7 lg:h-[488px]">
-              <p className="text-5xl text-primary font-semibold">
+              <p className="text-4xl lg:text-5xl text-primary font-semibold">
                 How you benefit
               </p>
               <div className="flex gap-4">
@@ -317,7 +317,7 @@ const Softphone = () => {
                 </div>
               </div>
             </div>
-            <div className="  rounded-[50px] mt-5 mx-8 mb-8 p-10 bg-white">
+            <div className="rounded-[50px] mt-5  mx-4 md:mx-8 mb-8 px-7 py-10 lg:p-14 bg-white">
               <div>
                 <p className="text-customColors-fiord text-2xl font-semibold">
                   Simeon Aduragba
@@ -326,11 +326,11 @@ const Softphone = () => {
                   Marketing Manager at Nethub
                 </p>
               </div>
-              <p className="italic text-[22px] text-customColors-dovegray mb-[33px]">
+              <p className="italic text-lg md:text-[22px] text-customColors-dovegray mb-[33px]">
                 “During the COVID crisis, many of our customers had to send
                 their employees to work from home.
               </p>
-              <p className="italic text-[22px] text-customColors-dovegray">
+              <p className="italic text-lg md:text-[22px] text-customColors-dovegray">
                 With NetPhone we were able to offer them a reliable way to
                 continue working. Our WebRTC app allowed them to quickly respond
                 to rapidly changing market demands and to continue operating
