@@ -18,7 +18,7 @@ const PageHeader = ({
     <>
       <div
         className={`w-full ${
-          height ? height : "h-[600px]"
+          height ? height : "h-[400px] md:h-[600px]"
         } bg-cover bg-center bg-no-repeat`}
         style={{ backgroundImage: `url(${image})` }}
       >
@@ -43,7 +43,7 @@ const PageHeader = ({
                   </h4>
                 )}
                 <h3
-                  className={`text-white sm:text-[36px] lg:text-[40px]  ${
+                  className={`text-white text-[20px] md:text-[38px]  ${
                     fontsize ? fontsize : "xl:text-[52px]"
                   } font-semibold tracking-[-0.8px]  xl:leading-[64.8px]`}
                 >

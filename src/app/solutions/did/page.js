@@ -27,7 +27,7 @@ const Did = () => {
   const crumbs = [
     { title: "home", href: "/" },
     { title: "solutions", href: "/solutions" },
-    { title: "DID Management", href: "#" },
+    { title: "DID Management" },
   ];
   return (
     <div>
@@ -39,7 +39,7 @@ const Did = () => {
         }
         btntxt="contact us"
         description="Resell inbound DIDs (local, toll-free, premium and international) to call centers, enterprises and residential customers. Manage DID inventory or use on-demand number acquisition to reduce costs."
-        height="h-[550px]"
+        height=""
       />
       {/* DID mgmt solutions content */}
       <section className="bg-customColors-porcelain pt-10 pb-10 ">
@@ -70,7 +70,7 @@ const Did = () => {
               </p>
             </div>
             {/* review */}
-            <div className="rounded-[50px] mt-5 mx-8 mb-8 p-14 bg-white">
+            <div className="rounded-[50px] mt-5  mx-4 md:mx-8 mb-8 px-7 py-10 lg:p-14 bg-white">
               <div>
                 <p className="text-customColors-fiord text-2xl font-semibold">
                   Suleiman Babayo
@@ -79,12 +79,12 @@ const Did = () => {
                   Commercial Director at Nethub Telecoms
                 </p>
               </div>
-              <p className=" text-[20px] text-customColors-dovegray mb-[33px]">
+              <p className=" text-lg md:text-[20px] text-customColors-dovegray mb-[33px]">
                 Nethub provides IT & Telecom solutions for international call
                 centers that help reduce operations cost & improve revenue
                 generation and multi-channel management.
               </p>
-              <p className=" text-[20px] text-customColors-dovegray">
+              <p className=" text-lg md:text-[20px] text-customColors-dovegray">
                 We were VERY impressed with Nethub as a company and the
                 NetSwitch equipment was superbly engineered, reliable and hugely
                 flexible.
@@ -125,7 +125,7 @@ const Did = () => {
         </div>
       </section>
       {/* better way */}
-      <section className="p-16">
+      <section className="p-8 md:p-16">
         <div className="container">
           <h3 className="text-5xl text-primary font-semibold mb-6">
             Discover a better way
@@ -163,7 +163,7 @@ const Did = () => {
         </div>
       </section>
       {/* whats in it  */}
-      <section className="xl:p-20 lg:p-16 bg-customColors-porcelain">
+      <section className="xl:p-20 lg:p-16 p-8 bg-customColors-porcelain">
         <div className="container">
           <h3 className="text-5xl text-primary font-semibold my-6">
             What&apos;s in it for you?
@@ -188,7 +188,7 @@ const Did = () => {
         </div>
       </section>
       {/* why nethub */}
-      <section className="xl:p-20 lg:p-16 bg-customColors-fiord">
+      <section className="xl:p-20 lg:p-16 p-8 bg-customColors-fiord">
         <div className="container text-white ">
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* written */}
@@ -202,7 +202,7 @@ const Did = () => {
               </p>
             </div>
             {/* pic */}
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center mt-10">
               <div className="w-72 h-72 overflow-hidden rounded-full flex">
                 <Image
                   height={500}

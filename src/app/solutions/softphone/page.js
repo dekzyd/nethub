@@ -35,7 +35,7 @@ const Softphone = () => {
   const crumbs = [
     { title: "home", href: "/" },
     { title: "solutions", href: "/solutions" },
-    { title: "Softphone", href: "#" },
+    { title: "Softphone" },
   ];
 
   return (
