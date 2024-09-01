@@ -26,7 +26,7 @@ export default function WhyNethubSection() {
           </div>
           <div className="grid place-content-center">
             <div className="w-full flex">
-              <div className="w-72 h-72 overflow-hidden rounded-full flex">
+              <div className="w-52 h-52 md:w-60 md:h-60 lg:w-72 lg:h-72 overflow-hidden rounded-full flex">
                 <Image
                   height={500}
                   width={500}
