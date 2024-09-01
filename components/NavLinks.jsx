@@ -104,14 +104,14 @@ export function NavigationMenuDemo() {
           </Link>
         </NavigationMenuItem>
         {/* search */}
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <Link href="#" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               <span className="mr-1">Search</span>
               <Search size={15} strokeWidth={2} />
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
       </NavigationMenuList>
     </NavigationMenu>
   );
