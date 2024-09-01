@@ -15,12 +15,11 @@ export default function Home() {
       {/* Best values */}
       <BestValues />
       {/* feedback from happy customers */}
-      <Divider fill="#F0F2F3" />
+      <Divider fill="var(--fiord)" />
       <FeaturedProducts />
       <FeedbackSlider flip />
-      {/* <Divider fill="#F0F2F3" /> */}
       <Talkwithus />
-      <Divider fill="#F0F2F3" />
+      <Divider fill="var(--fiord)" />
     </main>
   );
 }

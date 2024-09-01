@@ -5,6 +5,15 @@ import BizPerksCard from "../../../../components/BizPerksCard.jsx";
 import { DiamondIcon } from "../../../../components/icons";
 import { FiPhoneCall } from "react-icons/fi";
 
+{
+  /* meta data and title */
+}
+export const metadata = {
+  title: "Voice solutions",
+  description:
+    "Deliver a business communication environment to your SMB and enterprise customers with NetSwitch – voice, video, CCaaS, CRM integrations, and more.",
+};
+
 const VoiceSolutions = () => {
   // voice solutions page breadcrumbs
   const voicecrumbs = [
@@ -14,14 +23,6 @@ const VoiceSolutions = () => {
   ];
   return (
     <div>
-      {/* meta data and title */}
-      <head>
-        <title>Voice solutions</title>
-        <meta
-          name="Nethub's voice solutions"
-          content="Deliver a business communication environment to your SMB and enterprise customers with NetSwitch – voice, video, CCaaS, CRM integrations, and more."
-        />
-      </head>
       <PageHeader
         image="/voice.jpg"
         title="Voice solutions"

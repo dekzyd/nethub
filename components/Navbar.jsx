@@ -1,25 +1,34 @@
+"use client";
 import Divider from "./divider";
 import Link from "next/link";
 import { NavigationMenuDemo } from "./NavLinks";
+import { TiThMenu } from "react-icons/ti";
 import Logo from "./Logo";
+import { useGlobalContext } from "./Context";
 
 const Navbar = () => {
+  const { isSidebarOpen, openSidebar } = useGlobalContext();
   return (
     <nav className="w-full sticky top-0 bg-white z-20 drop-shadow-lg">
-      <div className="w-full h-20 flex">
-        <div className="container flex justify-between items-center gap-x-3">
+      <div className="w-full h-16 flex">
+        <div className="container flex justify-between items-center">
           {/* logo */}
           <Link href="/" className="relative top-1">
             <div id="logo">
-              <Logo />
+              <Logo animation />
             </div>
           </Link>
           {/* links */}
-          <ul className="hidden lg:flex justify-end ">
+          <ul className="hidden md:flex justify-end mt-2">
             <NavigationMenuDemo className="" />
           </ul>
           {/* dropdown icon */}
-          <div className="lg:hidden flex justify-end basis-3/4">dropdown</div>
+          <div className="md:hidden flex justify-end basis-3/4">
+            <TiThMenu
+              className="text-2xl cursor-pointer text-customColors-dovegray relative top-[6px] hover:text-primary"
+              onClick={openSidebar}
+            />
+          </div>
         </div>
       </div>
       {/* element divider */}

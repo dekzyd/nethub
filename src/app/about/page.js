@@ -8,34 +8,32 @@ import HotTopics from "../../../components/HotTopics";
 import Misc from "../../../components/Misc";
 import FeedbackSlider from "../../../components/FeedbackSlider";
 import { UniqueMktData } from "@/lib/data/aboutData";
+import Image from "next/image";
+
+{
+  /* meta data and title */
+}
+export const metadata = {
+  title: "Nethub Company",
+  description:
+    "Nethub is a global telecommunication software platform developer",
+};
 
 const About = () => {
   // about page breadcrumbs links
-  const aboutcrumbs = [
-    { title: "home", href: "/" },
-    { title: "about", href: "/about" },
-  ];
+  const aboutcrumbs = [{ title: "home", href: "/" }, { title: "about" }];
 
   return (
     <div>
-      {/* meta data and title */}
-      <head>
-        <title>Nethub Company</title>
-        <meta
-          name="Nethub Company"
-          content="Nethub is a global telecommunication software platform developer"
-        />
-      </head>
       <PageHeader
         image="/about3.jpg"
-        title="Nethub at a glance"
+        title="Nethub at a Glance"
         pre_title="company overview"
-        height="h-[550px]"
         icon={<SearchlightIcon />}
       />
       <Divider fill="#fff" />
       {/* About page contents */}
-      <section className="container pt-16 pb-10 grid sm:grid-cols-1 md:grid-cols-2">
+      <section className="container pt-8 2xl:pt-16 pb-10 grid sm:grid-cols-1 md:grid-cols-2">
         {/* write up */}
         <div className="flex flex-col gap-7 p-5">
           <Breadcrumbs crumbs={aboutcrumbs} />
@@ -58,29 +56,109 @@ const About = () => {
             <div className="flex justify-between font-bold text-lg pb-3">
               <p>Founded</p>
               <p className="font-light text-customColors-dovegray/40">
-                -----------------------------
+                --------
               </p>
-              <p>2001</p>
+              <p>2013</p>
             </div>
             <div className="flex justify-between font-bold text-lg pb-3">
               <p>Headquaters</p>
               <p className="font-light text-customColors-dovegray/40">
-                -----------------------
+                --------
               </p>
-              <p>Abuja, Nigeria</p>
+              <p>Abuja, Ng</p>
             </div>
             <div className="flex justify-between font-bold text-lg pb-3">
               <p>Employees</p>
               <p className="font-light text-customColors-dovegray/40">
-                -----------------------------
+                --------
               </p>
               <p>250+</p>
             </div>
           </div>
         </div>
         {/* media */}
-        <div className="bg-slate-200 flex justify-center items-center p-5">
-          Media
+        <div className="grid grid-cols-2 xl:grid-cols-3 gap-2 p-5">
+          <div className="bg-red-200 flex">
+            <Image
+              src="/about.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>
+          <div className="bg-red-200 flex">
+            <Image
+              src="/about3.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
+          <div className="bg-red-200 flex">
+            <Image
+              src="/call-center.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
+          <div className="bg-red-200 flex">
+            <Image
+              src="/about2.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
+          <div className="bg-red-200 flex">
+            <Image
+              src="/about.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
+          <div className="bg-red-200 flex">
+            <Image
+              src="/journey3f.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
+          <div className="bg-red-200 flex">
+            <Image
+              src="/about.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
+          <div className="bg-red-200 flex">
+            <Image
+              src="/journey2.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>{" "}
+          <div className="bg-red-200 flex">
+            <Image
+              src="/mvno.jpg"
+              alt="test image"
+              width={400}
+              height={400}
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
       <Divider fill="#F0F2F3" />
@@ -88,6 +166,7 @@ const About = () => {
         pretitle="what makes Nethub unique"
         title="Here’s why telcos around the world choose our products and
               services to help them succeed"
+        textCol="text-customColors-fiord"
         perks={UniqueMktData}
       />
       {/* partner */}

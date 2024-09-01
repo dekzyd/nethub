@@ -13,13 +13,17 @@ import {
 
 const Footer = () => {
   return (
-    <section id="footer">
-      <div id="contact" className="bg-customColors-fiord pt-[70px]">
+    <section id="footer" className="scroll-mt-[70px]">
+      <div
+        id="contact"
+        // use scroll margin to fix content margin in viewport during scroll.
+        className="bg-customColors-fiord pt-[70px] scroll-mt-[70px]"
+      >
         <div className="md:container">
           {/* contact form */}
           <div className="h-full md:mx-4 grid sm:grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col flex-initial p-5">
-              <h3 className="mb-5 text-4xl tracking-widest uppercase text-customColors-hitgray">
+              <h3 className="mb-5 text-3xl lg:text-4xl tracking-widest uppercase text-customColors-hitgray">
                 Talk with us
               </h3>
               <ContactForm />
@@ -215,13 +219,13 @@ const Footer = () => {
 
           <div id="privacy-policy" className="pt-16">
             <div className="h-full container flex flex-col items-center">
-              <h2 className="p-2.5 mb-9 text-2xl text-primary">
+              <h2 className="p-2.5 mb-9 text-2xl text-center text-primary">
                 Helping telcos connect people since 2013
               </h2>
               <p className="mb-8 text-sm text-customColors-loblolly/85">
                 © 2013 – 2024 Nethub Inc. All rights reserved.
               </p>
-              <div className="flex justify-center gap-5 pb-5 text-customColors-loblolly">
+              <div className="hidden md:flex justify-center gap-5 pb-5 text-customColors-loblolly">
                 <p className="flex gap-2 capitalize text-sm items-center">
                   <span className="text-xl text-customColors-fiord">
                     <FaCookieBite />
@@ -244,12 +248,14 @@ const Footer = () => {
             </div>
           </div>
 
-          <div id="bottom footer" className="pt-5 pb-20">
+          <div id="bottom footer" className="md:pt-5 md:pb-20 pb-10">
             <div className="h-full container flex flex-wrap justify-center items-center">
               {/* logo */}
-              <Logo section="footer" />
+              <div className="mr-4 mb-5">
+                <Logo section="footer" />
+              </div>
               {/* address */}
-              <div className="bottomftr text-customColors-loblolly/85 flex flex-col sm:items-center">
+              <div className="bottomftr text-center text-customColors-loblolly/85 flex flex-col">
                 <p className="font-semibold">Nethub Tech</p>
                 <p>A113 - 2009 lougheed hwy</p>
                 <p>port, BV VBC Abuja, Nigeria</p>

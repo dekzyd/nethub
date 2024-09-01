@@ -4,23 +4,24 @@ import PageHeader from "../../../../components/PageHeader.jsx";
 import { MdOutlineNetworkCheck } from "react-icons/md";
 import { RocketIcon } from "../../../../components/icons";
 
+{
+  /* meta data and page title */
+}
+export const metadata = {
+  title: "Internet solution",
+  content:
+    "Offer enterprise PBX and call center connectivity, resell phone numbers (DID), protect yourself and users with anti-fraud tools, and implement custom scenarios via a programmable voice API, all via NetSwitch.",
+};
+
 const InternetSolutions = () => {
   const internetcrumbs = [
     { title: "home", href: "/" },
     { title: "solutions", href: "/solutions" },
-    { title: "internet solutions", href: "#" },
+    { title: "internet solutions" },
   ];
 
   return (
     <div>
-      {/* meta data and title */}
-      <head>
-        <title>Internet solution</title>
-        <meta
-          name="Nethub's Internet solutions"
-          content="Offer enterprise PBX and call center connectivity, resell phone numbers (DID), protect yourself and users with anti-fraud tools, and implement custom scenarios via a programmable voice API, all via NetSwitch."
-        />
-      </head>
       <PageHeader
         image="/internet.jpeg"
         title="Internet solution"

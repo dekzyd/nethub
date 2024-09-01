@@ -12,12 +12,13 @@ const PageHeader = ({
   btntxt,
   height,
   fontsize,
+  pretitlefontsize,
 }) => {
   return (
     <>
       <div
         className={`w-full ${
-          height ? height : "h-[600px]"
+          height ? height : "h-[400px] md:h-[600px]"
         } bg-cover bg-center bg-no-repeat`}
         style={{ backgroundImage: `url(${image})` }}
       >
@@ -33,14 +34,20 @@ const PageHeader = ({
             <div className="h-full">
               <div className="flex flex-col h-full justify-center gap-10 lg:max-w-[600px]">
                 {pre_title && (
-                  <h4 className="text-white uppercase text-xl font-medium tracking-wider">
+                  <h4
+                    className={`text-white uppercase font-Open_sans ${
+                      pretitlefontsize
+                        ? pretitlefontsize
+                        : "text-sm sm:text-bas lg:text-xl"
+                    } font-light tracking-[5px]`}
+                  >
                     {pre_title}
                   </h4>
                 )}
                 <h3
-                  className={`text-white sm:text-[36px] lg:text-[38px]  ${
-                    fontsize ? fontsize : "xl:text-[48px]"
-                  } font-bold tracking-[-0.8px]  xl:leading-[64.8px]`}
+                  className={`text-white text-[22px] sm:text-[29px] md:text-[38px]  ${
+                    fontsize ? fontsize : "xl:text-[52px]"
+                  } font-semibold tracking-[-0.8px]  xl:leading-[64.8px]`}
                 >
                   {title}
                 </h3>

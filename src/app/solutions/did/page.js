@@ -1,4 +1,6 @@
-import React from "react";
+import Link from "next/link.js";
+import { Button } from "@/components/ui/button.jsx";
+import { FaAngleRight } from "react-icons/fa6";
 import Breadcrumbs from "../../../../components/Breadcrumbs.jsx";
 import PageHeader from "../../../../components/PageHeader.jsx";
 import { havingtroubles } from "../../../lib/data/diddata.jsx";
@@ -11,23 +13,24 @@ import {
 } from "../../../lib/data/diddata.jsx";
 import Image from "next/image.js";
 
+{
+  /* meta data and title */
+}
+export const metadata = {
+  title: "DID Provisioning",
+  content:
+    "Resell inbound DIDs (local, toll-free, premium and international) to call centers, enterprises and residential customers. Manage DID inventory or use on-demand number acquisition to reduce costs",
+};
+
 const Did = () => {
   // Did Management solutions page breadcrumbs
   const crumbs = [
     { title: "home", href: "/" },
     { title: "solutions", href: "/solutions" },
-    { title: "DID Management", href: "#" },
+    { title: "DID Management" },
   ];
   return (
     <div>
-      {/* meta data and title */}
-      <head>
-        <title>DID Provisioning</title>
-        <meta
-          name="Nethub's DID Provisioning"
-          content="Resell inbound DIDs (local, toll-free, premium and international) to call centers, enterprises and residential customers. Manage DID inventory or use on-demand number acquisition to reduce costs"
-        />
-      </head>
       <PageHeader
         image="/did3.jpeg"
         title="Build a DID trading platform using NetSwitch"
@@ -67,7 +70,7 @@ const Did = () => {
               </p>
             </div>
             {/* review */}
-            <div className="rounded-[50px] mt-5 mx-8 mb-8 p-14 bg-white">
+            <div className="rounded-[50px] mt-5  mx-4 md:mx-8 mb-8 px-7 py-10 lg:p-14 bg-white">
               <div>
                 <p className="text-customColors-fiord text-2xl font-semibold">
                   Suleiman Babayo
@@ -76,12 +79,12 @@ const Did = () => {
                   Commercial Director at Nethub Telecoms
                 </p>
               </div>
-              <p className=" text-[20px] text-customColors-dovegray mb-[33px]">
+              <p className=" text-lg md:text-[20px] text-customColors-dovegray mb-[33px]">
                 Nethub provides IT & Telecom solutions for international call
                 centers that help reduce operations cost & improve revenue
                 generation and multi-channel management.
               </p>
-              <p className=" text-[20px] text-customColors-dovegray">
+              <p className=" text-lg md:text-[20px] text-customColors-dovegray">
                 We were VERY impressed with Nethub as a company and the
                 NetSwitch equipment was superbly engineered, reliable and hugely
                 flexible.
@@ -94,18 +97,20 @@ const Did = () => {
       <section className="bg-[#a0b0b5] min-h-56 pt-12 pb-16">
         <div className="container">
           <div className="p-5 grid gap-5">
-            <p className="text-white text-[44px] font-bold drop-shadow-md">
+            <p className="text-white text-4xl lg:text-[44px] font-bold drop-shadow-md">
               Having trouble managing your DID inventory?
             </p>
             <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-              {havingtroubles.map(({ title, content }) => {
+              {havingtroubles.map(({ title, content, icon }) => {
                 return (
                   <BizPerksCard
                     key={title}
                     content={content}
+                    icon={icon}
                     title={title}
                     titlecolor="text-black"
                     contentcolor="text-black"
+                    hoverbgcolor="hover:bg-[#a0b0b5]"
                   />
                 );
               })}
@@ -120,36 +125,50 @@ const Did = () => {
         </div>
       </section>
       {/* better way */}
-      <section className="py-16">
+      <section className="p-8 md:p-16">
         <div className="container">
-          <h3 className="text-5xl text-primary font-semibold mb-6">
+          <h3 className="text-4xl lg:text-5xl text-primary font-semibold mb-6">
             Discover a better way
           </h3>
-          <p className="text-xl tracking-wide text-black">
+          <p className="text-lg lg:text-xl tracking-wide text-black">
             NetSwitch combines the top technologies to improve operations for
             telecom providers. With us you can:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-5 lg:gap-8 my-16">
-            {disBstWay.map(({ icon, title, content }) => {
+            {disBstWay.map(({ icon, title, content, bgcolor }) => {
               return (
                 <BizPerksCard
                   key={title}
                   title={title}
                   content={content}
                   icon={icon}
+                  bgcolor={bgcolor}
                 />
               );
             })}
           </div>
+          <div>
+            <p className="mb-3 font-medium text-lg">
+              Ready to talk? Let’s arrange a demo via a personal call or online
+              presentation.
+            </p>
+
+            <Link href="#contact">
+              <Button className="w-auto font-semibold font-Open_sans uppercase">
+                contact us
+                <FaAngleRight className="ml-1 -mt-[1px] text-[12px] font-bold" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
       {/* whats in it  */}
-      <section className="py-16 bg-customColors-porcelain">
+      <section className="xl:p-20 lg:p-16 p-8 bg-customColors-porcelain">
         <div className="container">
-          <h3 className="text-5xl text-primary font-semibold mb-6">
+          <h3 className="text-4xl lg:text-5xl text-primary font-semibold my-6">
             What&apos;s in it for you?
           </h3>
-          <p className="text-xl font-medium tracking-wide">
+          <p className="text-lg lg:text-xl font-medium tracking-wide">
             Reduce costs by outsourcing implementation of custom scenarios to
             customers or 3rd parties. We also maintain the platform, so you save
             on hardware purchasing, hosting, provisioning, and maintenance.
@@ -169,37 +188,33 @@ const Did = () => {
         </div>
       </section>
       {/* why nethub */}
-      <section className="py-16 bg-customColors-fiord">
+      <section className="xl:p-20 lg:p-16 p-8 bg-customColors-fiord">
         <div className="container text-white ">
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* written */}
             <div>
-              <h3 className="text-5xl font-semibold mb-8">
+              <h3 className="text-4xl lg:text-5xl font-semibold mb-10">
                 Why choose Nethub?
               </h3>
-              <p className="text-xl font-medium tracking-wide">
+              <p className="text-lg lg:text-xl font-medium tracking-wide">
                 What has made so many telecom providers join the community of
                 NetSwitch users when providing DID management provisioning?
               </p>
-              <p className="text-xl font-medium tracking-wide">
-                Allow us to highlight how we differentiate ourselves from the
-                pack.
-              </p>
             </div>
             {/* pic */}
-            <div className="w-full flex justify-center">
-              <div className="w-72 h-72 overflow-hidden rounded-full flex">
+            <div className="w-full flex justify-center mt-10">
+              <div className="h-52 w-52 lg:w-72 lg:h-72 overflow-hidden rounded-full flex">
                 <Image
                   height={500}
                   width={500}
-                  src="/about2.jpeg"
+                  src="/whynethub2.jpg"
                   alt="image"
                   className="object-cover"
                 />
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-5 lg:gap-8 my-16">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-5 lg:gap-8 mt-10">
             {whynethubdata.map(({ icon, title, content }) => {
               return (
                 <BizPerksCard

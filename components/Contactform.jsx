@@ -94,7 +94,7 @@ export function ContactForm() {
               </FormItem>
             )}
           />
-          <div className="h-20 bg-primary-foreground rounded-md w-2/6"></div>
+
           <FormField
             control={form.control}
             name="message"
@@ -112,6 +112,7 @@ export function ContactForm() {
               </FormItem>
             )}
           />
+          <div className="h-20 bg-primary-foreground rounded-md w-2/6"></div>
           <Button
             type="submit"
             className="w-full uppercase tracking-wide font-semibold font-sans px-7 py-4"

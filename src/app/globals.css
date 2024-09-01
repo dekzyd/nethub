@@ -35,6 +35,7 @@
     --cuttysark: #5b7884;
     --preprimary: #e6335f;
     --porcelain: "#F0F2F3";
+    --alterblue: "#7dabcb";
   }
 
   .dark {
@@ -106,7 +107,7 @@
 }
 
 .bottomftr {
-  @apply p-5 max-w-[321px];
+  @apply max-w-[321px];
 }
 
 .social-icon {

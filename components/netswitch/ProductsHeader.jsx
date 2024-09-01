@@ -17,7 +17,7 @@ export default function ProductsHeader({
       {/* BACKGROUND IMAGE */}
       <div
         className={`w-full relative ${
-          height ? height : "h-[600px]"
+          height ? height : "h-[400px] md:h-[600px]"
         } bg-cover bg-center bg-no-repeat`}
         style={{ backgroundImage: `url(${image})` }}
       >
@@ -39,7 +39,9 @@ export default function ProductsHeader({
                 )}
                 <h3
                   className={`text-white sm:text-3xl ${
-                    fontsize ? fontsize : "lg:text-6xl"
+                    fontsize
+                      ? fontsize
+                      : "text-[20px] md:text-[38px] lg:text-6xl"
                   } font-semibold tracking-wide leading-tight`}
                 >
                   {title}
@@ -68,7 +70,7 @@ export default function ProductsHeader({
           className={`absolute z-10 bottom-0 w-full`}
         >
           <svg
-            className="w-full h-4 bg-transparent"
+            className="w-full h-2 xl:h-5 bg-transparent"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1000 100"
             preserveAspectRatio="none"

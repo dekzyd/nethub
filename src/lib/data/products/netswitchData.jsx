@@ -7,13 +7,13 @@ import { FaFilterCircleDollar } from "react-icons/fa6";
 import { HiOutlineGlobeAlt } from "react-icons/hi2";
 import { TbHours24 } from "react-icons/tb";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
+import { TbReplace } from "react-icons/tb";
 
 import {
   DiamondIcon,
   RocketIcon,
   CrescentIcon,
   ScalabilityIcon,
-  MedalIcon,
   BricksIcon,
   SolutionIcon,
   AgileIcon,
@@ -109,7 +109,7 @@ export const FavoritePerks = [
     title: "Agile development",
     content:
       "Nethub delivers more than 20 software builds per year – new features are available every 7 weeks",
-    icon: <AgileIcon fill="#9EAEB4" />,
+    icon: <TbReplace className="text-[#9EAEB4] text-6xl" />,
   },
   {
     title: "24/7 technical support",

@@ -8,17 +8,18 @@ import {
   FavoritePerks,
 } from "@/lib/data/products/netswitchData.jsx";
 
+{
+  /* meta data and title */
+}
+export const metadata = {
+  title: "Netswitch",
+  description:
+    "A Unified Service Management & Delivery Platform for voice, messaging, IoT/M2M, and data traffic within a single converged network.",
+};
+
 const Netswitch = () => {
   return (
     <>
-      {/* meta data and title */}
-      <head>
-        <title>Netswitch</title>
-        <meta
-          name="Nethub's NetSwitch"
-          content="A Unified Service Management & Delivery Platform for voice, messaging, IoT/M2M, and data traffic within a single converged network."
-        />
-      </head>
       {/* HEADER */}
       <ProductsHeader
         image="/netswitch.jpg"
@@ -38,14 +39,14 @@ const Netswitch = () => {
       {/* MOST TELCOS */}
       <MostTelcos />
       {/* DISCOVER A BETTER WAY */}
-      <Divider fill="#F0F2F3" />
+      <Divider fill="#F0F2F3" flip />
       <UniqueMkt
         title="Discover a better way"
         perks={BetterPerks}
-        image="/about3.jpg"
+        image="/goodcheck.png"
         descCol="text-customColors-fiord"
         flip
-        titlesize="text-[40px]"
+        titlesize="text-3xl md:text-[40px]"
         ltrspacing="tracking-normal"
         rating
         description=<p className="font-semibold">
@@ -59,9 +60,9 @@ const Netswitch = () => {
         title="What makes NetSwitch a favorite in telecom circles?"
         bgCol="bg-customColors-fiord"
         perks={FavoritePerks}
-        image="/about3.jpg"
+        image="/whynethub.jpg"
         IconBg="bg-customColors-fiord"
-        titlesize="text-[40px]"
+        titlesize="text-3xl md:text-[40px]"
         UniqTitleColor="text-primary"
         UniqTextColor="text-white"
         ltrspacing="tracking-normal"

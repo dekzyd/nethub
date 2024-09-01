@@ -22,7 +22,7 @@ const FeedbackSlider = ({ flip }) => {
                   : "text-customColors-hitgray "
               } text-3xl font-semibold text-center`}
             >
-              Feedback from happy customers
+              Feedback from Happy customers
             </h3>
           </div>
           <div className="flex justify-center">
@@ -35,8 +35,8 @@ const FeedbackSlider = ({ flip }) => {
                       flip ? "bg-white" : "bg-customColors-porcelain"
                     } p-5 rounded-3xl max-h-[400px] border border-gray-200`}
                   >
-                    <div className="flex flex-col items-start p-5 gap-4 justify-stretch">
-                      <div className="bg-red-200 h-36 w-36 rounded-full flex overflow-hidden">
+                    <div className="flex flex-col items-start md:p-5 gap-4 justify-stretch">
+                      <div className="h-24 w-24 lg:h-36 lg:w-36 rounded-full flex overflow-hidden">
                         <Image
                           src={logo}
                           width={200}
@@ -47,7 +47,7 @@ const FeedbackSlider = ({ flip }) => {
                       </div>
                       <p className="text-medium">{review}</p>
                       <div className="">
-                        <p className="text-primary font-semibold text-2xl italic">
+                        <p className="text-primary font-semibold text-xl md:text-2xl italic">
                           {author}
                         </p>
                         <p className="text-customColors-dovegray">{position}</p>

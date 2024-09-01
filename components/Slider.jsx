@@ -3,6 +3,7 @@ import React from "react";
 import { Carousel } from "flowbite-react";
 import { Button } from "@/components/ui/button";
 import { slides } from "@/lib/data/slides";
+import Link from "next/link";
 
 const customTheme = {
   scrollContainer: {
@@ -27,7 +28,7 @@ const Slider = () => {
           {
             /* destructure slide  */
           }
-          const { image, icon, title, details, btntxt } = slide;
+          const { image, icon, title, details, btntxt, link } = slide;
           return (
             <div
               key={index}
@@ -40,16 +41,18 @@ const Slider = () => {
                 {/* slide content */}
                 <div className="">
                   <div className="flex flex-col h-full justify-center gap-6 lg:max-w-[600px] drop-shadow-md">
-                    <h3 className="text-white text-3xl sm:text-3xl lg:text-[48px] font-semibold lg:leading-normal leading-tight">
+                    <h3 className="text-white text-3xl lg:text-4xl xl:text-[48px] font-semibold lg:leading-normal leading-tight">
                       {title}
                     </h3>
-                    <p className="text-white lg:text-2xl font-Open_sans leading-normal">
+                    <p className="text-white text-xl xl:text-2xl font-Open_sans leading-normal">
                       {details}
                     </p>
                     <div>
-                      <Button className="w-auto drop-shadow font-semibold capitalize">
-                        {btntxt}
-                      </Button>
+                      <Link href={link}>
+                        <Button className="w-auto drop-shadow font-semibold capitalize">
+                          {btntxt}
+                        </Button>
+                      </Link>
                     </div>
                   </div>
                 </div>

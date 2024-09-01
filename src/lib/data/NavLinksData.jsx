@@ -67,6 +67,7 @@ export const products = [
   {
     title: "Netswitch",
     featured: true,
+    bgcol: "bg-customColors-alterblue",
     button: "take a look",
     href: "/products/netswitch",
     description: "A unified service management & delivery platform",
@@ -75,6 +76,7 @@ export const products = [
   {
     title: "Alterswitch",
     featured: true,
+    bgcol: "bg-customColors-fiord",
     button: "see the possibilities",
     href: "#",
     description: "A Cloud-based unified service management & delivery platform",
@@ -83,6 +85,7 @@ export const products = [
   {
     title: "NetcoHub",
     href: "#",
+    bgcol: "bg-customColors-ecstacy",
     description: "Cloud-based integration platform as a service for telcos",
     icon: <TbCloudNetwork />,
   },
