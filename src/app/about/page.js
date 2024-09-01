@@ -27,11 +27,9 @@ const About = () => {
     <div>
       <PageHeader
         image="/about3.jpg"
-        title="Nethub at a glance"
+        title="Nethub at a Glance"
         pre_title="company overview"
-        height="h-[550px]"
         icon={<SearchlightIcon />}
-        pretitlefontsize="text-xl"
       />
       <Divider fill="#fff" />
       {/* About page contents */}

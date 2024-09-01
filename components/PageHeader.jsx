@@ -36,14 +36,16 @@ const PageHeader = ({
                 {pre_title && (
                   <h4
                     className={`text-white uppercase font-Open_sans ${
-                      pretitlefontsize ? pretitlefontsize : "text-xl"
+                      pretitlefontsize
+                        ? pretitlefontsize
+                        : "text-sm sm:text-bas lg:text-xl"
                     } font-light tracking-[5px]`}
                   >
                     {pre_title}
                   </h4>
                 )}
                 <h3
-                  className={`text-white text-[20px] md:text-[38px]  ${
+                  className={`text-white text-[22px] sm:text-[29px] md:text-[38px]  ${
                     fontsize ? fontsize : "xl:text-[52px]"
                   } font-semibold tracking-[-0.8px]  xl:leading-[64.8px]`}
                 >

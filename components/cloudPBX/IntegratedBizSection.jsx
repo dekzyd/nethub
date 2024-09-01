@@ -10,16 +10,16 @@ export default function IntegratedBizSection() {
   return (
     <section className="bg-white pt-10 pb-10">
       <div className="container">
-        <div className="my-10 grid sm:grid-cols-1 md:grid-cols-2">
+        <div className="my-10 grid sm:grid-cols-1 md:grid-cols-2 gap-10">
           <div className="">
             <div className="flex flex-col gap-4">
-              <p className="uppercase text-2xl tracking-widest">
+              <p className="uppercase text-lg lg:text-2xl tracking-widest">
                 Nethub Cloud PBX & Call Center
               </p>
-              <p className="text-primary text-[32px] xl:text-5xl font-semibold -tracking-[0.5px] leading-[43.2px] xl:leading-[62.1px]">
+              <p className="text-primary text-[28px] lg:text-[32px] xl:text-5xl font-semibold -tracking-[0.5px]  leading-normal lg:leading-[43.2px] xl:leading-[62.1px]">
                 Integrated business communication solution
               </p>
-              <p className="font-semibold text-[20px] leading-[30px] font-Open_sans">
+              <p className="font-semibold text-base lg:text-[20px] lg:leading-[30px] font-Open_sans">
                 Become a next-generation provider of communication services by
                 delivering an integrated business cloud telephony solution that
                 your SMB and enterprise customers will be excited about.
@@ -28,7 +28,7 @@ export default function IntegratedBizSection() {
           </div>
           <div className="grid place-content-center">
             <div className="w-full flex">
-              <div className="w-72 h-72 overflow-hidden rounded-full flex">
+              <div className="w-52 h-52 md:w-60 md:h-60 lg:w-72 lg:h-72 overflow-hidden rounded-full flex">
                 <Image
                   height={500}
                   width={500}
