@@ -51,7 +51,12 @@ export default function IntegratedBizSection() {
           {bizsoldata.map(({ title, icon, content }, index) => {
             return (
               <div className="p-5" key={index}>
-                <BizPerksCard title={title} icon={icon} content={content} />
+                <BizPerksCard
+                  title={title}
+                  icon={icon}
+                  content={content}
+                  delay={index + 1}
+                />
               </div>
             );
           })}

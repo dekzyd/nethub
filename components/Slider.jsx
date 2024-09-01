@@ -20,8 +20,6 @@ const Slider = () => {
         // slide={false}
         pauseOnHover
         slideInterval={10000}
-        className=""
-        onSlideChange={(index) => console.log("onSlideChange()", index)}
       >
         {/* slides */}
         {slides.map((slide, index) => {
