@@ -22,7 +22,7 @@ import { useEffect } from "react";
 export default function RootLayout({ children }) {
   useEffect(() => {
     AOS.init({ duration: 2000 });
-    console.log("useEffect in session");
+    // console.log("useEffect in session");
   }, []);
   return (
     <html lang="en" className="scroll-smooth">

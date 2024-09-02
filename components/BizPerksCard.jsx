@@ -20,7 +20,7 @@ const BizPerksCard = ({
     <div
       className="md:p-3 lg:p-5 my-3"
       data-aos="slide-up"
-      data-aos-once={true}
+      // data-aos-once={true}
       data-aos-delay={`${delay}00`}
     >
       <div

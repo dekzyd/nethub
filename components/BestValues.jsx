@@ -31,7 +31,7 @@ const BestValues = () => {
           </div>
           {/* value cards */}
           <div className="grid grid-cols-1 md:grid-cols-4 my-10">
-            {bestValueData.map(({ title, content, icon }) => {
+            {bestValueData.map(({ title, content, icon }, index) => {
               return (
                 <BizPerksCard
                   key={title}
@@ -39,6 +39,7 @@ const BestValues = () => {
                   content={content}
                   icon={icon}
                   titlesize="text-xl"
+                  delay={index + 1}
                 />
               );
             })}

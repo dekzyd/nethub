@@ -28,7 +28,7 @@ const Talkwithus = () => {
               <Carousel
                 className="grid"
                 // slide={false}
-                slideInterval={5000}
+                slideInterval={7000}
               >
                 {talkWithUsData.map(({ image, content }, index) => {
                   return (
@@ -37,7 +37,7 @@ const Talkwithus = () => {
                       style={{ backgroundImage: `url(${image})` }}
                       className="grid place-content-center bg-cover bg-no-repeat bg-center w-full bg-red-100 h-full p-[50px]"
                     >
-                      <div className="">
+                      <div data-aos="slide-up" data-aos-once={false}>
                         <p className="text-base md:text-[20px] lg:text-[20px] tracking-wide">
                           {content}
                         </p>
