@@ -1,4 +1,6 @@
+"use client";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import { Carousel } from "flowbite-react";
 import Link from "next/link";
 import React from "react";
@@ -37,10 +39,15 @@ const Talkwithus = () => {
                       style={{ backgroundImage: `url(${image})` }}
                       className="grid place-content-center bg-cover bg-no-repeat bg-center w-full bg-red-100 h-full p-[50px]"
                     >
-                      <div data-aos="slide-up" data-aos-once={false}>
-                        <p className="text-base md:text-[20px] lg:text-[20px] tracking-wide">
+                      <div>
+                        <motion.p
+                          initial={{ opacity: 0, y: 100 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 1.25 }}
+                          className="text-base md:text-[20px] lg:text-[20px] tracking-wide"
+                        >
                           {content}
-                        </p>
+                        </motion.p>
                       </div>
                     </div>
                   );

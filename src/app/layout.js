@@ -1,4 +1,3 @@
-"use client";
 import "./globals.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -7,23 +6,16 @@ import { Slide, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AppProvider } from "../../components/Context";
 import SideMenu from "../../components/SideMenu";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
-// export const metadata = {
-//   title: "Nethub",
-//   description: "Nethub Technologies",
-//   icons: {
-//     icon: "../favicon.ico",
-//   },
-// };
+export const metadata = {
+  title: "Nethub",
+  description: "Nethub Technologies",
+  icons: {
+    icon: "../favicon.ico",
+  },
+};
 
 export default function RootLayout({ children }) {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-    // console.log("useEffect in session");
-  }, []);
   return (
     <html lang="en" className="scroll-smooth">
       <head>
