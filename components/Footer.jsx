@@ -24,10 +24,10 @@ const Footer = () => {
           <div className="h-full md:mx-4 grid sm:grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col flex-initial p-5">
               <motion.h3
-                // initial={{ opacity: 0, y: 100 }}
-                // whileInView={{ opacity: 1, y: 0 }}
-                // transition={{ ease: "easeOut", duration: 1.2 }}
-                // viewport={{ once: true }}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ ease: "easeOut", duration: 1.2 }}
+                viewport={{ once: true }}
                 className="mb-5 text-3xl lg:text-4xl tracking-widest uppercase text-customColors-hitgray"
               >
                 Talk with us
@@ -36,10 +36,10 @@ const Footer = () => {
             </div>
             {/* contact details */}
             <motion.div
-              // initial={{ opacity: 0, y: 300 }}
-              // whileInView={{ opacity: 1, y: 0 }}
-              // transition={{ ease: "easeOut", duration: 1.2 }}
-              // viewport={{ once: true }}
+              initial={{ opacity: 0, y: 300 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ ease: "easeOut", duration: 1.2 }}
+              viewport={{ once: true }}
               className="flex flex-col flex-initial py-20 pl-10 pr-5 text-xl text-white"
             >
               {/* toll free number*/}
@@ -81,10 +81,10 @@ const Footer = () => {
       {/* footer container 2 */}
       <div className=" bg-customColors-fiord pt-10 pb-20 md:px-10">
         <motion.div
-          // initial={{ opacity: 0, y: 100 }}
-          // whileInView={{ opacity: 1, y: 0 }}
-          // transition={{ ease: "easeOut", duration: 1.2 }}
-          // viewport={{ once: true }}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 1.2 }}
+          viewport={{ once: true }}
           className="container"
         >
           <h1 className="text-customColors-hitgray text-2xl tracking-wider uppercase pb-3">

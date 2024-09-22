@@ -20,10 +20,10 @@ const BizPerksCard = ({
 }) => {
   return (
     <motion.div
-      // initial={{ opacity: 0, y: 200 }}
-      // whileInView={{ opacity: 1, y: 0 }}
-      // transition={{ duration: 1, delay: delay / 10 }}
-      // viewport={{ once: true }}
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: delay / 10 }}
+      viewport={{ once: true }}
       className="md:p-3 lg:p-5 my-3"
     >
       <div
