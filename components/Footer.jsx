@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import { ContactForm } from "./Contactform";
 import { CommunityIcons, NewsletterIcons } from "./icons";
 import Link from "next/link";
@@ -23,13 +23,25 @@ const Footer = () => {
           {/* contact form */}
           <div className="h-full md:mx-4 grid sm:grid-cols-1 md:grid-cols-2">
             <div className="flex flex-col flex-initial p-5">
-              <h3 className="mb-5 text-3xl lg:text-4xl tracking-widest uppercase text-customColors-hitgray">
+              <motion.h3
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ ease: "easeOut", duration: 1.2 }}
+                viewport={{ once: true }}
+                className="mb-5 text-3xl lg:text-4xl tracking-widest uppercase text-customColors-hitgray"
+              >
                 Talk with us
-              </h3>
+              </motion.h3>
               <ContactForm />
             </div>
             {/* contact details */}
-            <div className="flex flex-col flex-initial py-20 pl-10 pr-5 text-xl text-white">
+            <motion.div
+              initial={{ opacity: 0, y: 300 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ ease: "easeOut", duration: 1.2 }}
+              viewport={{ once: true }}
+              className="flex flex-col flex-initial py-20 pl-10 pr-5 text-xl text-white"
+            >
               {/* toll free number*/}
               <div className="pb-5">
                 <p className="font-medium">Toll-free calls (phone & Skype)</p>
@@ -61,14 +73,20 @@ const Footer = () => {
               <div>
                 <CommunityIcons />
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
 
       {/* footer container 2 */}
       <div className=" bg-customColors-fiord pt-10 pb-20 md:px-10">
-        <div className="container">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 1.2 }}
+          viewport={{ once: true }}
+          className="container"
+        >
           <h1 className="text-customColors-hitgray text-2xl tracking-wider uppercase pb-3">
             Meeting in Person
           </h1>
@@ -162,7 +180,7 @@ const Footer = () => {
           <h3 className="text-primary text-2xl font-semibold">
             <span className="text-primary">{<FaAngleRight />}</span>All Events
           </h3> */}
-        </div>
+        </motion.div>
       </div>
       {/* about, solutions, products, resources links */}
       <div className="bg-customColors-dune flex justify-center">

@@ -19,7 +19,6 @@ export default function Home() {
       <FeaturedProducts />
       <FeedbackSlider flip />
       <Talkwithus />
-      <Divider fill="var(--fiord)" />
     </main>
   );
 }

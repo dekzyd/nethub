@@ -1,8 +1,11 @@
+"use client";
+import { motion, useScroll } from "framer-motion";
 import Breadcrumbs from "../Breadcrumbs";
 import { frustrationData } from "../../src/lib/data/products/netswitchData";
 import Image from "next/image";
 
 export default function MostTelcos() {
+  const { scrollYProgress } = useScroll();
   // Netswitch page breadcrumbs links
   const netswitchcrumbs = [
     { title: "home", href: "/" },
@@ -40,15 +43,22 @@ export default function MostTelcos() {
           </div>
         </div>
         {/* media */}
-        <div className="bg-slate-20 items-center p-5 hidden lg:flex">
-          <Image
-            src="/products/netswitch/unhappy.jpg"
-            alt="unhappy"
-            width={300}
-            height={300}
-            layout="responsive"
-            className="rounded-xl shadow-xl"
-          />
+        <div className="w-full flex justify-center items-center">
+          <motion.div
+            style={{
+              scale: scrollYProgress,
+            }}
+            className="w-96 h-96 overflow-hidden rounded-full hidden lg:flex"
+          >
+            <Image
+              height={300}
+              width={300}
+              src="/products/netswitch/unhappy.jpg"
+              alt="unhappy"
+              layout="responsive"
+              className="object-cover shadow-xl"
+            />
+          </motion.div>
         </div>
       </section>
     </section>

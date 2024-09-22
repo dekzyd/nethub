@@ -28,33 +28,37 @@ const FeedbackSlider = ({ flip }) => {
           <div className="flex justify-center">
             <Carousel className="w-full max-w-[1040px]">
               <CarouselContent className="gap-2 w-full py-3 pl-5">
-                {feedbackdata.map(({ author, logo, review, position }) => (
-                  <CarouselItem
-                    key={author}
-                    className={`basis-full md:basis-1/2 ${
-                      flip ? "bg-white" : "bg-customColors-porcelain"
-                    } p-5 rounded-3xl max-h-[400px] border border-gray-200`}
-                  >
-                    <div className="flex flex-col items-start md:p-5 gap-4 justify-stretch">
-                      <div className="h-24 w-24 lg:h-36 lg:w-36 rounded-full flex overflow-hidden">
-                        <Image
-                          src={logo}
-                          width={200}
-                          height={200}
-                          alt="company logo"
-                          className="object-cover"
-                        />
+                {feedbackdata.map(
+                  ({ author, logo, review, position }, index) => (
+                    <CarouselItem
+                      key={author + index}
+                      className={`basis-full md:basis-1/2 ${
+                        flip ? "bg-white" : "bg-customColors-porcelain"
+                      } p-5 rounded-3xl max-h-[400px] border border-gray-200`}
+                    >
+                      <div className="flex flex-col items-start md:p-5 gap-4 justify-stretch">
+                        <div className="h-24 w-24 lg:h-36 lg:w-36 rounded-full flex overflow-hidden">
+                          <Image
+                            src={logo}
+                            width={200}
+                            height={200}
+                            alt="company logo"
+                            className="object-cover"
+                          />
+                        </div>
+                        <p className="text-medium">{review}</p>
+                        <div className="">
+                          <p className="text-primary font-semibold text-xl md:text-2xl italic">
+                            {author}
+                          </p>
+                          <p className="text-customColors-dovegray">
+                            {position}
+                          </p>
+                        </div>
                       </div>
-                      <p className="text-medium">{review}</p>
-                      <div className="">
-                        <p className="text-primary font-semibold text-xl md:text-2xl italic">
-                          {author}
-                        </p>
-                        <p className="text-customColors-dovegray">{position}</p>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                ))}
+                    </CarouselItem>
+                  )
+                )}
               </CarouselContent>
               <CarouselPrevious />
               <CarouselNext />

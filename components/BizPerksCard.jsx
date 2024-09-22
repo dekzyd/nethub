@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 const BizPerksCard = ({
   title,
   content,
@@ -14,9 +16,16 @@ const BizPerksCard = ({
   link,
   hoverbgcolor,
   txtcolor,
+  delay,
 }) => {
   return (
-    <div className="md:p-3 lg:p-5 my-3">
+    <motion.div
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: delay / 10 }}
+      viewport={{ once: true }}
+      className="md:p-3 lg:p-5 my-3"
+    >
       <div
         className={`${bgcolor ? bgcolor : "bg-white"} ${
           hoverbgcolor ? hoverbgcolor : ""
@@ -51,7 +60,7 @@ const BizPerksCard = ({
           </Link>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
