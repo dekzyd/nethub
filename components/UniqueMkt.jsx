@@ -69,7 +69,7 @@ const UniqueMkt = ({
         </div>
         {/* bIZ PERKS CARD */}
         <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 py-5">
-          {perks.map(({ icon, title, content }) => {
+          {perks.map(({ icon, title, content }, index) => {
             return (
               <BizPerksCard
                 key={title}
@@ -79,6 +79,7 @@ const UniqueMkt = ({
                 titlecolor={UniqTitleColor}
                 contentcolor={UniqTextColor}
                 bgcolor={IconBg}
+                delay={index + 1}
               />
             );
           })}

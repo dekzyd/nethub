@@ -44,9 +44,9 @@ const FeaturedProducts = () => {
                       <div className="grid h-full content-center gap-2 grid-cols-1 md:grid-cols-3 dark:bg-gray-700 dark:text-white">
                         {/* animate slide content */}
                         <motion.div
-                          initial={{ opacity: 0, y: 200 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 1.5 }}
+                          // initial={{ opacity: 0, y: 200 }}
+                          // whileInView={{ opacity: 1, y: 0 }}
+                          // transition={{ duration: 1.5 }}
                           className="gap-2 md:gap-4 lg:gap-5 col-span-2 lg:p-5"
                         >
                           <div className="flex flex-col gap-2 md:gap-4 lg:gap-5 ">
@@ -62,9 +62,9 @@ const FeaturedProducts = () => {
                           </Button>
                         </motion.div>
                         <motion.div
-                          initial={{ scale: 0.5 }}
-                          whileInView={{ scale: 1 }}
-                          transition={{ duration: 1.5 }}
+                          // initial={{ scale: 0.5 }}
+                          // whileInView={{ scale: 1 }}
+                          // transition={{ duration: 1.5 }}
                           className={`m-1 p-3 border-2 border-white hidden md:flex justify-center items-center text-9xl text-white rounded-xl ${
                             bgcol ? bgcol : "bg-primary/90"
                           } `}

@@ -40,14 +40,14 @@ const Talkwithus = () => {
                       className="grid place-content-center bg-cover bg-no-repeat bg-center w-full bg-red-100 h-full p-[50px]"
                     >
                       <div>
-                        <motion.p
+                        {/* <motion.p
                           initial={{ opacity: 0, y: 100 }}
                           whileInView={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 1.25 }}
+                          transition={{ duration: 1 }}
                           className="text-base md:text-[20px] lg:text-[20px] tracking-wide"
                         >
                           {content}
-                        </motion.p>
+                        </motion.p> */}
                       </div>
                     </div>
                   );

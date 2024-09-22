@@ -34,7 +34,6 @@ export default function RootLayout({ children }) {
             <Navbar />
             {children}
             <Footer />
-            <div className="w-full max-w-[1140px] bg-slate-700 my-0 mx-auto"></div>
           </AppProvider>
         </main>
       </body>
