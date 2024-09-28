@@ -1,5 +1,4 @@
 import "./globals.css";
-import { ThemeModeScript } from "flowbite-react";
 import { Slide, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AppProvider } from "../../components/Context";
@@ -23,7 +22,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* <ThemeModeScript /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
