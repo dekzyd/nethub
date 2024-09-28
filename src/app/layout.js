@@ -1,11 +1,15 @@
 import "./globals.css";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import { ThemeModeScript } from "flowbite-react";
 import { Slide, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AppProvider } from "../../components/Context";
-import SideMenu from "../../components/SideMenu";
+import dynamic from "next/dynamic";
+
+// lazy load component & libraries
+// const { Slide, ToastContainer } = dynamic(() => import("react-toastify"));
+const Navbar = dynamic(() => import("../../components/Navbar"));
+const Footer = dynamic(() => import("../../components/Footer"));
+const SideMenu = dynamic(() => import("../../components/SideMenu"));
 
 export const metadata = {
   title: "Nethub",

@@ -3,11 +3,6 @@ import PageHeader from "../../../components/PageHeader.jsx";
 import BizPerksCard from "../../../components/BizPerksCard.jsx";
 import { solutions } from "@/lib/data/NavLinksData";
 import { FaGears } from "react-icons/fa6";
-import { MdOutlineNetworkCheck, MdDialerSip } from "react-icons/md";
-import { IoKeypad } from "react-icons/io5";
-import { RiVoiceprintLine } from "react-icons/ri";
-import { FiSmartphone } from "react-icons/fi";
-import { TbCloudCog } from "react-icons/tb";
 
 {
   /* meta data and title */
@@ -57,60 +52,6 @@ export default function Solutions() {
                 />
               );
             })}
-            {/* <BizPerksCard
-              icon={
-                <MdOutlineNetworkCheck className="text-customColors-porcelain text-5xl" />
-              }
-              bgcolor="bg-customColors-fiord"
-              title="Internet Solutions"
-              content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
-              link="/solutions/internet"
-            />
-            <BizPerksCard
-              icon={
-                <RiVoiceprintLine className="text-customColors-porcelain text-5xl" />
-              }
-              bgcolor="bg-customColors-fiord"
-              title="Voice Solutions"
-              content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
-              link="/solutions/voice"
-            />
-            <BizPerksCard
-              icon={
-                <MdDialerSip className="text-customColors-porcelain text-5xl" />
-              }
-              bgcolor="bg-customColors-fiord"
-              title="Sip Trunking"
-              content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
-              link="/solutions/sip"
-            />
-            <BizPerksCard
-              icon={
-                <IoKeypad className="text-customColors-porcelain text-5xl" />
-              }
-              bgcolor="bg-customColors-fiord"
-              title="DID Management"
-              content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
-              link="/solutions/did"
-            />
-            <BizPerksCard
-              icon={
-                <FiSmartphone className="text-customColors-porcelain text-5xl" />
-              }
-              bgcolor="bg-customColors-fiord"
-              title="Softphone"
-              content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
-              link="/solutions/softphone"
-            />
-            <BizPerksCard
-              icon={
-                <TbCloudCog className="text-customColors-porcelain text-5xl" />
-              }
-              bgcolor="bg-customColors-fiord"
-              title="Cloud PBX & Call Center"
-              content="Use our cloud marketplace to expand your range of value-added services and create irresistible 'a la carte' bundles & solutions for niche enterprise markets"
-              link="/solutions/cloudpbx"
-            /> */}
           </div>
         </div>
       </section>

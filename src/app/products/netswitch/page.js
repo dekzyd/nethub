@@ -60,7 +60,7 @@ const Netswitch = () => {
         title="What makes NetSwitch a favorite in telecom circles?"
         bgCol="bg-customColors-fiord"
         perks={FavoritePerks}
-        image="/whynethub.jpg"
+        image="/whynethub.webp"
         IconBg="bg-customColors-fiord"
         titlesize="text-3xl md:text-[40px]"
         UniqTitleColor="text-primary"

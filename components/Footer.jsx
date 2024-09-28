@@ -4,12 +4,7 @@ import { ContactForm } from "./Contactform";
 import { CommunityIcons, NewsletterIcons } from "./icons";
 import Link from "next/link";
 import Logo from "./Logo";
-import {
-  FaAngleRight,
-  FaCookieBite,
-  FaLock,
-  FaRegHandPointRight,
-} from "react-icons/fa";
+import { FaCookieBite, FaLock, FaRegHandPointRight } from "react-icons/fa";
 
 const Footer = () => {
   return (
