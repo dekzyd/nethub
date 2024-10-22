@@ -2,8 +2,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -40,8 +39,12 @@ export function ContactForm() {
   const formRef = useRef();
 
   // submit handler
-  function onSubmit(values) {
-    console.log(values);
+  async function onSubmit(values) {
+    // console.log(values);
+
+    // Dynamically import emailjs and toast
+    const { toast } = await import("react-toastify");
+    const emailjs = await import("@emailjs/browser");
     emailjs
       .sendForm("service_fow05uw", "template_uvfna3q", formRef.current, {
         publicKey: "pMQTsRwKmT5ezThl9",

@@ -1,12 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    optimizePackageImports: ["react-icons/*"],
+    optimizePackageImports: [
+      "react-icons/*",
+      "framer-motion",
+      "flowbite-react",
+      "zod",
+      "react-hook-form",
+    ],
   },
 };
 
-// import withBundleAnalyzer from "@next/bundle-analyzer";
+import withBundleAnalyzer from "@next/bundle-analyzer";
 
-// export default withBundleAnalyzer(nextConfig);
+export default withBundleAnalyzer(nextConfig);
 
-export default nextConfig;
+// export default nextConfig;

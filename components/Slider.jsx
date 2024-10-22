@@ -14,10 +14,11 @@ const customTheme = {
 
 const Slider = () => {
   return (
-    <div className="h-96 lg:h-[420px] xl:h-[600px]">
+    <div className="h-96 lg:h-[400px] xl:h-[600px]">
       <Carousel
         theme={customTheme}
         // slide={false}
+        indicators={false}
         pauseOnHover
         slideInterval={10000}
       >
